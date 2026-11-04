@@ -1,0 +1,589 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(addsf3.o)
+                              /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o (__addsf3)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(divsf3.o)
+                              /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o (__divsf3)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(gesf2.o)
+                              /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o (__gesf2)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(lesf2.o)
+                              /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o (__lesf2)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(mulsf3.o)
+                              /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o (__mulsf3)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(subsf3.o)
+                              /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o (__subsf3)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatsisf.o)
+                              /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o (__floatsisf)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatunsisf.o)
+                              /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o (__floatunsisf)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(muldi3.o)
+                              /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o (__mulsi3)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(multi3.o)
+                              /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o (__muldi3)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(div.o)
+                              /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o (__divsi3)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clzsi2.o)
+                              /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(addsf3.o) (__clzsi2)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clz.o)
+                              /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clzsi2.o) (__clz_tab)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 /home/adithyan/test-lattice/baro/build/main.o
+ .data          0x00000000        0x0 /home/adithyan/test-lattice/baro/build/main.o
+ .bss           0x00000000        0x0 /home/adithyan/test-lattice/baro/build/main.o
+ .text          0x00000000        0x0 /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ .data          0x00000000        0x0 /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ .bss           0x00000000        0x0 /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ .text.bmp280_read
+                0x00000000       0x14 /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ .text.bmp280_pressure_to_altitude
+                0x00000000      0x1d4 /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ .text.bmp280_read_altitude
+                0x00000000       0x70 /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ .text.bmp280_spi2_init
+                0x00000000       0x14 /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ .text          0x00000000        0x0 /home/adithyan/test-lattice/baro/build/common/src/spi.o
+ .data          0x00000000        0x0 /home/adithyan/test-lattice/baro/build/common/src/spi.o
+ .bss           0x00000000        0x0 /home/adithyan/test-lattice/baro/build/common/src/spi.o
+ .text.SPI_get_slave_select
+                0x00000000       0x38 /home/adithyan/test-lattice/baro/build/common/src/spi.o
+ .text.SPI_set_slave_select
+                0x00000000       0x38 /home/adithyan/test-lattice/baro/build/common/src/spi.o
+ .text.SPI_check_overrun
+                0x00000000       0x38 /home/adithyan/test-lattice/baro/build/common/src/spi.o
+ .text.SPI_set_intr
+                0x00000000       0x54 /home/adithyan/test-lattice/baro/build/common/src/spi.o
+ .text.SPI_receive
+                0x00000000       0x40 /home/adithyan/test-lattice/baro/build/common/src/spi.o
+ .text.SPI_wait_if_busy
+                0x00000000       0x34 /home/adithyan/test-lattice/baro/build/common/src/spi.o
+ .text.SPI_transmit
+                0x00000000       0x70 /home/adithyan/test-lattice/baro/build/common/src/spi.o
+ .text.SPI_read_rx_reg
+                0x00000000       0x38 /home/adithyan/test-lattice/baro/build/common/src/spi.o
+ .text.SPI_write_tx_reg
+                0x00000000        0x8 /home/adithyan/test-lattice/baro/build/common/src/spi.o
+ .text.spi_register_isr
+                0x00000000       0x58 /home/adithyan/test-lattice/baro/build/common/src/spi.o
+ .text.spi_intr_status
+                0x00000000       0x6c /home/adithyan/test-lattice/baro/build/common/src/spi.o
+ .text          0x00000000        0x0 /home/adithyan/test-lattice/baro/build/startup.o
+ .data          0x00000000        0x0 /home/adithyan/test-lattice/baro/build/startup.o
+ .bss           0x00000000        0x0 /home/adithyan/test-lattice/baro/build/startup.o
+ .text          0x00000000      0x424 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(addsf3.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(addsf3.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(addsf3.o)
+ .debug_info    0x00000000      0x2ec /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(addsf3.o)
+ .debug_abbrev  0x00000000      0x164 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(addsf3.o)
+ .debug_loclists
+                0x00000000      0x571 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(addsf3.o)
+ .debug_aranges
+                0x00000000       0x20 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(addsf3.o)
+ .debug_rnglists
+                0x00000000       0x92 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(addsf3.o)
+ .debug_line    0x00000000      0xc15 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(addsf3.o)
+ .debug_str     0x00000000      0x269 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(addsf3.o)
+ .debug_line_str
+                0x00000000      0x13c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(addsf3.o)
+ .comment       0x00000000       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(addsf3.o)
+ .debug_frame   0x00000000       0x40 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(addsf3.o)
+ .riscv.attributes
+                0x00000000       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(addsf3.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(divsf3.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(divsf3.o)
+ .text          0x00000000       0xac /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(gesf2.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(gesf2.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(gesf2.o)
+ .debug_info    0x00000000      0x201 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(gesf2.o)
+ .debug_abbrev  0x00000000      0x15f /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(gesf2.o)
+ .debug_loclists
+                0x00000000       0x8f /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(gesf2.o)
+ .debug_aranges
+                0x00000000       0x20 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(gesf2.o)
+ .debug_rnglists
+                0x00000000       0x20 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(gesf2.o)
+ .debug_line    0x00000000      0x2df /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(gesf2.o)
+ .debug_str     0x00000000      0x1c0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(gesf2.o)
+ .debug_line_str
+                0x00000000      0x149 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(gesf2.o)
+ .comment       0x00000000       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(gesf2.o)
+ .debug_frame   0x00000000       0x20 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(gesf2.o)
+ .riscv.attributes
+                0x00000000       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(gesf2.o)
+ .text          0x00000000       0xac /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(lesf2.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(lesf2.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(lesf2.o)
+ .debug_info    0x00000000      0x201 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(lesf2.o)
+ .debug_abbrev  0x00000000      0x15f /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(lesf2.o)
+ .debug_loclists
+                0x00000000       0x8f /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(lesf2.o)
+ .debug_aranges
+                0x00000000       0x20 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(lesf2.o)
+ .debug_rnglists
+                0x00000000       0x20 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(lesf2.o)
+ .debug_line    0x00000000      0x2df /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(lesf2.o)
+ .debug_str     0x00000000      0x1c0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(lesf2.o)
+ .debug_line_str
+                0x00000000      0x149 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(lesf2.o)
+ .comment       0x00000000       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(lesf2.o)
+ .debug_frame   0x00000000       0x20 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(lesf2.o)
+ .riscv.attributes
+                0x00000000       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(lesf2.o)
+ .text          0x00000000      0x364 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(mulsf3.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(mulsf3.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(mulsf3.o)
+ .debug_info    0x00000000      0x3d0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(mulsf3.o)
+ .debug_abbrev  0x00000000      0x16f /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(mulsf3.o)
+ .debug_loclists
+                0x00000000      0x358 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(mulsf3.o)
+ .debug_aranges
+                0x00000000       0x20 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(mulsf3.o)
+ .debug_rnglists
+                0x00000000       0x88 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(mulsf3.o)
+ .debug_line    0x00000000      0x889 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(mulsf3.o)
+ .debug_str     0x00000000      0x29a /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(mulsf3.o)
+ .debug_line_str
+                0x00000000      0x146 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(mulsf3.o)
+ .comment       0x00000000       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(mulsf3.o)
+ .debug_frame   0x00000000       0x4c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(mulsf3.o)
+ .riscv.attributes
+                0x00000000       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(mulsf3.o)
+ .text          0x00000000      0x434 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(subsf3.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(subsf3.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(subsf3.o)
+ .debug_info    0x00000000      0x2ec /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(subsf3.o)
+ .debug_abbrev  0x00000000      0x164 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(subsf3.o)
+ .debug_loclists
+                0x00000000      0x588 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(subsf3.o)
+ .debug_aranges
+                0x00000000       0x20 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(subsf3.o)
+ .debug_rnglists
+                0x00000000       0x96 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(subsf3.o)
+ .debug_line    0x00000000      0xc5b /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(subsf3.o)
+ .debug_str     0x00000000      0x269 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(subsf3.o)
+ .debug_line_str
+                0x00000000      0x13c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(subsf3.o)
+ .comment       0x00000000       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(subsf3.o)
+ .debug_frame   0x00000000       0x40 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(subsf3.o)
+ .riscv.attributes
+                0x00000000       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(subsf3.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatsisf.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatsisf.o)
+ .text          0x00000000       0xe0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatunsisf.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatunsisf.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatunsisf.o)
+ .debug_info    0x00000000      0x20a /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatunsisf.o)
+ .debug_abbrev  0x00000000      0x186 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatunsisf.o)
+ .debug_loclists
+                0x00000000       0xf0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatunsisf.o)
+ .debug_aranges
+                0x00000000       0x20 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatunsisf.o)
+ .debug_rnglists
+                0x00000000       0x33 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatunsisf.o)
+ .debug_line    0x00000000      0x31f /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatunsisf.o)
+ .debug_str     0x00000000      0x22c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatunsisf.o)
+ .debug_line_str
+                0x00000000      0x155 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatunsisf.o)
+ .comment       0x00000000       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatunsisf.o)
+ .debug_frame   0x00000000       0x34 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatunsisf.o)
+ .riscv.attributes
+                0x00000000       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatunsisf.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(muldi3.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(muldi3.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(multi3.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(multi3.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(div.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(div.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clzsi2.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clzsi2.o)
+ .text          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clz.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clz.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clz.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ram              0x00200000         0x00040000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /home/adithyan/test-lattice/baro/build/main.o
+LOAD /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+LOAD /home/adithyan/test-lattice/baro/build/common/src/spi.o
+LOAD /home/adithyan/test-lattice/baro/build/startup.o
+START GROUP
+LOAD /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a
+LOAD /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a
+LOAD /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libm_nano.a
+END GROUP
+LOAD /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a
+LOAD /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a
+LOAD /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a
+START GROUP
+LOAD /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a
+LOAD /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a
+LOAD /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a
+END GROUP
+START GROUP
+LOAD /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a
+LOAD /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a
+LOAD /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a
+END GROUP
+                0x00200000                        RAM_START_ADDRESS = 0x200000
+                0x00040000                        RAM_SIZE = 0x40000
+                0x00004000                        STACK_SIZE = 0x4000
+
+.text           0x00200000     0x1ef0
+ *(SORT_NONE(.text.entry))
+ .text.entry    0x00200000       0x44 /home/adithyan/test-lattice/baro/build/startup.o
+                0x00200000                _start
+                0x00200050                        . = ALIGN (0x10)
+ *fill*         0x00200044        0xc 
+ *(.text .text.* .gnu.linkonce.t.*)
+ .text.startup.main
+                0x00200050       0x1c /home/adithyan/test-lattice/baro/build/main.o
+                0x00200050                main
+ .text.bmp280_parse_calib
+                0x0020006c       0xf4 /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ .text.baro_delay_ms
+                0x00200160       0x3c /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ .text.baro_uart_putc
+                0x0020019c       0x1c /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ .text.baro_uart_print_u32
+                0x002001b8       0xa0 /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ .text.baro_spi2_poll
+                0x00200258       0x3c /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ .text.baro_spi2_transfer
+                0x00200294       0x94 /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ .text.baro_spi2_cs_high
+                0x00200328        0xc /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ .text.bmp280_calib_valid
+                0x00200334       0x58 /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ .text.baro_uart_print.part.0
+                0x0020038c       0x34 /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ .text.baro_uart_print_error
+                0x002003c0       0x90 /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ .text.baro_spi2_cs_low
+                0x00200450       0x58 /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ .text.bmp280_xfer.isra.0
+                0x002004a8        0xc /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ .text.bmp280_read_regs.constprop.0
+                0x002004b4       0x58 /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ .text.bmp280_write_reg
+                0x0020050c       0x5c /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ .text.bmp280_read.part.0
+                0x00200568      0x408 /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ .text.bmp280_init
+                0x00200970      0x188 /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+                0x00200970                bmp280_init
+ .text.bmp280_spi2_init.part.0
+                0x00200af8       0xa4 /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ .text.baro_run
+                0x00200b9c      0x2ec /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+                0x00200b9c                baro_run
+ .text.SPI_init
+                0x00200e88       0x58 /home/adithyan/test-lattice/baro/build/common/src/spi.o
+                0x00200e88                SPI_init
+ .text.SPI_config
+                0x00200ee0       0x30 /home/adithyan/test-lattice/baro/build/common/src/spi.o
+                0x00200ee0                SPI_config
+ .text.SPI_set_baud
+                0x00200f10       0x34 /home/adithyan/test-lattice/baro/build/common/src/spi.o
+                0x00200f10                SPI_set_baud
+ .text.SPI_set_CSAAT_pin
+                0x00200f44       0x64 /home/adithyan/test-lattice/baro/build/common/src/spi.o
+                0x00200f44                SPI_set_CSAAT_pin
+ .text          0x00200fa8      0x384 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(divsf3.o)
+                0x00200fa8                __divsf3
+ .text          0x0020132c      0x108 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatsisf.o)
+                0x0020132c                __floatsisf
+ .text          0x00201434       0x24 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(muldi3.o)
+                0x00201434                __mulsi3
+ .text          0x00201458       0x8c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(multi3.o)
+                0x00201458                __muldi3
+ .text          0x002014e4       0xb4 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(div.o)
+                0x002014e4                __divsi3
+                0x002014ec                __hidden___udivsi3
+                0x002014ec                __udivsi3
+                0x00201534                __umodsi3
+                0x00201568                __modsi3
+ .text          0x00201598       0x4c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clzsi2.o)
+                0x00201598                __clzsi2
+ *(.plt)
+                0x002015f0                        . = ALIGN (0x10)
+ *fill*         0x002015e4        0xc 
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *crtend.o(.ctors)
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *crtend.o(.dtors)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.baro_uart_print_error.str1.4
+                0x002015f0      0x28a /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+                                 0x8e (size before relaxing)
+ *fill*         0x0020187a        0x2 
+ .rodata.baro_uart_print_error
+                0x0020187c       0x20 /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ .rodata.baro_run.str1.4
+                0x0020189c      0x1f6 /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ .rodata.altitude_cm_table.0
+                0x0020189c      0x504 /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ .rodata.hex.1  0x00201da0       0x11 /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ *fill*         0x00201db1        0x3 
+ .rodata        0x00201db4       0x3c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(divsf3.o)
+ .rodata        0x00201df0      0x100 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clz.o)
+                0x00201df0                __clz_tab
+ *(.gcc_except_table)
+ *(.eh_frame_hdr)
+ *(.eh_frame)
+ *(.init)
+ *(.fini)
+                [!provide]                        PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                [!provide]                        PROVIDE (__preinit_array_end = .)
+                [!provide]                        PROVIDE (__init_array_start = .)
+ *(SORT_BY_NAME(.init_array.*))
+ *(.init_array)
+                [!provide]                        PROVIDE (__init_array_end = .)
+                [!provide]                        PROVIDE (__fini_array_start = .)
+ *(.fini_array)
+ *(SORT_BY_NAME(.fini_array.*))
+                [!provide]                        PROVIDE (__fini_array_end = .)
+                0x00201ef0                        . = ALIGN (0x10)
+
+.sdata          0x00201ef0       0x20
+                0x00201ef0                        __sdata_load = LOADADDR (.sdata)
+                0x00201ef0                        __sdata_start = .
+                0x002026f0                        PROVIDE (__global_pointer$ = (. + 0x800))
+ *(.srodata.cst16)
+ *(.srodata.cst8)
+ *(.srodata.cst4)
+ .srodata.cst4  0x00201ef0       0x14 /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ *(.srodata.cst2)
+ *(.srodata*)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+                0x00201f10                        . = ALIGN (0x10)
+ *fill*         0x00201f04        0xc 
+                0x00201f10                        __sdata_end = .
+
+.rela.dyn       0x00201f10        0x0
+ .rela.text.entry
+                0x00201f10        0x0 /home/adithyan/test-lattice/baro/build/main.o
+
+.data           0x00201f10        0x0
+                0x00201f10                        __data_load = LOADADDR (.data)
+                0x00201f10                        __data_start = .
+ *(.got.plt)
+ *(.got)
+ *(.shdata)
+ *(.data .data.* .gnu.linkonce.d.*)
+                0x00201f10                        . = ALIGN (0x10)
+                0x00201f10                        __data_end = .
+
+.sbss           0x00201f10       0x10
+                0x00201f10                        __sbss_start = .
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss.initialized.2
+                0x00201f10        0x4 /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ .sbss.baro_spi2_failed
+                0x00201f14        0x1 /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ *fill*         0x00201f15        0x3 
+ .sbss.gSPItransfer
+                0x00201f18        0x2 /home/adithyan/test-lattice/baro/build/common/src/spi.o
+                0x00201f18                gSPItransfer
+ *(.scommon)
+                0x00201f20                        . = ALIGN (0x10)
+ *fill*         0x00201f1a        0x6 
+                0x00201f20                        __sbss_end = .
+
+.bss            0x00201f20        0x0
+                0x00201f20                        __bss_start = .
+ *(.shbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ *(COMMON)
+                0x00201f20                        . = ALIGN (0x10)
+                0x00201f20                        __bss_end = .
+                [!provide]                        PROVIDE (_end = __bss_end)
+                [!provide]                        PROVIDE (end = __bss_end)
+
+.stack          0x00201f20     0x4000
+                0x00201f20                        __stack_bottom = .
+                0x00205f20                        . = (. + STACK_SIZE)
+ *fill*         0x00201f20     0x4000 
+                0x00205f20                        __stack_top = .
+OUTPUT(/home/adithyan/test-lattice/baro/build/riscv_baro.elf elf32-littleriscv)
+
+.debug_info     0x00000000     0x2ea1
+ .debug_info    0x00000000       0x9c /home/adithyan/test-lattice/baro/build/main.o
+ .debug_info    0x0000009c     0x1d77 /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ .debug_info    0x00001e13      0x5cd /home/adithyan/test-lattice/baro/build/common/src/spi.o
+ .debug_info    0x000023e0      0x3a9 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(divsf3.o)
+ .debug_info    0x00002789      0x213 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatsisf.o)
+ .debug_info    0x0000299c       0x31 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(muldi3.o)
+ .debug_info    0x000029cd      0x23f /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(multi3.o)
+ .debug_info    0x00002c0c       0x5f /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(div.o)
+ .debug_info    0x00002c6b      0x150 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clzsi2.o)
+ .debug_info    0x00002dbb       0xe6 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clz.o)
+
+.debug_abbrev   0x00000000      0xda1
+ .debug_abbrev  0x00000000       0x61 /home/adithyan/test-lattice/baro/build/main.o
+ .debug_abbrev  0x00000061      0x5b8 /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ .debug_abbrev  0x00000619      0x237 /home/adithyan/test-lattice/baro/build/common/src/spi.o
+ .debug_abbrev  0x00000850      0x141 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(divsf3.o)
+ .debug_abbrev  0x00000991      0x16d /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatsisf.o)
+ .debug_abbrev  0x00000afe       0x28 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(muldi3.o)
+ .debug_abbrev  0x00000b26      0x119 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(multi3.o)
+ .debug_abbrev  0x00000c3f       0x28 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(div.o)
+ .debug_abbrev  0x00000c67       0xca /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clzsi2.o)
+ .debug_abbrev  0x00000d31       0x70 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clz.o)
+
+.debug_aranges  0x00000000      0x250
+ .debug_aranges
+                0x00000000       0x20 /home/adithyan/test-lattice/baro/build/main.o
+ .debug_aranges
+                0x00000020       0xc8 /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ .debug_aranges
+                0x000000e8       0x90 /home/adithyan/test-lattice/baro/build/common/src/spi.o
+ .debug_aranges
+                0x00000178       0x20 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(divsf3.o)
+ .debug_aranges
+                0x00000198       0x20 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatsisf.o)
+ .debug_aranges
+                0x000001b8       0x20 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(muldi3.o)
+ .debug_aranges
+                0x000001d8       0x20 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(multi3.o)
+ .debug_aranges
+                0x000001f8       0x20 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(div.o)
+ .debug_aranges
+                0x00000218       0x20 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clzsi2.o)
+ .debug_aranges
+                0x00000238       0x18 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clz.o)
+
+.debug_rnglists
+                0x00000000      0x289
+ .debug_rnglists
+                0x00000000       0x13 /home/adithyan/test-lattice/baro/build/main.o
+ .debug_rnglists
+                0x00000013      0x138 /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ .debug_rnglists
+                0x0000014b       0x67 /home/adithyan/test-lattice/baro/build/common/src/spi.o
+ .debug_rnglists
+                0x000001b2       0x7d /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(divsf3.o)
+ .debug_rnglists
+                0x0000022f       0x44 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatsisf.o)
+ .debug_rnglists
+                0x00000273       0x16 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clzsi2.o)
+
+.debug_line     0x00000000     0x36b3
+ .debug_line    0x00000000       0x7a /home/adithyan/test-lattice/baro/build/main.o
+ .debug_line    0x0000007a     0x1c4c /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ .debug_line    0x00001cc6      0x8ed /home/adithyan/test-lattice/baro/build/common/src/spi.o
+ .debug_line    0x000025b3      0x89e /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(divsf3.o)
+ .debug_line    0x00002e51      0x357 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatsisf.o)
+ .debug_line    0x000031a8       0x7a /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(muldi3.o)
+ .debug_line    0x00003222      0x220 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(multi3.o)
+ .debug_line    0x00003442      0x153 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(div.o)
+ .debug_line    0x00003595       0xdf /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clzsi2.o)
+ .debug_line    0x00003674       0x3f /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clz.o)
+
+.debug_str      0x00000000      0xd01
+ .debug_str     0x00000000      0xd01 /home/adithyan/test-lattice/baro/build/main.o
+                                0x171 (size before relaxing)
+ .debug_str     0x00000d01      0x7e4 /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ .debug_str     0x00000d01      0x3bb /home/adithyan/test-lattice/baro/build/common/src/spi.o
+ .debug_str     0x00000d01      0x2f0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(divsf3.o)
+ .debug_str     0x00000d01      0x231 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatsisf.o)
+ .debug_str     0x00000d01       0xaf /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(muldi3.o)
+ .debug_str     0x00000d01      0x22d /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(multi3.o)
+ .debug_str     0x00000d01       0xdc /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(div.o)
+ .debug_str     0x00000d01      0x1d0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clzsi2.o)
+ .debug_str     0x00000d01      0x1b3 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clz.o)
+
+.debug_line_str
+                0x00000000      0x344
+ .debug_line_str
+                0x00000000      0x344 /home/adithyan/test-lattice/baro/build/main.o
+                                 0x7f (size before relaxing)
+ .debug_line_str
+                0x00000344      0x1ba /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ .debug_line_str
+                0x00000344       0x9d /home/adithyan/test-lattice/baro/build/common/src/spi.o
+ .debug_line_str
+                0x00000344      0x13c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(divsf3.o)
+ .debug_line_str
+                0x00000344      0x14f /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatsisf.o)
+ .debug_line_str
+                0x00000344       0x9a /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(muldi3.o)
+ .debug_line_str
+                0x00000344      0x15d /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(multi3.o)
+ .debug_line_str
+                0x00000344       0x97 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(div.o)
+ .debug_line_str
+                0x00000344      0x130 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clzsi2.o)
+ .debug_line_str
+                0x00000344      0x130 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clz.o)
+
+.comment        0x00000000       0x1b
+ .comment       0x00000000       0x1b /home/adithyan/test-lattice/baro/build/main.o
+                                 0x1c (size before relaxing)
+ .comment       0x0000001b       0x1c /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ .comment       0x0000001b       0x1c /home/adithyan/test-lattice/baro/build/common/src/spi.o
+ .comment       0x0000001b       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(divsf3.o)
+ .comment       0x0000001b       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatsisf.o)
+ .comment       0x0000001b       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(multi3.o)
+ .comment       0x0000001b       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clzsi2.o)
+ .comment       0x0000001b       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clz.o)
+
+.riscv.attributes
+                0x00000000       0x29
+ .riscv.attributes
+                0x00000000       0x25 /home/adithyan/test-lattice/baro/build/main.o
+ .riscv.attributes
+                0x00000025       0x25 /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ .riscv.attributes
+                0x0000004a       0x25 /home/adithyan/test-lattice/baro/build/common/src/spi.o
+ .riscv.attributes
+                0x0000006f       0x27 /home/adithyan/test-lattice/baro/build/startup.o
+ .riscv.attributes
+                0x00000096       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(divsf3.o)
+ .riscv.attributes
+                0x000000b2       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatsisf.o)
+ .riscv.attributes
+                0x000000ce       0x1a /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(muldi3.o)
+ .riscv.attributes
+                0x000000e8       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(multi3.o)
+ .riscv.attributes
+                0x00000104       0x1a /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(div.o)
+ .riscv.attributes
+                0x0000011e       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clzsi2.o)
+ .riscv.attributes
+                0x0000013a       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clz.o)
+
+.debug_frame    0x00000000      0x51c
+ .debug_frame   0x00000000       0x2c /home/adithyan/test-lattice/baro/build/main.o
+ .debug_frame   0x0000002c      0x2f0 /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ .debug_frame   0x0000031c      0x124 /home/adithyan/test-lattice/baro/build/common/src/spi.o
+ .debug_frame   0x00000440       0x58 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(divsf3.o)
+ .debug_frame   0x00000498       0x38 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatsisf.o)
+ .debug_frame   0x000004d0       0x2c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(multi3.o)
+ .debug_frame   0x000004fc       0x20 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clzsi2.o)
+
+.debug_loclists
+                0x00000000     0x1305
+ .debug_loclists
+                0x00000000      0x909 /home/adithyan/test-lattice/baro/build/driver/src/barometer/barometer.o
+ .debug_loclists
+                0x00000909      0x2f3 /home/adithyan/test-lattice/baro/build/common/src/spi.o
+ .debug_loclists
+                0x00000bfc      0x4c8 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(divsf3.o)
+ .debug_loclists
+                0x000010c4      0x13d /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatsisf.o)
+ .debug_loclists
+                0x00001201       0xc0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(multi3.o)
+ .debug_loclists
+                0x000012c1       0x44 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clzsi2.o)

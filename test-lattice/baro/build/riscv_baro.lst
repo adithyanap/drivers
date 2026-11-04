@@ -1,0 +1,3290 @@
+
+/home/adithyan/test-lattice/baro/build/riscv_baro.elf:     file format elf32-littleriscv
+/home/adithyan/test-lattice/baro/build/riscv_baro.elf
+architecture: riscv:rv32, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0x00200000
+
+Program Header:
+0x70000003 off    0x0000b744 vaddr 0x00000000 paddr 0x00000000 align 2**0
+         filesz 0x00000029 memsz 0x00000000 flags r--
+    LOAD off    0x00001000 vaddr 0x00200000 paddr 0x00200000 align 2**12
+         filesz 0x00001f10 memsz 0x00005f20 flags rwx
+
+Sections:
+Idx Name              Size      VMA       LMA       File off  Algn  Flags
+  0 .text             00001ef0  00200000  00200000  00001000  2**4  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .sdata            00000020  00201ef0  00201ef0  00002ef0  2**4  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  2 .data             00000000  00201f10  00201f10  00002f10  2**4  CONTENTS, ALLOC, LOAD, DATA
+  3 .sbss             00000010  00201f10  00201f10  00002f10  2**4  ALLOC
+  4 .bss              00000000  00201f20  00201f20  00000000  2**4  ALLOC
+  5 .stack            00004000  00201f20  00201f20  00002f10  2**4  ALLOC
+  6 .debug_info       00002ea1  00000000  00000000  00002f10  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+  7 .debug_abbrev     00000da1  00000000  00000000  00005db1  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+  8 .debug_aranges    00000250  00000000  00000000  00006b58  2**3  CONTENTS, READONLY, DEBUGGING, OCTETS
+  9 .debug_rnglists   00000289  00000000  00000000  00006da8  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 10 .debug_line       000036b3  00000000  00000000  00007031  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 11 .debug_str        00000d01  00000000  00000000  0000a6e4  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 12 .debug_line_str   00000344  00000000  00000000  0000b3e5  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 13 .comment          0000001b  00000000  00000000  0000b729  2**0  CONTENTS, READONLY
+ 14 .riscv.attributes 00000029  00000000  00000000  0000b744  2**0  CONTENTS, READONLY
+ 15 .debug_frame      0000051c  00000000  00000000  0000b770  2**2  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 16 .debug_loclists   00001305  00000000  00000000  0000bc8c  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+SYMBOL TABLE:
+00200000 l    d  .text	00000000 .text
+00201ef0 l    d  .sdata	00000000 .sdata
+00201f10 l    d  .data	00000000 .data
+00201f10 l    d  .sbss	00000000 .sbss
+00201f20 l    d  .bss	00000000 .bss
+00201f20 l    d  .stack	00000000 .stack
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_rnglists	00000000 .debug_rnglists
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_line_str	00000000 .debug_line_str
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .riscv.attributes	00000000 .riscv.attributes
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_loclists	00000000 .debug_loclists
+00000000 l    df *ABS*	00000000 startup.o
+00200040 l       .text	00000000 trap_handler
+00200028 l       .text	00000000 clear_bss
+00200038 l       .text	00000000 bss_done
+0020003c l       .text	00000000 hang
+00000000 l    df *ABS*	00000000 main.c
+00000000 l    df *ABS*	00000000 barometer.c
+0020006c l     F .text	000000f4 bmp280_parse_calib
+00200160 l     F .text	0000003c baro_delay_ms
+0020019c l     F .text	0000001c baro_uart_putc
+002001b8 l     F .text	000000a0 baro_uart_print_u32
+00200258 l     F .text	0000003c baro_spi2_poll
+00200294 l     F .text	00000094 baro_spi2_transfer
+00201f14 l     O .sbss	00000001 baro_spi2_failed
+00200328 l     F .text	0000000c baro_spi2_cs_high
+00200334 l     F .text	00000058 bmp280_calib_valid
+0020038c l     F .text	00000034 baro_uart_print.part.0
+002003c0 l     F .text	00000090 baro_uart_print_error
+00200450 l     F .text	00000058 baro_spi2_cs_low
+002004a8 l     F .text	0000000c bmp280_xfer.isra.0
+002004b4 l     F .text	00000058 bmp280_read_regs.constprop.0
+0020050c l     F .text	0000005c bmp280_write_reg
+00200568 l     F .text	00000408 bmp280_read.part.0
+00200af8 l     F .text	000000a4 bmp280_spi2_init.part.0
+00201f10 l     O .sbss	00000004 initialized.2
+00201da0 l     O .text	00000011 hex.1
+0020189c l     O .text	00000504 altitude_cm_table.0
+00000000 l    df *ABS*	00000000 spi.c
+00000000 l    df *ABS*	00000000 divsf3.c
+00000000 l    df *ABS*	00000000 floatsisf.c
+00000000 l    df *ABS*	00000000 muldi3.o
+00000000 l    df *ABS*	00000000 multi3.c
+00000000 l    df *ABS*	00000000 div.o
+00000000 l    df *ABS*	00000000 libgcc2.c
+00000000 l    df *ABS*	00000000 libgcc2.c
+00004000 g       *ABS*	00000000 STACK_SIZE
+002026f0 g       .sdata	00000000 __global_pointer$
+00200f44 g     F .text	00000064 SPI_set_CSAAT_pin
+00201f10 g       *ABS*	00000000 __data_load
+00200fa8 g     F .text	00000384 .hidden __divsf3
+00201f10 g       .sbss	00000000 __sbss_start
+00201ef0 g       .sdata	00000000 __sdata_start
+002014ec g     F .text	00000048 .hidden __hidden___udivsi3
+002014ec g     F .text	00000048 .hidden __udivsi3
+00040000 g       *ABS*	00000000 RAM_SIZE
+00200b9c g     F .text	000002ec baro_run
+00201f20 g       .bss	00000000 __bss_end
+00200ee0 g     F .text	00000030 SPI_config
+00201f18 g     O .sbss	00000002 gSPItransfer
+00201f20 g       .sbss	00000000 __sbss_end
+00205f20 g       .stack	00000000 __stack_top
+00201534 g     F .text	00000010 .hidden __umodsi3
+00201598 g     F .text	0000004c .hidden __clzsi2
+00200000 g       .text	00000000 _start
+0020132c g     F .text	00000108 .hidden __floatsisf
+00201ef0 g       *ABS*	00000000 __sdata_load
+00201f10 g       .data	00000000 __data_end
+00201434 g     F .text	00000024 .hidden __mulsi3
+00200000 g       *ABS*	00000000 RAM_START_ADDRESS
+00201f20 g       .bss	00000000 __bss_start
+00200050 g     F .text	0000001c main
+002014e4 g     F .text	00000084 .hidden __divsi3
+00201f10 g       .sdata	00000000 __sdata_end
+00201df0 g     O .text	00000100 .hidden __clz_tab
+00200970 g     F .text	00000188 bmp280_init
+00201f20 g       .stack	00000000 __stack_bottom
+00200e88 g     F .text	00000058 SPI_init
+00201568 g     F .text	00000030 .hidden __modsi3
+00200f10 g     F .text	00000034 SPI_set_baud
+00201458 g     F .text	0000008c .hidden __muldi3
+00201f10 g       .data	00000000 __data_start
+
+
+
+Disassembly of section .text:
+
+00200000 <_start>:
+_start():
+  200000:	00002197          	auipc	gp,0x2
+  200004:	6f018193          	addi	gp,gp,1776 # 2026f0 <__global_pointer$>
+  200008:	00006117          	auipc	sp,0x6
+  20000c:	f1810113          	addi	sp,sp,-232 # 205f20 <__stack_top>
+  200010:	00000297          	auipc	t0,0x0
+  200014:	03028293          	addi	t0,t0,48 # 200040 <trap_handler>
+  200018:	30529073          	csrw	mtvec,t0
+  20001c:	30401073          	csrw	mie,zero
+  200020:	82018293          	addi	t0,gp,-2016 # 201f10 <initialized.2>
+  200024:	83018313          	addi	t1,gp,-2000 # 201f20 <__bss_end>
+
+00200028 <clear_bss>:
+clear_bss():
+  200028:	0062f863          	bgeu	t0,t1,200038 <bss_done>
+  20002c:	0002a023          	sw	zero,0(t0)
+  200030:	00428293          	addi	t0,t0,4
+  200034:	ff5ff06f          	j	200028 <clear_bss>
+
+00200038 <bss_done>:
+bss_done():
+  200038:	018000ef          	jal	200050 <main>
+
+0020003c <hang>:
+hang():
+  20003c:	0000006f          	j	20003c <hang>
+
+00200040 <trap_handler>:
+trap_handler():
+  200040:	0000006f          	j	200040 <trap_handler>
+	...
+
+00200050 <main>:
+main():
+/home/adithyan/test-lattice/baro/main.c:12
+ */
+
+#include "barometer.h"
+
+int main(void)
+{
+  200050:	ff010113          	addi	sp,sp,-16
+  200054:	00112623          	sw	ra,12(sp)
+/home/adithyan/test-lattice/baro/main.c:13
+    baro_run();
+  200058:	345000ef          	jal	200b9c <baro_run>
+/home/adithyan/test-lattice/baro/main.c:15
+    return 0;
+}
+  20005c:	00c12083          	lw	ra,12(sp)
+  200060:	00000513          	li	a0,0
+  200064:	01010113          	addi	sp,sp,16
+  200068:	00008067          	ret
+
+0020006c <bmp280_parse_calib>:
+bmp280_parse_calib():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:64
+    return (int16_t)bmp280_le16u(p);
+}
+
+static void bmp280_parse_calib(bmp280_t *dev, const uint8_t *calib)
+{
+    dev->calib.T1 = bmp280_le16u(&calib[0]);
+  20006c:	0015c783          	lbu	a5,1(a1)
+  200070:	0005c703          	lbu	a4,0(a1)
+  200074:	00879793          	slli	a5,a5,0x8
+  200078:	00e7e7b3          	or	a5,a5,a4
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:64 (discriminator 1)
+  20007c:	00f51023          	sh	a5,0(a0)
+bmp280_le16u():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:54
+    return (uint16_t)((uint16_t)p[0] | ((uint16_t)p[1] << 8));
+  200080:	0035c783          	lbu	a5,3(a1)
+  200084:	0025c703          	lbu	a4,2(a1)
+  200088:	00879793          	slli	a5,a5,0x8
+  20008c:	00e7e7b3          	or	a5,a5,a4
+bmp280_parse_calib():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:65 (discriminator 1)
+    dev->calib.T2 = bmp280_le16s(&calib[2]);
+  200090:	00f51123          	sh	a5,2(a0)
+bmp280_le16u():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:54
+    return (uint16_t)((uint16_t)p[0] | ((uint16_t)p[1] << 8));
+  200094:	0055c783          	lbu	a5,5(a1)
+  200098:	0045c703          	lbu	a4,4(a1)
+  20009c:	00879793          	slli	a5,a5,0x8
+  2000a0:	00e7e7b3          	or	a5,a5,a4
+bmp280_parse_calib():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:66 (discriminator 1)
+    dev->calib.T3 = bmp280_le16s(&calib[4]);
+  2000a4:	00f51223          	sh	a5,4(a0)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:68
+
+    dev->calib.P1 = bmp280_le16u(&calib[6]);
+  2000a8:	0075c783          	lbu	a5,7(a1)
+  2000ac:	0065c703          	lbu	a4,6(a1)
+  2000b0:	00879793          	slli	a5,a5,0x8
+  2000b4:	00e7e7b3          	or	a5,a5,a4
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:68 (discriminator 1)
+  2000b8:	00f51323          	sh	a5,6(a0)
+bmp280_le16u():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:54
+    return (uint16_t)((uint16_t)p[0] | ((uint16_t)p[1] << 8));
+  2000bc:	0095c783          	lbu	a5,9(a1)
+  2000c0:	0085c703          	lbu	a4,8(a1)
+  2000c4:	00879793          	slli	a5,a5,0x8
+  2000c8:	00e7e7b3          	or	a5,a5,a4
+bmp280_parse_calib():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:69 (discriminator 1)
+    dev->calib.P2 = bmp280_le16s(&calib[8]);
+  2000cc:	00f51423          	sh	a5,8(a0)
+bmp280_le16u():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:54
+    return (uint16_t)((uint16_t)p[0] | ((uint16_t)p[1] << 8));
+  2000d0:	00b5c783          	lbu	a5,11(a1)
+  2000d4:	00a5c703          	lbu	a4,10(a1)
+  2000d8:	00879793          	slli	a5,a5,0x8
+  2000dc:	00e7e7b3          	or	a5,a5,a4
+bmp280_parse_calib():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:70 (discriminator 1)
+    dev->calib.P3 = bmp280_le16s(&calib[10]);
+  2000e0:	00f51523          	sh	a5,10(a0)
+bmp280_le16u():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:54
+    return (uint16_t)((uint16_t)p[0] | ((uint16_t)p[1] << 8));
+  2000e4:	00d5c783          	lbu	a5,13(a1)
+  2000e8:	00c5c703          	lbu	a4,12(a1)
+  2000ec:	00879793          	slli	a5,a5,0x8
+  2000f0:	00e7e7b3          	or	a5,a5,a4
+bmp280_parse_calib():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:71 (discriminator 1)
+    dev->calib.P4 = bmp280_le16s(&calib[12]);
+  2000f4:	00f51623          	sh	a5,12(a0)
+bmp280_le16u():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:54
+    return (uint16_t)((uint16_t)p[0] | ((uint16_t)p[1] << 8));
+  2000f8:	00f5c783          	lbu	a5,15(a1)
+  2000fc:	00e5c703          	lbu	a4,14(a1)
+  200100:	00879793          	slli	a5,a5,0x8
+  200104:	00e7e7b3          	or	a5,a5,a4
+bmp280_parse_calib():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:72 (discriminator 1)
+    dev->calib.P5 = bmp280_le16s(&calib[14]);
+  200108:	00f51723          	sh	a5,14(a0)
+bmp280_le16u():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:54
+    return (uint16_t)((uint16_t)p[0] | ((uint16_t)p[1] << 8));
+  20010c:	0115c783          	lbu	a5,17(a1)
+  200110:	0105c703          	lbu	a4,16(a1)
+  200114:	00879793          	slli	a5,a5,0x8
+  200118:	00e7e7b3          	or	a5,a5,a4
+bmp280_parse_calib():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:73 (discriminator 1)
+    dev->calib.P6 = bmp280_le16s(&calib[16]);
+  20011c:	00f51823          	sh	a5,16(a0)
+bmp280_le16u():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:54
+    return (uint16_t)((uint16_t)p[0] | ((uint16_t)p[1] << 8));
+  200120:	0135c783          	lbu	a5,19(a1)
+  200124:	0125c703          	lbu	a4,18(a1)
+  200128:	00879793          	slli	a5,a5,0x8
+  20012c:	00e7e7b3          	or	a5,a5,a4
+bmp280_parse_calib():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:74 (discriminator 1)
+    dev->calib.P7 = bmp280_le16s(&calib[18]);
+  200130:	00f51923          	sh	a5,18(a0)
+bmp280_le16u():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:54
+    return (uint16_t)((uint16_t)p[0] | ((uint16_t)p[1] << 8));
+  200134:	0155c783          	lbu	a5,21(a1)
+  200138:	0145c703          	lbu	a4,20(a1)
+  20013c:	00879793          	slli	a5,a5,0x8
+  200140:	00e7e7b3          	or	a5,a5,a4
+bmp280_parse_calib():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:75 (discriminator 1)
+    dev->calib.P8 = bmp280_le16s(&calib[20]);
+  200144:	00f51a23          	sh	a5,20(a0)
+bmp280_le16u():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:54
+    return (uint16_t)((uint16_t)p[0] | ((uint16_t)p[1] << 8));
+  200148:	0175c783          	lbu	a5,23(a1)
+  20014c:	0165c703          	lbu	a4,22(a1)
+  200150:	00879793          	slli	a5,a5,0x8
+  200154:	00e7e7b3          	or	a5,a5,a4
+bmp280_parse_calib():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:76 (discriminator 1)
+    dev->calib.P9 = bmp280_le16s(&calib[22]);
+  200158:	00f51b23          	sh	a5,22(a0)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:77
+}
+  20015c:	00008067          	ret
+
+00200160 <baro_delay_ms>:
+baro_delay_ms():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:608
+     * ~47.7 hours, and the unsigned subtraction below stays correct across
+     * the wrap for any sane delay.  Keeping it 32-bit also avoids the
+     * 64-bit __muldi3/__udivdi3 helpers on the critical init path.
+     */
+    volatile uint32_t *mtime_lo = (volatile uint32_t *)BARO_MTIME_ADDR;
+    uint32_t ticks  = ms * (BARO_MTIME_HZ / 1000U);
+  200160:	00151793          	slli	a5,a0,0x1
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:609
+    uint32_t start  = *mtime_lo;
+  200164:	20010737          	lui	a4,0x20010
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:608
+    uint32_t ticks  = ms * (BARO_MTIME_HZ / 1000U);
+  200168:	00a787b3          	add	a5,a5,a0
+  20016c:	00379793          	slli	a5,a5,0x3
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:609
+    uint32_t start  = *mtime_lo;
+  200170:	58072603          	lw	a2,1408(a4) # 20010580 <__stack_top+0x1fe0a660>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:608
+    uint32_t ticks  = ms * (BARO_MTIME_HZ / 1000U);
+  200174:	00a78533          	add	a0,a5,a0
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:612
+    uint32_t spin   = 0U;
+
+    while ((uint32_t)(*mtime_lo - start) < ticks)
+  200178:	001e87b7          	lui	a5,0x1e8
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:609
+    uint32_t start  = *mtime_lo;
+  20017c:	58070713          	addi	a4,a4,1408
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:612
+    while ((uint32_t)(*mtime_lo - start) < ticks)
+  200180:	48178793          	addi	a5,a5,1153 # 1e8481 <RAM_SIZE+0x1a8481>
+  200184:	00072683          	lw	a3,0(a4)
+  200188:	40c686b3          	sub	a3,a3,a2
+  20018c:	00a6f663          	bgeu	a3,a0,200198 <baro_delay_ms+0x38>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:614
+    {
+        if (++spin > BARO_DELAY_SPIN_LIMIT)
+  200190:	fff78793          	addi	a5,a5,-1
+  200194:	fe0798e3          	bnez	a5,200184 <baro_delay_ms+0x24>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:619
+        {
+            break;
+        }
+    }
+}
+  200198:	00008067          	ret
+
+0020019c <baro_uart_putc>:
+baro_uart_putc():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:635 (discriminator 1)
+    BARO_UART0_REGS->iir_fcr = 0x00U;
+}
+
+static void baro_uart_putc(char c)
+{
+    while ((BARO_UART0_REGS->lsr & BARO_UART_LSR_THRE) == 0U)
+  20019c:	100007b7          	lui	a5,0x10000
+  2001a0:	10078793          	addi	a5,a5,256 # 10000100 <__stack_top+0xfdfa1e0>
+  2001a4:	0147a703          	lw	a4,20(a5)
+  2001a8:	02077713          	andi	a4,a4,32
+  2001ac:	fe070ce3          	beqz	a4,2001a4 <baro_uart_putc+0x8>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:638
+    {
+    }
+    BARO_UART0_REGS->dr = (uint32_t)(uint8_t)c;
+  2001b0:	00a7a023          	sw	a0,0(a5)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:639
+}
+  2001b4:	00008067          	ret
+
+002001b8 <baro_uart_print_u32>:
+baro_uart_print_u32():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:666
+    text[2] = '\0';
+    baro_uart_print(text);
+}
+
+static void baro_uart_print_u32(uint32_t value)
+{
+  2001b8:	fd010113          	addi	sp,sp,-48
+  2001bc:	02812423          	sw	s0,40(sp)
+  2001c0:	02912223          	sw	s1,36(sp)
+  2001c4:	01312e23          	sw	s3,28(sp)
+  2001c8:	02112623          	sw	ra,44(sp)
+  2001cc:	03212023          	sw	s2,32(sp)
+  2001d0:	00050493          	mv	s1,a0
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:668
+    char digits[10];
+    uint8_t count = 0U;
+  2001d4:	00000413          	li	s0,0
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:674 (discriminator 1)
+
+    do
+    {
+        digits[count++] = (char)('0' + (value % 10U));
+        value /= 10U;
+    } while (value != 0U);
+  2001d8:	00900993          	li	s3,9
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:672
+        digits[count++] = (char)('0' + (value % 10U));
+  2001dc:	00040793          	mv	a5,s0
+  2001e0:	01078793          	addi	a5,a5,16
+  2001e4:	00a00593          	li	a1,10
+  2001e8:	00048513          	mv	a0,s1
+  2001ec:	00278933          	add	s2,a5,sp
+  2001f0:	344010ef          	jal	201534 <__umodsi3>
+  2001f4:	03050513          	addi	a0,a0,48
+  2001f8:	fea90a23          	sb	a0,-12(s2)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:673
+        value /= 10U;
+  2001fc:	00a00593          	li	a1,10
+  200200:	00048513          	mv	a0,s1
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:672
+        digits[count++] = (char)('0' + (value % 10U));
+  200204:	00140413          	addi	s0,s0,1
+  200208:	00048913          	mv	s2,s1
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:673
+        value /= 10U;
+  20020c:	2e0010ef          	jal	2014ec <__hidden___udivsi3>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:672
+        digits[count++] = (char)('0' + (value % 10U));
+  200210:	0ff47413          	zext.b	s0,s0
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:673
+        value /= 10U;
+  200214:	00050493          	mv	s1,a0
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:674 (discriminator 1)
+    } while (value != 0U);
+  200218:	fd29e2e3          	bltu	s3,s2,2001dc <baro_uart_print_u32+0x24>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:676
+
+    while (count != 0U)
+  20021c:	02041063          	bnez	s0,20023c <baro_uart_print_u32+0x84>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:680
+    {
+        baro_uart_putc(digits[--count]);
+    }
+}
+  200220:	02c12083          	lw	ra,44(sp)
+  200224:	02812403          	lw	s0,40(sp)
+  200228:	02412483          	lw	s1,36(sp)
+  20022c:	02012903          	lw	s2,32(sp)
+  200230:	01c12983          	lw	s3,28(sp)
+  200234:	03010113          	addi	sp,sp,48
+  200238:	00008067          	ret
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:678
+        baro_uart_putc(digits[--count]);
+  20023c:	fff40413          	addi	s0,s0,-1
+  200240:	0ff47413          	zext.b	s0,s0
+  200244:	01040793          	addi	a5,s0,16
+  200248:	002787b3          	add	a5,a5,sp
+  20024c:	ff47c503          	lbu	a0,-12(a5)
+  200250:	f4dff0ef          	jal	20019c <baro_uart_putc>
+  200254:	fc9ff06f          	j	20021c <baro_uart_print_u32+0x64>
+
+00200258 <baro_spi2_poll>:
+baro_spi2_poll():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:770
+#define BARO_SPI_SPIN_LIMIT     200000UL
+
+static uint8_t baro_spi2_failed;
+
+static int baro_spi2_poll(uint32_t mask, int want_set)
+{
+  200258:	000317b7          	lui	a5,0x31
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:775
+    uint32_t spin;
+
+    for (spin = 0U; spin < BARO_SPI_SPIN_LIMIT; ++spin)
+    {
+        uint32_t status = SPIreg(BMP280_SPI2_BUS).Status;
+  20025c:	102006b7          	lui	a3,0x10200
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:770
+{
+  200260:	d4078793          	addi	a5,a5,-704 # 30d40 <STACK_SIZE+0x2cd40>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:775
+        uint32_t status = SPIreg(BMP280_SPI2_BUS).Status;
+  200264:	10068693          	addi	a3,a3,256 # 10200100 <__stack_top+0xfffa1e0>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:777
+
+        if (((status & mask) != 0U) == (want_set != 0))
+  200268:	0015f593          	andi	a1,a1,1
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:775
+        uint32_t status = SPIreg(BMP280_SPI2_BUS).Status;
+  20026c:	0046a703          	lw	a4,4(a3)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:777
+        if (((status & mask) != 0U) == (want_set != 0))
+  200270:	00a77733          	and	a4,a4,a0
+  200274:	00173713          	seqz	a4,a4
+  200278:	00b71a63          	bne	a4,a1,20028c <baro_spi2_poll+0x34>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:773 (discriminator 1)
+    for (spin = 0U; spin < BARO_SPI_SPIN_LIMIT; ++spin)
+  20027c:	fff78793          	addi	a5,a5,-1
+  200280:	fe0796e3          	bnez	a5,20026c <baro_spi2_poll+0x14>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:783
+        {
+            return 0;
+        }
+    }
+
+    return -1;
+  200284:	fff00513          	li	a0,-1
+  200288:	00008067          	ret
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:779
+            return 0;
+  20028c:	00000513          	li	a0,0
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:784
+}
+  200290:	00008067          	ret
+
+00200294 <baro_spi2_transfer>:
+baro_spi2_transfer():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:809
+    /* Always release CS, even after a failed transfer. */
+    SPI_set_CSAAT_pin(BMP280_SPI2_BUS, LOW);
+}
+
+static uint8_t baro_spi2_transfer(uint8_t tx)
+{
+  200294:	ff010113          	addi	sp,sp,-16
+  200298:	01212023          	sw	s2,0(sp)
+  20029c:	00112623          	sw	ra,12(sp)
+  2002a0:	00812423          	sw	s0,8(sp)
+  2002a4:	00912223          	sw	s1,4(sp)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:810
+    if (baro_spi2_failed != 0U)
+  2002a8:	82418913          	addi	s2,gp,-2012 # 201f14 <baro_spi2_failed>
+  2002ac:	00094783          	lbu	a5,0(s2)
+  2002b0:	02079063          	bnez	a5,2002d0 <baro_spi2_transfer+0x3c>
+  2002b4:	00050493          	mv	s1,a0
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:817
+        return 0xFFU;
+    }
+
+    /* Match the BSP SPI sequence: wait for the controller to be idle,
+       then for room in the TX holding register. */
+    if (baro_spi2_poll(SPI_BUSY_BIT, 0) != 0)
+  2002b8:	00000593          	li	a1,0
+  2002bc:	01000513          	li	a0,16
+  2002c0:	f99ff0ef          	jal	200258 <baro_spi2_poll>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:817 (discriminator 1)
+  2002c4:	02050463          	beqz	a0,2002ec <baro_spi2_transfer+0x58>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:819
+    {
+        baro_spi2_failed = 1U;
+  2002c8:	00100793          	li	a5,1
+  2002cc:	00f90023          	sb	a5,0(s2)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:812
+        return 0xFFU;
+  2002d0:	0ff00513          	li	a0,255
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:839
+        baro_spi2_failed = 1U;
+        return 0xFFU;
+    }
+
+    return (uint8_t)(SPIreg(BMP280_SPI2_BUS).RxData & 0xFFU);
+}
+  2002d4:	00c12083          	lw	ra,12(sp)
+  2002d8:	00812403          	lw	s0,8(sp)
+  2002dc:	00412483          	lw	s1,4(sp)
+  2002e0:	00012903          	lw	s2,0(sp)
+  2002e4:	01010113          	addi	sp,sp,16
+  2002e8:	00008067          	ret
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:823
+    if (baro_spi2_poll(SPI_TX_HOLD_EMPTY_BIT, 1) != 0)
+  2002ec:	00100593          	li	a1,1
+  2002f0:	08000513          	li	a0,128
+  2002f4:	f65ff0ef          	jal	200258 <baro_spi2_poll>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:823 (discriminator 1)
+  2002f8:	fc0518e3          	bnez	a0,2002c8 <baro_spi2_transfer+0x34>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:829
+    SPIreg(BMP280_SPI2_BUS).TxData = (US)tx;
+  2002fc:	10200437          	lui	s0,0x10200
+  200300:	10040413          	addi	s0,s0,256 # 10200100 <__stack_top+0xfffa1e0>
+  200304:	00942623          	sw	s1,12(s0)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:830
+    __asm__ __volatile__ ("fence" ::: "memory");
+  200308:	0ff0000f          	fence
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:832
+    if (baro_spi2_poll(SPI_RX_COMPLETE_BIT, 1) != 0)
+  20030c:	00100593          	li	a1,1
+  200310:	04000513          	li	a0,64
+  200314:	f45ff0ef          	jal	200258 <baro_spi2_poll>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:832 (discriminator 1)
+  200318:	fa0518e3          	bnez	a0,2002c8 <baro_spi2_transfer+0x34>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:838
+    return (uint8_t)(SPIreg(BMP280_SPI2_BUS).RxData & 0xFFU);
+  20031c:	01042503          	lw	a0,16(s0)
+  200320:	0ff57513          	zext.b	a0,a0
+  200324:	fb1ff06f          	j	2002d4 <baro_spi2_transfer+0x40>
+
+00200328 <baro_spi2_cs_high>:
+baro_spi2_cs_high():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:805
+    SPI_set_CSAAT_pin(BMP280_SPI2_BUS, LOW);
+  200328:	00000593          	li	a1,0
+  20032c:	00200513          	li	a0,2
+  200330:	4150006f          	j	200f44 <SPI_set_CSAAT_pin>
+
+00200334 <bmp280_calib_valid>:
+bmp280_calib_valid():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:86
+    if ((dev->calib.T1 == 0U) || (dev->calib.P1 == 0U))
+  200334:	00055603          	lhu	a2,0(a0)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:80
+{
+  200338:	00050793          	mv	a5,a0
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:86
+    if ((dev->calib.T1 == 0U) || (dev->calib.P1 == 0U))
+  20033c:	04060463          	beqz	a2,200384 <bmp280_calib_valid+0x50>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:86 (discriminator 1)
+  200340:	00655703          	lhu	a4,6(a0)
+  200344:	000106b7          	lui	a3,0x10
+  200348:	ffd68693          	addi	a3,a3,-3 # fffd <STACK_SIZE+0xbffd>
+  20034c:	fff70713          	addi	a4,a4,-1
+  200350:	01071713          	slli	a4,a4,0x10
+  200354:	01075713          	srli	a4,a4,0x10
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:88
+        return 0;
+  200358:	00000513          	li	a0,0
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:86 (discriminator 1)
+    if ((dev->calib.T1 == 0U) || (dev->calib.P1 == 0U))
+  20035c:	02e6e663          	bltu	a3,a4,200388 <bmp280_calib_valid+0x54>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:91
+    if ((dev->calib.T1 == 0xFFFFU) || (dev->calib.P1 == 0xFFFFU))
+  200360:	00010737          	lui	a4,0x10
+  200364:	fff70713          	addi	a4,a4,-1 # ffff <STACK_SIZE+0xbfff>
+  200368:	02e60063          	beq	a2,a4,200388 <bmp280_calib_valid+0x54>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:101
+    if ((dev->calib.T2 == 0) && (dev->calib.T3 == 0))
+  20036c:	00279703          	lh	a4,2(a5)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:106
+    return 1;
+  200370:	00100513          	li	a0,1
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:101
+    if ((dev->calib.T2 == 0) && (dev->calib.T3 == 0))
+  200374:	00071a63          	bnez	a4,200388 <bmp280_calib_valid+0x54>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:101 (discriminator 1)
+  200378:	00479503          	lh	a0,4(a5)
+  20037c:	00a03533          	snez	a0,a0
+  200380:	00008067          	ret
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:88
+        return 0;
+  200384:	00000513          	li	a0,0
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:107
+}
+  200388:	00008067          	ret
+
+0020038c <baro_uart_print.part.0>:
+baro_uart_print():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:641
+static void baro_uart_print(const char *text)
+  20038c:	ff010113          	addi	sp,sp,-16
+  200390:	00812423          	sw	s0,8(sp)
+  200394:	00112623          	sw	ra,12(sp)
+  200398:	00050413          	mv	s0,a0
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:648
+    while (*text != '\0')
+  20039c:	00044503          	lbu	a0,0(s0)
+  2003a0:	00051a63          	bnez	a0,2003b4 <baro_uart_print.part.0+0x28>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:652
+}
+  2003a4:	00c12083          	lw	ra,12(sp)
+  2003a8:	00812403          	lw	s0,8(sp)
+  2003ac:	01010113          	addi	sp,sp,16
+  2003b0:	00008067          	ret
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:650
+        baro_uart_putc(*text++);
+  2003b4:	00140413          	addi	s0,s0,1
+  2003b8:	de5ff0ef          	jal	20019c <baro_uart_putc>
+  2003bc:	fe1ff06f          	j	20039c <baro_uart_print.part.0+0x10>
+
+002003c0 <baro_uart_print_error>:
+baro_uart_print_error():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:723
+    switch (err)
+  2003c0:	00700793          	li	a5,7
+  2003c4:	08a7e063          	bltu	a5,a0,200444 <baro_uart_print_error+0x84>
+  2003c8:	00001717          	auipc	a4,0x1
+  2003cc:	4b470713          	addi	a4,a4,1204 # 20187c <__clzsi2+0x2e4>
+  2003d0:	00251513          	slli	a0,a0,0x2
+  2003d4:	00e50533          	add	a0,a0,a4
+  2003d8:	00052783          	lw	a5,0(a0)
+  2003dc:	00e787b3          	add	a5,a5,a4
+  2003e0:	00078067          	jr	a5
+baro_uart_print():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:643
+    if (text == NULL)
+  2003e4:	00001517          	auipc	a0,0x1
+  2003e8:	20c50513          	addi	a0,a0,524 # 2015f0 <__clzsi2+0x58>
+  2003ec:	fa1ff06f          	j	20038c <baro_uart_print.part.0>
+  2003f0:	00001517          	auipc	a0,0x1
+  2003f4:	20850513          	addi	a0,a0,520 # 2015f8 <__clzsi2+0x60>
+  2003f8:	ff5ff06f          	j	2003ec <baro_uart_print_error+0x2c>
+  2003fc:	00001517          	auipc	a0,0x1
+  200400:	20850513          	addi	a0,a0,520 # 201604 <__clzsi2+0x6c>
+  200404:	fe9ff06f          	j	2003ec <baro_uart_print_error+0x2c>
+  200408:	00001517          	auipc	a0,0x1
+  20040c:	20850513          	addi	a0,a0,520 # 201610 <__clzsi2+0x78>
+  200410:	fddff06f          	j	2003ec <baro_uart_print_error+0x2c>
+  200414:	00001517          	auipc	a0,0x1
+  200418:	20c50513          	addi	a0,a0,524 # 201620 <__clzsi2+0x88>
+  20041c:	fd1ff06f          	j	2003ec <baro_uart_print_error+0x2c>
+  200420:	00001517          	auipc	a0,0x1
+  200424:	21450513          	addi	a0,a0,532 # 201634 <__clzsi2+0x9c>
+  200428:	fc5ff06f          	j	2003ec <baro_uart_print_error+0x2c>
+  20042c:	00001517          	auipc	a0,0x1
+  200430:	21050513          	addi	a0,a0,528 # 20163c <__clzsi2+0xa4>
+  200434:	fb9ff06f          	j	2003ec <baro_uart_print_error+0x2c>
+  200438:	00001517          	auipc	a0,0x1
+  20043c:	22050513          	addi	a0,a0,544 # 201658 <__clzsi2+0xc0>
+  200440:	fadff06f          	j	2003ec <baro_uart_print_error+0x2c>
+  200444:	00001517          	auipc	a0,0x1
+  200448:	23050513          	addi	a0,a0,560 # 201674 <__clzsi2+0xdc>
+  20044c:	fa1ff06f          	j	2003ec <baro_uart_print_error+0x2c>
+
+00200450 <baro_spi2_cs_low>:
+baro_spi2_cs_low():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:787
+{
+  200450:	ff010113          	addi	sp,sp,-16
+  200454:	00812423          	sw	s0,8(sp)
+  200458:	00112623          	sw	ra,12(sp)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:788
+    if (baro_spi2_failed != 0U)
+  20045c:	82418413          	addi	s0,gp,-2012 # 201f14 <baro_spi2_failed>
+  200460:	00044783          	lbu	a5,0(s0)
+  200464:	00079e63          	bnez	a5,200480 <baro_spi2_cs_low+0x30>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:793
+    if (baro_spi2_poll(SPI_BUSY_BIT, 0) != 0)
+  200468:	00000593          	li	a1,0
+  20046c:	01000513          	li	a0,16
+  200470:	de9ff0ef          	jal	200258 <baro_spi2_poll>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:793 (discriminator 1)
+  200474:	00050e63          	beqz	a0,200490 <baro_spi2_cs_low+0x40>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:795
+        baro_spi2_failed = 1U;
+  200478:	00100793          	li	a5,1
+  20047c:	00f40023          	sb	a5,0(s0)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:800
+}
+  200480:	00c12083          	lw	ra,12(sp)
+  200484:	00812403          	lw	s0,8(sp)
+  200488:	01010113          	addi	sp,sp,16
+  20048c:	00008067          	ret
+  200490:	00812403          	lw	s0,8(sp)
+  200494:	00c12083          	lw	ra,12(sp)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:799
+    SPI_set_CSAAT_pin(BMP280_SPI2_BUS, HIGH);
+  200498:	00100593          	li	a1,1
+  20049c:	00200513          	li	a0,2
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:800
+}
+  2004a0:	01010113          	addi	sp,sp,16
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:799
+    SPI_set_CSAAT_pin(BMP280_SPI2_BUS, HIGH);
+  2004a4:	2a10006f          	j	200f44 <SPI_set_CSAAT_pin>
+
+002004a8 <bmp280_xfer.isra.0>:
+bmp280_xfer():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:21
+static uint8_t bmp280_xfer(bmp280_t *dev, uint8_t tx)
+  2004a8:	00050793          	mv	a5,a0
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:23
+    return dev->port.transfer(tx);
+  2004ac:	00058513          	mv	a0,a1
+  2004b0:	00078067          	jr	a5
+
+002004b4 <bmp280_read_regs.constprop.0>:
+bmp280_read_regs():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:33
+    dev->port.cs_low();
+  2004b4:	02c52783          	lw	a5,44(a0)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:26
+static void bmp280_read_regs(bmp280_t *dev,
+  2004b8:	fe010113          	addi	sp,sp,-32
+  2004bc:	00112e23          	sw	ra,28(sp)
+  2004c0:	00812c23          	sw	s0,24(sp)
+  2004c4:	00912a23          	sw	s1,20(sp)
+  2004c8:	00050413          	mv	s0,a0
+  2004cc:	00060493          	mv	s1,a2
+  2004d0:	00b12623          	sw	a1,12(sp)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:33
+    dev->port.cs_low();
+  2004d4:	000780e7          	jalr	a5
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:34
+    (void)bmp280_xfer(dev, (uint8_t)(reg | BMP280_SPI_READ));
+  2004d8:	00c12583          	lw	a1,12(sp)
+  2004dc:	03442503          	lw	a0,52(s0)
+  2004e0:	fc9ff0ef          	jal	2004a8 <bmp280_xfer.isra.0>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:38
+        buf[i] = bmp280_xfer(dev, 0xFF);
+  2004e4:	03442503          	lw	a0,52(s0)
+  2004e8:	0ff00593          	li	a1,255
+  2004ec:	fbdff0ef          	jal	2004a8 <bmp280_xfer.isra.0>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:38 (discriminator 1)
+  2004f0:	00a48023          	sb	a0,0(s1)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:41
+    dev->port.cs_high();
+  2004f4:	03042783          	lw	a5,48(s0)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:42
+}
+  2004f8:	01812403          	lw	s0,24(sp)
+  2004fc:	01c12083          	lw	ra,28(sp)
+  200500:	01412483          	lw	s1,20(sp)
+  200504:	02010113          	addi	sp,sp,32
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:41
+    dev->port.cs_high();
+  200508:	00078067          	jr	a5
+
+0020050c <bmp280_write_reg>:
+bmp280_write_reg():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:46
+    dev->port.cs_low();
+  20050c:	02c52783          	lw	a5,44(a0)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:45
+{
+  200510:	ff010113          	addi	sp,sp,-16
+  200514:	00112623          	sw	ra,12(sp)
+  200518:	00812423          	sw	s0,8(sp)
+  20051c:	00912223          	sw	s1,4(sp)
+  200520:	01212023          	sw	s2,0(sp)
+  200524:	00050413          	mv	s0,a0
+  200528:	00060493          	mv	s1,a2
+  20052c:	00058913          	mv	s2,a1
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:46
+    dev->port.cs_low();
+  200530:	000780e7          	jalr	a5
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:47
+    (void)bmp280_xfer(dev, (uint8_t)(reg & BMP280_SPI_WRITE_MASK));
+  200534:	03442503          	lw	a0,52(s0)
+  200538:	07f97593          	andi	a1,s2,127
+  20053c:	f6dff0ef          	jal	2004a8 <bmp280_xfer.isra.0>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:48
+    (void)bmp280_xfer(dev, value);
+  200540:	03442503          	lw	a0,52(s0)
+  200544:	00048593          	mv	a1,s1
+  200548:	f61ff0ef          	jal	2004a8 <bmp280_xfer.isra.0>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:49
+    dev->port.cs_high();
+  20054c:	03042783          	lw	a5,48(s0)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:50
+}
+  200550:	00812403          	lw	s0,8(sp)
+  200554:	00c12083          	lw	ra,12(sp)
+  200558:	00412483          	lw	s1,4(sp)
+  20055c:	00012903          	lw	s2,0(sp)
+  200560:	01010113          	addi	sp,sp,16
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:49
+    dev->port.cs_high();
+  200564:	00078067          	jr	a5
+
+00200568 <bmp280_read.part.0>:
+bmp280_read():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:199
+bmp280_error_t bmp280_read(bmp280_t *dev,
+  200568:	fc010113          	addi	sp,sp,-64
+  20056c:	03212823          	sw	s2,48(sp)
+  200570:	03412423          	sw	s4,40(sp)
+  200574:	00060913          	mv	s2,a2
+  200578:	00058a13          	mv	s4,a1
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:221
+    bmp280_write_reg(dev, BMP280_REG_CTRL_MEAS,
+  20057c:	05500613          	li	a2,85
+  200580:	0f400593          	li	a1,244
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:199
+bmp280_error_t bmp280_read(bmp280_t *dev,
+  200584:	02112e23          	sw	ra,60(sp)
+  200588:	02812c23          	sw	s0,56(sp)
+  20058c:	02912a23          	sw	s1,52(sp)
+  200590:	00050413          	mv	s0,a0
+  200594:	03312623          	sw	s3,44(sp)
+  200598:	03512223          	sw	s5,36(sp)
+  20059c:	03612023          	sw	s6,32(sp)
+  2005a0:	01712e23          	sw	s7,28(sp)
+  2005a4:	01812c23          	sw	s8,24(sp)
+  2005a8:	01912a23          	sw	s9,20(sp)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:221
+    bmp280_write_reg(dev, BMP280_REG_CTRL_MEAS,
+  2005ac:	f61ff0ef          	jal	20050c <bmp280_write_reg>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:230
+    dev->port.delay_ms(BMP280_MEASURE_DELAY_MS);
+  2005b0:	03842783          	lw	a5,56(s0)
+  2005b4:	03200513          	li	a0,50
+  2005b8:	06500493          	li	s1,101
+  2005bc:	000780e7          	jalr	a5
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:237
+        bmp280_read_regs(dev, BMP280_REG_STATUS, &status, 1);
+  2005c0:	00710613          	addi	a2,sp,7
+  2005c4:	0f300593          	li	a1,243
+  2005c8:	00040513          	mv	a0,s0
+  2005cc:	ee9ff0ef          	jal	2004b4 <bmp280_read_regs.constprop.0>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:239
+        if ((status & BMP280_STATUS_MEASURING) == 0)
+  2005d0:	00714783          	lbu	a5,7(sp)
+  2005d4:	0087f793          	andi	a5,a5,8
+  2005d8:	00078e63          	beqz	a5,2005f4 <bmp280_read.part.0+0x8c>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:244
+        if (timeout < BMP280_POLL_PERIOD_MS)
+  2005dc:	fff48493          	addi	s1,s1,-1
+  2005e0:	38048463          	beqz	s1,200968 <bmp280_read.part.0+0x400>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:249
+        dev->port.delay_ms(BMP280_POLL_PERIOD_MS);
+  2005e4:	03842783          	lw	a5,56(s0)
+  2005e8:	00100513          	li	a0,1
+  2005ec:	000780e7          	jalr	a5
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:237
+        bmp280_read_regs(dev, BMP280_REG_STATUS, &status, 1);
+  2005f0:	fd1ff06f          	j	2005c0 <bmp280_read.part.0+0x58>
+  2005f4:	00000493          	li	s1,0
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:254 (discriminator 1)
+    for (i = 0U; i < 3U; ++i)
+  2005f8:	00300a93          	li	s5,3
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:256
+        bmp280_read_regs(dev, (uint8_t)(BMP280_REG_PRESS_MSB + i),
+  2005fc:	0ff4f993          	zext.b	s3,s1
+  200600:	00810793          	addi	a5,sp,8
+  200604:	ff798593          	addi	a1,s3,-9
+  200608:	00978633          	add	a2,a5,s1
+  20060c:	0ff5f593          	zext.b	a1,a1
+  200610:	00040513          	mv	a0,s0
+  200614:	ea1ff0ef          	jal	2004b4 <bmp280_read_regs.constprop.0>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:258
+        bmp280_read_regs(dev, (uint8_t)(BMP280_REG_TEMP_MSB + i),
+  200618:	00c10793          	addi	a5,sp,12
+  20061c:	ffa98593          	addi	a1,s3,-6
+  200620:	00978633          	add	a2,a5,s1
+  200624:	0ff5f593          	zext.b	a1,a1
+  200628:	00040513          	mv	a0,s0
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:254 (discriminator 1)
+    for (i = 0U; i < 3U; ++i)
+  20062c:	00148493          	addi	s1,s1,1
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:258
+        bmp280_read_regs(dev, (uint8_t)(BMP280_REG_TEMP_MSB + i),
+  200630:	e85ff0ef          	jal	2004b4 <bmp280_read_regs.constprop.0>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:254 (discriminator 1)
+    for (i = 0U; i < 3U; ++i)
+  200634:	fd5494e3          	bne	s1,s5,2005fc <bmp280_read.part.0+0x94>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:262
+    adc_P = ((int32_t)pbuf[0] << 12) |
+  200638:	00814983          	lbu	s3,8(sp)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:263
+            ((int32_t)pbuf[1] << 4)  |
+  20063c:	00914783          	lbu	a5,9(sp)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:267
+            ((int32_t)tbuf[1] << 4)  |
+  200640:	00d14703          	lbu	a4,13(sp)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:262
+    adc_P = ((int32_t)pbuf[0] << 12) |
+  200644:	00c99993          	slli	s3,s3,0xc
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:263
+            ((int32_t)pbuf[1] << 4)  |
+  200648:	00479793          	slli	a5,a5,0x4
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:262
+    adc_P = ((int32_t)pbuf[0] << 12) |
+  20064c:	00f9e9b3          	or	s3,s3,a5
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:264
+            ((int32_t)pbuf[2] >> 4);
+  200650:	00a14783          	lbu	a5,10(sp)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:267
+            ((int32_t)tbuf[1] << 4)  |
+  200654:	00471713          	slli	a4,a4,0x4
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:264
+            ((int32_t)pbuf[2] >> 4);
+  200658:	0047d793          	srli	a5,a5,0x4
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:262
+    adc_P = ((int32_t)pbuf[0] << 12) |
+  20065c:	00f9e9b3          	or	s3,s3,a5
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:266
+    adc_T = ((int32_t)tbuf[0] << 12) |
+  200660:	00c14783          	lbu	a5,12(sp)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:270
+    dev->last_adc_p = adc_P;
+  200664:	01342e23          	sw	s3,28(s0)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:266
+    adc_T = ((int32_t)tbuf[0] << 12) |
+  200668:	00c79793          	slli	a5,a5,0xc
+  20066c:	00e7e7b3          	or	a5,a5,a4
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:268
+            ((int32_t)tbuf[2] >> 4);
+  200670:	00e14703          	lbu	a4,14(sp)
+  200674:	00475713          	srli	a4,a4,0x4
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:266
+    adc_T = ((int32_t)tbuf[0] << 12) |
+  200678:	00e7e7b3          	or	a5,a5,a4
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:271
+    dev->last_adc_t = adc_T;
+  20067c:	02f42023          	sw	a5,32(s0)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:277
+    if (((adc_P == 0) || (adc_P == 0xFFFFF)) &&
+  200680:	00098863          	beqz	s3,200690 <bmp280_read.part.0+0x128>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:277 (discriminator 2)
+  200684:	00100737          	lui	a4,0x100
+  200688:	fff70713          	addi	a4,a4,-1 # fffff <RAM_SIZE+0xbffff>
+  20068c:	00e99c63          	bne	s3,a4,2006a4 <bmp280_read.part.0+0x13c>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:280
+        return BMP280_ERR_DATA;
+  200690:	00700513          	li	a0,7
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:277 (discriminator 3)
+    if (((adc_P == 0) || (adc_P == 0xFFFFF)) &&
+  200694:	28078a63          	beqz	a5,200928 <bmp280_read.part.0+0x3c0>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:278
+        ((adc_T == 0) || (adc_T == 0xFFFFF)))
+  200698:	00100737          	lui	a4,0x100
+  20069c:	fff70713          	addi	a4,a4,-1 # fffff <RAM_SIZE+0xbffff>
+  2006a0:	28e78463          	beq	a5,a4,200928 <bmp280_read.part.0+0x3c0>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:293
+                  ((int64_t)dev->calib.T1 << 1)) *
+  2006a4:	00045503          	lhu	a0,0(s0)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:296
+        v2_64 = (((((int64_t)(adc_T >> 4) - (int64_t)dev->calib.T1) *
+  2006a8:	4047d493          	srai	s1,a5,0x4
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:294
+                 (int64_t)dev->calib.T2) >> 11;
+  2006ac:	00241603          	lh	a2,2(s0)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:296
+        v2_64 = (((((int64_t)(adc_T >> 4) - (int64_t)dev->calib.T1) *
+  2006b0:	40a48bb3          	sub	s7,s1,a0
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:292
+        v1_64 = (((int64_t)(adc_T >> 3) -
+  2006b4:	4037d793          	srai	a5,a5,0x3
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:293
+                  ((int64_t)dev->calib.T1 << 1)) *
+  2006b8:	00151513          	slli	a0,a0,0x1
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:292
+        v1_64 = (((int64_t)(adc_T >> 3) -
+  2006bc:	40a78533          	sub	a0,a5,a0
+  2006c0:	00a7b7b3          	sltu	a5,a5,a0
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:293
+                  ((int64_t)dev->calib.T1 << 1)) *
+  2006c4:	41f65693          	srai	a3,a2,0x1f
+  2006c8:	40f005b3          	neg	a1,a5
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:296
+        v2_64 = (((((int64_t)(adc_T >> 4) - (int64_t)dev->calib.T1) *
+  2006cc:	0174b4b3          	sltu	s1,s1,s7
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:293
+                  ((int64_t)dev->calib.T1 << 1)) *
+  2006d0:	589000ef          	jal	201458 <__muldi3>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:296
+        v2_64 = (((((int64_t)(adc_T >> 4) - (int64_t)dev->calib.T1) *
+  2006d4:	409004b3          	neg	s1,s1
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:292
+        v1_64 = (((int64_t)(adc_T >> 3) -
+  2006d8:	01559793          	slli	a5,a1,0x15
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:296
+        v2_64 = (((((int64_t)(adc_T >> 4) - (int64_t)dev->calib.T1) *
+  2006dc:	00048693          	mv	a3,s1
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:292
+        v1_64 = (((int64_t)(adc_T >> 3) -
+  2006e0:	00b55b13          	srli	s6,a0,0xb
+  2006e4:	40b5da93          	srai	s5,a1,0xb
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:296
+        v2_64 = (((((int64_t)(adc_T >> 4) - (int64_t)dev->calib.T1) *
+  2006e8:	000b8613          	mv	a2,s7
+  2006ec:	00048593          	mv	a1,s1
+  2006f0:	000b8513          	mv	a0,s7
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:292
+        v1_64 = (((int64_t)(adc_T >> 3) -
+  2006f4:	0167eb33          	or	s6,a5,s6
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:296
+        v2_64 = (((((int64_t)(adc_T >> 4) - (int64_t)dev->calib.T1) *
+  2006f8:	561000ef          	jal	201458 <__muldi3>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:298
+                 (int64_t)dev->calib.T3) >> 14;
+  2006fc:	00441603          	lh	a2,4(s0)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:297
+                   ((int64_t)(adc_T >> 4) - (int64_t)dev->calib.T1)) >> 12) *
+  200700:	01459793          	slli	a5,a1,0x14
+  200704:	00c55513          	srli	a0,a0,0xc
+  200708:	41f65693          	srai	a3,a2,0x1f
+  20070c:	00a7e533          	or	a0,a5,a0
+  200710:	40c5d593          	srai	a1,a1,0xc
+  200714:	545000ef          	jal	201458 <__muldi3>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:296
+        v2_64 = (((((int64_t)(adc_T >> 4) - (int64_t)dev->calib.T1) *
+  200718:	01259793          	slli	a5,a1,0x12
+  20071c:	00e55493          	srli	s1,a0,0xe
+  200720:	0097e4b3          	or	s1,a5,s1
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:300
+        tf_64 = v1_64 + v2_64;
+  200724:	009b04b3          	add	s1,s6,s1
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:296
+        v2_64 = (((((int64_t)(adc_T >> 4) - (int64_t)dev->calib.T1) *
+  200728:	40e5d593          	srai	a1,a1,0xe
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:300
+        tf_64 = v1_64 + v2_64;
+  20072c:	0164bb33          	sltu	s6,s1,s6
+  200730:	00ba85b3          	add	a1,s5,a1
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:310
+        dev->t_fine = (int32_t)tf_64;
+  200734:	00942c23          	sw	s1,24(s0)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:312
+        temp_64 = (tf_64 * 5 + 128) >> 8;
+  200738:	00500613          	li	a2,5
+  20073c:	00000693          	li	a3,0
+  200740:	00048513          	mv	a0,s1
+  200744:	00bb05b3          	add	a1,s6,a1
+  200748:	511000ef          	jal	201458 <__muldi3>
+  20074c:	08050793          	addi	a5,a0,128
+  200750:	00a7b533          	sltu	a0,a5,a0
+  200754:	00b50533          	add	a0,a0,a1
+  200758:	01851593          	slli	a1,a0,0x18
+  20075c:	0087d513          	srli	a0,a5,0x8
+  200760:	00a5e533          	or	a0,a1,a0
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:324
+    dev->last_temp_centi = temp;
+  200764:	02a42223          	sw	a0,36(s0)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:326
+    if (temperature_c != NULL)
+  200768:	000a0c63          	beqz	s4,200780 <bmp280_read.part.0+0x218>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:328
+        *temperature_c = (float)temp / 100.0f;
+  20076c:	3c1000ef          	jal	20132c <__floatsisf>
+  200770:	00001597          	auipc	a1,0x1
+  200774:	7805a583          	lw	a1,1920(a1) # 201ef0 <__sdata_load>
+  200778:	031000ef          	jal	200fa8 <__divsf3>
+  20077c:	00aa2023          	sw	a0,0(s4)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:332
+    var1 = (((int32_t)dev->t_fine) / 2) - (int32_t)64000;
+  200780:	01f4da13          	srli	s4,s1,0x1f
+  200784:	009a0a33          	add	s4,s4,s1
+  200788:	ffff07b7          	lui	a5,0xffff0
+  20078c:	60078793          	addi	a5,a5,1536 # ffff0600 <__stack_top+0xffdea6e0>
+  200790:	401a5a13          	srai	s4,s4,0x1
+  200794:	00fa0a33          	add	s4,s4,a5
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:334
+    var2 = (((var1 / 4) * (var1 / 4)) / 2048) *
+  200798:	41fa5593          	srai	a1,s4,0x1f
+  20079c:	0035f593          	andi	a1,a1,3
+  2007a0:	014585b3          	add	a1,a1,s4
+  2007a4:	4025d593          	srai	a1,a1,0x2
+  2007a8:	00058513          	mv	a0,a1
+  2007ac:	489000ef          	jal	201434 <__mulsi3>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:340
+    var1 = ((((int32_t)dev->calib.P3 *
+  2007b0:	40d55593          	srai	a1,a0,0xd
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:334
+    var2 = (((var1 / 4) * (var1 / 4)) / 2048) *
+  2007b4:	00050c93          	mv	s9,a0
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:340
+    var1 = ((((int32_t)dev->calib.P3 *
+  2007b8:	00a41503          	lh	a0,10(s0)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:335
+           ((int32_t)dev->calib.P6);
+  2007bc:	01041b83          	lh	s7,16(s0)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:337
+    var2 = var2 + ((var1 * ((int32_t)dev->calib.P5)) * 2);
+  2007c0:	00e41b03          	lh	s6,14(s0)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:340
+    var1 = ((((int32_t)dev->calib.P3 *
+  2007c4:	471000ef          	jal	201434 <__mulsi3>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:341
+              (((var1 / 4) * (var1 / 4)) / 8192)) / 8) +
+  2007c8:	41f55793          	srai	a5,a0,0x1f
+  2007cc:	0077f793          	andi	a5,a5,7
+  2007d0:	00a787b3          	add	a5,a5,a0
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:342
+            ((((int32_t)dev->calib.P2) * var1) / 2)) / 262144;
+  2007d4:	00841503          	lh	a0,8(s0)
+  2007d8:	000a0593          	mv	a1,s4
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:341
+              (((var1 / 4) * (var1 / 4)) / 8192)) / 8) +
+  2007dc:	4037d493          	srai	s1,a5,0x3
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:342
+            ((((int32_t)dev->calib.P2) * var1) / 2)) / 262144;
+  2007e0:	455000ef          	jal	201434 <__mulsi3>
+  2007e4:	01f55793          	srli	a5,a0,0x1f
+  2007e8:	00a787b3          	add	a5,a5,a0
+  2007ec:	4017d793          	srai	a5,a5,0x1
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:341
+              (((var1 / 4) * (var1 / 4)) / 8192)) / 8) +
+  2007f0:	00f487b3          	add	a5,s1,a5
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:340
+    var1 = ((((int32_t)dev->calib.P3 *
+  2007f4:	41f7d713          	srai	a4,a5,0x1f
+  2007f8:	00e71713          	slli	a4,a4,0xe
+  2007fc:	00e75713          	srli	a4,a4,0xe
+  200800:	00f707b3          	add	a5,a4,a5
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:344
+    var1 = ((((32768 + var1)) * ((int32_t)dev->calib.P1)) / 32768);
+  200804:	00645583          	lhu	a1,6(s0)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:340
+    var1 = ((((int32_t)dev->calib.P3 *
+  200808:	4127d793          	srai	a5,a5,0x12
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:344
+    var1 = ((((32768 + var1)) * ((int32_t)dev->calib.P1)) / 32768);
+  20080c:	00008537          	lui	a0,0x8
+  200810:	00a78533          	add	a0,a5,a0
+  200814:	421000ef          	jal	201434 <__mulsi3>
+  200818:	40f55c13          	srai	s8,a0,0xf
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:338
+    var2 = (var2 / 4) + (((int32_t)dev->calib.P4) * 65536);
+  20081c:	00c41a83          	lh	s5,12(s0)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:348
+        p = 0;
+  200820:	00000493          	li	s1,0
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:346
+    if (var1 == 0)
+  200824:	0e0c0663          	beqz	s8,200910 <bmp280_read.part.0+0x3a8>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:334
+    var2 = (((var1 / 4) * (var1 / 4)) / 2048) *
+  200828:	000b8593          	mv	a1,s7
+  20082c:	40bcd513          	srai	a0,s9,0xb
+  200830:	405000ef          	jal	201434 <__mulsi3>
+  200834:	00050493          	mv	s1,a0
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:337
+    var2 = var2 + ((var1 * ((int32_t)dev->calib.P5)) * 2);
+  200838:	000a0593          	mv	a1,s4
+  20083c:	000b0513          	mv	a0,s6
+  200840:	3f5000ef          	jal	201434 <__mulsi3>
+  200844:	00151793          	slli	a5,a0,0x1
+  200848:	00978533          	add	a0,a5,s1
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:338
+    var2 = (var2 / 4) + (((int32_t)dev->calib.P4) * 65536);
+  20084c:	41f55793          	srai	a5,a0,0x1f
+  200850:	0037f793          	andi	a5,a5,3
+  200854:	00a787b3          	add	a5,a5,a0
+  200858:	4027d793          	srai	a5,a5,0x2
+  20085c:	010a9a93          	slli	s5,s5,0x10
+  200860:	00fa8ab3          	add	s5,s5,a5
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:353
+                        (var2 / 4096)) * 3125);
+  200864:	41fad793          	srai	a5,s5,0x1f
+  200868:	01479793          	slli	a5,a5,0x14
+  20086c:	0147d793          	srli	a5,a5,0x14
+  200870:	015787b3          	add	a5,a5,s5
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:352
+        p = (uint32_t)(((int32_t)(1048576 - adc_P) -
+  200874:	00100537          	lui	a0,0x100
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:353
+                        (var2 / 4096)) * 3125);
+  200878:	40c7d793          	srai	a5,a5,0xc
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:352
+        p = (uint32_t)(((int32_t)(1048576 - adc_P) -
+  20087c:	41350533          	sub	a0,a0,s3
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:353
+                        (var2 / 4096)) * 3125);
+  200880:	000015b7          	lui	a1,0x1
+  200884:	c3558593          	addi	a1,a1,-971 # c35 <STACK_SIZE-0x33cb>
+  200888:	40f50533          	sub	a0,a0,a5
+  20088c:	3a9000ef          	jal	201434 <__mulsi3>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:357
+            p = (p << 1) / (uint32_t)var1;
+  200890:	000c0593          	mv	a1,s8
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:355
+        if (p < 0x80000000U)
+  200894:	0c054463          	bltz	a0,20095c <bmp280_read.part.0+0x3f4>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:357
+            p = (p << 1) / (uint32_t)var1;
+  200898:	00151513          	slli	a0,a0,0x1
+  20089c:	451000ef          	jal	2014ec <__hidden___udivsi3>
+  2008a0:	00050993          	mv	s3,a0
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:365
+                ((int32_t)(((p / 8) * (p / 8)) / 8192))) / 4096;
+  2008a4:	0039d593          	srli	a1,s3,0x3
+  2008a8:	00058513          	mv	a0,a1
+  2008ac:	389000ef          	jal	201434 <__mulsi3>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:364
+        var1 = (((int32_t)dev->calib.P9) *
+  2008b0:	01641583          	lh	a1,22(s0)
+  2008b4:	00d55513          	srli	a0,a0,0xd
+  2008b8:	37d000ef          	jal	201434 <__mulsi3>
+  2008bc:	41f55493          	srai	s1,a0,0x1f
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:367
+        var2 = (((int32_t)(p / 4)) *
+  2008c0:	01441583          	lh	a1,20(s0)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:364
+        var1 = (((int32_t)dev->calib.P9) *
+  2008c4:	01449493          	slli	s1,s1,0x14
+  2008c8:	0144d493          	srli	s1,s1,0x14
+  2008cc:	00a484b3          	add	s1,s1,a0
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:367
+        var2 = (((int32_t)(p / 4)) *
+  2008d0:	0029d513          	srli	a0,s3,0x2
+  2008d4:	361000ef          	jal	201434 <__mulsi3>
+  2008d8:	41f55793          	srai	a5,a0,0x1f
+  2008dc:	01379793          	slli	a5,a5,0x13
+  2008e0:	0137d793          	srli	a5,a5,0x13
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:371
+                       ((var1 + var2 + dev->calib.P7) / 16));
+  2008e4:	01241703          	lh	a4,18(s0)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:367
+        var2 = (((int32_t)(p / 4)) *
+  2008e8:	00a787b3          	add	a5,a5,a0
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:364
+        var1 = (((int32_t)dev->calib.P9) *
+  2008ec:	40c4d493          	srai	s1,s1,0xc
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:367
+        var2 = (((int32_t)(p / 4)) *
+  2008f0:	40d7d793          	srai	a5,a5,0xd
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:371
+                       ((var1 + var2 + dev->calib.P7) / 16));
+  2008f4:	00f487b3          	add	a5,s1,a5
+  2008f8:	00e787b3          	add	a5,a5,a4
+  2008fc:	41f7d493          	srai	s1,a5,0x1f
+  200900:	00f4f493          	andi	s1,s1,15
+  200904:	00f484b3          	add	s1,s1,a5
+  200908:	4044d493          	srai	s1,s1,0x4
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:370
+        p = (uint32_t)((int32_t)p +
+  20090c:	013484b3          	add	s1,s1,s3
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:374
+    if (pressure_pa != NULL)
+  200910:	00090863          	beqz	s2,200920 <bmp280_read.part.0+0x3b8>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:382
+        *pressure_pa = (float)(int32_t)p;
+  200914:	00048513          	mv	a0,s1
+  200918:	215000ef          	jal	20132c <__floatsisf>
+  20091c:	00a92023          	sw	a0,0(s2)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:385
+    dev->last_pressure_pa = p;
+  200920:	02942423          	sw	s1,40(s0)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:387
+    return BMP280_OK;
+  200924:	00000513          	li	a0,0
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:388
+}
+  200928:	03c12083          	lw	ra,60(sp)
+  20092c:	03812403          	lw	s0,56(sp)
+  200930:	03412483          	lw	s1,52(sp)
+  200934:	03012903          	lw	s2,48(sp)
+  200938:	02c12983          	lw	s3,44(sp)
+  20093c:	02812a03          	lw	s4,40(sp)
+  200940:	02412a83          	lw	s5,36(sp)
+  200944:	02012b03          	lw	s6,32(sp)
+  200948:	01c12b83          	lw	s7,28(sp)
+  20094c:	01812c03          	lw	s8,24(sp)
+  200950:	01412c83          	lw	s9,20(sp)
+  200954:	04010113          	addi	sp,sp,64
+  200958:	00008067          	ret
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:361
+            p = (p / (uint32_t)var1) * 2;
+  20095c:	391000ef          	jal	2014ec <__hidden___udivsi3>
+  200960:	00151993          	slli	s3,a0,0x1
+  200964:	f41ff06f          	j	2008a4 <bmp280_read.part.0+0x33c>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:246
+            return BMP280_ERR_TIMEOUT;
+  200968:	00500513          	li	a0,5
+  20096c:	fbdff06f          	j	200928 <bmp280_read.part.0+0x3c0>
+
+00200970 <bmp280_init>:
+bmp280_init():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:119
+    if (dev == NULL)
+  200970:	18050063          	beqz	a0,200af0 <bmp280_init+0x180>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:124
+    if (dev->port.cs_low   == NULL ||
+  200974:	02c52783          	lw	a5,44(a0) # 10002c <RAM_SIZE+0xc002c>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:114
+{
+  200978:	fc010113          	addi	sp,sp,-64
+  20097c:	02812c23          	sw	s0,56(sp)
+  200980:	02112e23          	sw	ra,60(sp)
+  200984:	02912a23          	sw	s1,52(sp)
+  200988:	03212823          	sw	s2,48(sp)
+  20098c:	03312623          	sw	s3,44(sp)
+  200990:	03412423          	sw	s4,40(sp)
+  200994:	03512223          	sw	s5,36(sp)
+  200998:	00050413          	mv	s0,a0
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:129
+        return BMP280_ERR_NULL_PORT;
+  20099c:	00200513          	li	a0,2
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:124
+    if (dev->port.cs_low   == NULL ||
+  2009a0:	0c078c63          	beqz	a5,200a78 <bmp280_init+0x108>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:125
+        dev->port.cs_high  == NULL ||
+  2009a4:	03042783          	lw	a5,48(s0)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:124 (discriminator 1)
+    if (dev->port.cs_low   == NULL ||
+  2009a8:	0c078863          	beqz	a5,200a78 <bmp280_init+0x108>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:125
+        dev->port.cs_high  == NULL ||
+  2009ac:	03442703          	lw	a4,52(s0)
+  2009b0:	0c070463          	beqz	a4,200a78 <bmp280_init+0x108>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:126
+        dev->port.transfer == NULL ||
+  2009b4:	03842703          	lw	a4,56(s0)
+  2009b8:	0c070063          	beqz	a4,200a78 <bmp280_init+0x108>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:133
+    dev->port.cs_high();
+  2009bc:	000780e7          	jalr	a5
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:134
+    dev->port.delay_ms(BMP280_RESET_DELAY_MS);
+  2009c0:	03842783          	lw	a5,56(s0)
+  2009c4:	00a00513          	li	a0,10
+  2009c8:	000780e7          	jalr	a5
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:137
+    bmp280_read_regs(dev, BMP280_REG_ID, &id, 1);
+  2009cc:	00040513          	mv	a0,s0
+  2009d0:	00710613          	addi	a2,sp,7
+  2009d4:	0d000593          	li	a1,208
+  2009d8:	addff0ef          	jal	2004b4 <bmp280_read_regs.constprop.0>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:138
+    if (id != BMP280_CHIP_ID)
+  2009dc:	00714703          	lbu	a4,7(sp)
+  2009e0:	05800793          	li	a5,88
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:140
+        return BMP280_ERR_SENSOR_ID;
+  2009e4:	00400513          	li	a0,4
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:138
+    if (id != BMP280_CHIP_ID)
+  2009e8:	08f71863          	bne	a4,a5,200a78 <bmp280_init+0x108>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:144
+    bmp280_write_reg(dev, BMP280_REG_RESET, BMP280_RESET_VALUE);
+  2009ec:	0b600613          	li	a2,182
+  2009f0:	0e000593          	li	a1,224
+  2009f4:	00040513          	mv	a0,s0
+  2009f8:	b15ff0ef          	jal	20050c <bmp280_write_reg>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:145
+    dev->port.delay_ms(BMP280_RESET_DELAY_MS);
+  2009fc:	03842783          	lw	a5,56(s0)
+  200a00:	00810913          	addi	s2,sp,8
+  200a04:	00a00513          	li	a0,10
+  200a08:	000780e7          	jalr	a5
+  200a0c:	00090993          	mv	s3,s2
+  200a10:	08800493          	li	s1,136
+  200a14:	00090a13          	mv	s4,s2
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:154 (discriminator 1)
+    for (i = 0U; i < 24U; ++i)
+  200a18:	0a000a93          	li	s5,160
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:156
+        bmp280_read_regs(dev, (uint8_t)(BMP280_REG_CALIB + i), &calib[i], 1);
+  200a1c:	00048593          	mv	a1,s1
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:154 (discriminator 1)
+    for (i = 0U; i < 24U; ++i)
+  200a20:	00148493          	addi	s1,s1,1
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:156
+        bmp280_read_regs(dev, (uint8_t)(BMP280_REG_CALIB + i), &calib[i], 1);
+  200a24:	00098613          	mv	a2,s3
+  200a28:	00040513          	mv	a0,s0
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:154 (discriminator 1)
+    for (i = 0U; i < 24U; ++i)
+  200a2c:	0ff4f493          	zext.b	s1,s1
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:156
+        bmp280_read_regs(dev, (uint8_t)(BMP280_REG_CALIB + i), &calib[i], 1);
+  200a30:	a85ff0ef          	jal	2004b4 <bmp280_read_regs.constprop.0>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:154 (discriminator 1)
+    for (i = 0U; i < 24U; ++i)
+  200a34:	00198993          	addi	s3,s3,1
+  200a38:	ff5492e3          	bne	s1,s5,200a1c <bmp280_init+0xac>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:158
+    bmp280_parse_calib(dev, calib);
+  200a3c:	00040513          	mv	a0,s0
+  200a40:	00090593          	mv	a1,s2
+  200a44:	e28ff0ef          	jal	20006c <bmp280_parse_calib>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:165
+    if (!bmp280_calib_valid(dev))
+  200a48:	00040513          	mv	a0,s0
+  200a4c:	8e9ff0ef          	jal	200334 <bmp280_calib_valid>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:165 (discriminator 1)
+  200a50:	04050663          	beqz	a0,200a9c <bmp280_init+0x12c>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:183
+    bmp280_write_reg(dev, BMP280_REG_CONFIG,
+  200a54:	01000613          	li	a2,16
+  200a58:	0f500593          	li	a1,245
+  200a5c:	00040513          	mv	a0,s0
+  200a60:	aadff0ef          	jal	20050c <bmp280_write_reg>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:187
+    bmp280_write_reg(dev, BMP280_REG_CTRL_MEAS,
+  200a64:	00040513          	mv	a0,s0
+  200a68:	05400613          	li	a2,84
+  200a6c:	0f400593          	li	a1,244
+  200a70:	a9dff0ef          	jal	20050c <bmp280_write_reg>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:192
+    return BMP280_OK;
+  200a74:	00000513          	li	a0,0
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:193
+}
+  200a78:	03c12083          	lw	ra,60(sp)
+  200a7c:	03812403          	lw	s0,56(sp)
+  200a80:	03412483          	lw	s1,52(sp)
+  200a84:	03012903          	lw	s2,48(sp)
+  200a88:	02c12983          	lw	s3,44(sp)
+  200a8c:	02812a03          	lw	s4,40(sp)
+  200a90:	02412a83          	lw	s5,36(sp)
+  200a94:	04010113          	addi	sp,sp,64
+  200a98:	00008067          	ret
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:167
+        dev->port.delay_ms(BMP280_RESET_DELAY_MS);
+  200a9c:	03842783          	lw	a5,56(s0)
+  200aa0:	00a00513          	li	a0,10
+  200aa4:	08800493          	li	s1,136
+  200aa8:	000780e7          	jalr	a5
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:169 (discriminator 1)
+        for (i = 0U; i < 24U; ++i)
+  200aac:	0a000993          	li	s3,160
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:171
+            bmp280_read_regs(dev, (uint8_t)(BMP280_REG_CALIB + i),
+  200ab0:	00048593          	mv	a1,s1
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:169 (discriminator 1)
+        for (i = 0U; i < 24U; ++i)
+  200ab4:	00148493          	addi	s1,s1,1
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:171
+            bmp280_read_regs(dev, (uint8_t)(BMP280_REG_CALIB + i),
+  200ab8:	00090613          	mv	a2,s2
+  200abc:	00040513          	mv	a0,s0
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:169 (discriminator 1)
+        for (i = 0U; i < 24U; ++i)
+  200ac0:	0ff4f493          	zext.b	s1,s1
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:171
+            bmp280_read_regs(dev, (uint8_t)(BMP280_REG_CALIB + i),
+  200ac4:	9f1ff0ef          	jal	2004b4 <bmp280_read_regs.constprop.0>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:169 (discriminator 1)
+        for (i = 0U; i < 24U; ++i)
+  200ac8:	00190913          	addi	s2,s2,1
+  200acc:	ff3492e3          	bne	s1,s3,200ab0 <bmp280_init+0x140>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:174
+        bmp280_parse_calib(dev, calib);
+  200ad0:	00040513          	mv	a0,s0
+  200ad4:	000a0593          	mv	a1,s4
+  200ad8:	d94ff0ef          	jal	20006c <bmp280_parse_calib>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:176
+        if (!bmp280_calib_valid(dev))
+  200adc:	00040513          	mv	a0,s0
+  200ae0:	855ff0ef          	jal	200334 <bmp280_calib_valid>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:176 (discriminator 1)
+  200ae4:	f60518e3          	bnez	a0,200a54 <bmp280_init+0xe4>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:178
+            return BMP280_ERR_CALIB;
+  200ae8:	00600513          	li	a0,6
+  200aec:	f8dff06f          	j	200a78 <bmp280_init+0x108>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:121
+        return BMP280_ERR_NULL_HANDLE;
+  200af0:	00100513          	li	a0,1
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:193
+}
+  200af4:	00008067          	ret
+
+00200af8 <bmp280_spi2_init.part.0>:
+bmp280_spi2_init():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:886
+    baro_spi2_cs_high();
+
+    return id;
+}
+
+bmp280_error_t bmp280_spi2_init(bmp280_t *dev)
+  200af8:	ff010113          	addi	sp,sp,-16
+  200afc:	00912223          	sw	s1,4(sp)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:895
+    if (dev == NULL)
+    {
+        return BMP280_ERR_NULL_HANDLE;
+    }
+
+    baro_spi2_failed = 0U;
+  200b00:	82018223          	sb	zero,-2012(gp) # 201f14 <baro_spi2_failed>
+baro_spi2_bus_init():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:846
+    if (initialized != 0)
+  200b04:	82018493          	addi	s1,gp,-2016 # 201f10 <initialized.2>
+  200b08:	0004a783          	lw	a5,0(s1)
+bmp280_spi2_init():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:886
+bmp280_error_t bmp280_spi2_init(bmp280_t *dev)
+  200b0c:	00812423          	sw	s0,8(sp)
+  200b10:	00112623          	sw	ra,12(sp)
+  200b14:	00050413          	mv	s0,a0
+baro_spi2_bus_init():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:846
+    if (initialized != 0)
+  200b18:	02079663          	bnez	a5,200b44 <bmp280_spi2_init.part.0+0x4c>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:851
+    SPI_init(BMP280_SPI2_BUS);
+  200b1c:	00200513          	li	a0,2
+  200b20:	368000ef          	jal	200e88 <SPI_init>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:866
+    SPI_config(BMP280_SPI2_BUS, control);
+  200b24:	03000593          	li	a1,48
+  200b28:	00200513          	li	a0,2
+  200b2c:	3b4000ef          	jal	200ee0 <SPI_config>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:869
+    SPI_set_baud(BMP280_SPI2_BUS, SPI_BAUD_CFD_32);
+  200b30:	00300593          	li	a1,3
+  200b34:	00200513          	li	a0,2
+  200b38:	3d8000ef          	jal	200f10 <SPI_set_baud>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:871
+    initialized = 1;
+  200b3c:	00100793          	li	a5,1
+  200b40:	00f4a023          	sw	a5,0(s1)
+bmp280_spi2_init():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:898
+    baro_spi2_bus_init();
+
+    dev->port.cs_low = baro_spi2_cs_low;
+  200b44:	00000797          	auipc	a5,0x0
+  200b48:	90c78793          	addi	a5,a5,-1780 # 200450 <baro_spi2_cs_low>
+  200b4c:	02f42623          	sw	a5,44(s0)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:899
+    dev->port.cs_high = baro_spi2_cs_high;
+  200b50:	fffff797          	auipc	a5,0xfffff
+  200b54:	7d878793          	addi	a5,a5,2008 # 200328 <baro_spi2_cs_high>
+  200b58:	02f42823          	sw	a5,48(s0)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:900
+    dev->port.transfer = baro_spi2_transfer;
+  200b5c:	fffff797          	auipc	a5,0xfffff
+  200b60:	73878793          	addi	a5,a5,1848 # 200294 <baro_spi2_transfer>
+  200b64:	02f42a23          	sw	a5,52(s0)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:901
+    dev->port.delay_ms = baro_delay_ms;
+  200b68:	fffff797          	auipc	a5,0xfffff
+  200b6c:	5f878793          	addi	a5,a5,1528 # 200160 <baro_delay_ms>
+  200b70:	02f42c23          	sw	a5,56(s0)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:903
+
+    err = bmp280_init(dev);
+  200b74:	00040513          	mv	a0,s0
+  200b78:	df9ff0ef          	jal	200970 <bmp280_init>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:906
+
+    /* A stuck status register means the bus, not the sensor, is the issue. */
+    if (baro_spi2_failed != 0U)
+  200b7c:	8241c783          	lbu	a5,-2012(gp) # 201f14 <baro_spi2_failed>
+  200b80:	00078463          	beqz	a5,200b88 <bmp280_spi2_init.part.0+0x90>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:908
+    {
+        return BMP280_ERR_TIMEOUT;
+  200b84:	00500513          	li	a0,5
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:912
+    }
+
+    return err;
+}
+  200b88:	00c12083          	lw	ra,12(sp)
+  200b8c:	00812403          	lw	s0,8(sp)
+  200b90:	00412483          	lw	s1,4(sp)
+  200b94:	01010113          	addi	sp,sp,16
+  200b98:	00008067          	ret
+
+00200b9c <baro_run>:
+baro_run():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:919
+/* --------------------------------------------------------------------------
+- Top-level barometer output loop
+- -------------------------------------------------------------------------- */
+
+void baro_run(void)
+{
+  200b9c:	f8010113          	addi	sp,sp,-128
+  200ba0:	06112e23          	sw	ra,124(sp)
+  200ba4:	06912a23          	sw	s1,116(sp)
+baro_uart_init():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:625
+    BARO_UART0_REGS->lcr = 0x83U;                 /* DLAB = 1 */
+  200ba8:	100007b7          	lui	a5,0x10000
+baro_run():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:919
+{
+  200bac:	06812c23          	sw	s0,120(sp)
+  200bb0:	07212823          	sw	s2,112(sp)
+  200bb4:	07312623          	sw	s3,108(sp)
+  200bb8:	07412423          	sw	s4,104(sp)
+  200bbc:	07512223          	sw	s5,100(sp)
+  200bc0:	07612023          	sw	s6,96(sp)
+  200bc4:	05712e23          	sw	s7,92(sp)
+  200bc8:	05812c23          	sw	s8,88(sp)
+  200bcc:	05912a23          	sw	s9,84(sp)
+  200bd0:	05a12823          	sw	s10,80(sp)
+  200bd4:	05b12623          	sw	s11,76(sp)
+baro_uart_init():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:625
+    BARO_UART0_REGS->lcr = 0x83U;                 /* DLAB = 1 */
+  200bd8:	08300713          	li	a4,131
+  200bdc:	10e7a623          	sw	a4,268(a5) # 1000010c <__stack_top+0xfdfa1ec>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:626
+    BARO_UART0_REGS->dr = divisor & 0xFFU;        /* divisor low byte  */
+  200be0:	03600713          	li	a4,54
+  200be4:	10e7a023          	sw	a4,256(a5)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:627
+    BARO_UART0_REGS->ie = (divisor >> 8) & 0xFFU; /* divisor high byte */
+  200be8:	1007a223          	sw	zero,260(a5)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:628
+    BARO_UART0_REGS->lcr = 0x03U;                 /* 8N1, DLAB = 0 */
+  200bec:	00300713          	li	a4,3
+  200bf0:	10e7a623          	sw	a4,268(a5)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:629
+    BARO_UART0_REGS->ie = 0x00U;
+  200bf4:	1007a223          	sw	zero,260(a5)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:630
+    BARO_UART0_REGS->iir_fcr = 0x00U;
+  200bf8:	1007a423          	sw	zero,264(a5)
+baro_uart_print():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:643
+    if (text == NULL)
+  200bfc:	00001517          	auipc	a0,0x1
+  200c00:	a8850513          	addi	a0,a0,-1400 # 201684 <__clzsi2+0xec>
+  200c04:	f88ff0ef          	jal	20038c <baro_uart_print.part.0>
+bmp280_spi2_init():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:890
+    if (dev == NULL)
+  200c08:	00410513          	addi	a0,sp,4
+  200c0c:	eedff0ef          	jal	200af8 <bmp280_spi2_init.part.0>
+  200c10:	00050493          	mv	s1,a0
+baro_run():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:930
+
+    baro_uart_init();
+    baro_uart_print("\r\nBMP280 barometer (ARIES v3, SPI2)\r\n");
+
+    err = bmp280_spi2_init(&dev);
+    if (err != BMP280_OK)
+  200c14:	0c050463          	beqz	a0,200cdc <baro_run+0x140>
+baro_uart_print():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:643
+    if (text == NULL)
+  200c18:	00001517          	auipc	a0,0x1
+  200c1c:	a9450513          	addi	a0,a0,-1388 # 2016ac <__clzsi2+0x114>
+  200c20:	f6cff0ef          	jal	20038c <baro_uart_print.part.0>
+baro_run():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:933
+    {
+        baro_uart_print("ERROR: BMP280 init failed (");
+        baro_uart_print_error(err);
+  200c24:	00048513          	mv	a0,s1
+  200c28:	f98ff0ef          	jal	2003c0 <baro_uart_print_error>
+baro_uart_print():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:643
+    if (text == NULL)
+  200c2c:	00001517          	auipc	a0,0x1
+  200c30:	a9c50513          	addi	a0,a0,-1380 # 2016c8 <__clzsi2+0x130>
+  200c34:	f58ff0ef          	jal	20038c <baro_uart_print.part.0>
+baro_run():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:936
+        baro_uart_print(")\r\n");
+
+        if (err == BMP280_ERR_TIMEOUT)
+  200c38:	00500793          	li	a5,5
+baro_uart_print():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:936
+  200c3c:	00001517          	auipc	a0,0x1
+  200c40:	a9050513          	addi	a0,a0,-1392 # 2016cc <__clzsi2+0x134>
+baro_run():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:936
+  200c44:	08f48463          	beq	s1,a5,200ccc <baro_run+0x130>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:942
+        {
+            baro_uart_print("SPI2 never completed a transfer; "
+                            "check that the BMP280 is on J4 and the "
+                            "SPI2 pins are wired correctly\r\n");
+        }
+        else if (err == BMP280_ERR_CALIB)
+  200c48:	00600793          	li	a5,6
+baro_uart_print():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:942
+  200c4c:	00001517          	auipc	a0,0x1
+  200c50:	ae850513          	addi	a0,a0,-1304 # 201734 <__clzsi2+0x19c>
+baro_run():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:942
+  200c54:	06f48c63          	beq	s1,a5,200ccc <baro_run+0x130>
+baro_uart_print():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:643
+    if (text == NULL)
+  200c58:	00001517          	auipc	a0,0x1
+  200c5c:	b5050513          	addi	a0,a0,-1200 # 2017a8 <__clzsi2+0x210>
+  200c60:	f2cff0ef          	jal	20038c <baro_uart_print.part.0>
+baro_read_chip_id():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:878
+    baro_spi2_cs_low();
+  200c64:	fecff0ef          	jal	200450 <baro_spi2_cs_low>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:879
+    (void)baro_spi2_transfer((uint8_t)(BMP280_REG_ID | BMP280_SPI_READ));
+  200c68:	0d000513          	li	a0,208
+  200c6c:	e28ff0ef          	jal	200294 <baro_spi2_transfer>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:880
+    id = baro_spi2_transfer(0xFFU);
+  200c70:	0ff00513          	li	a0,255
+  200c74:	e20ff0ef          	jal	200294 <baro_spi2_transfer>
+  200c78:	00050413          	mv	s0,a0
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:881
+    baro_spi2_cs_high();
+  200c7c:	eacff0ef          	jal	200328 <baro_spi2_cs_high>
+baro_uart_print_hex8():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:659
+    text[0] = hex[(value >> 4) & 0x0FU];
+  200c80:	00445793          	srli	a5,s0,0x4
+  200c84:	00001717          	auipc	a4,0x1
+  200c88:	11c70713          	addi	a4,a4,284 # 201da0 <hex.1>
+  200c8c:	0ff7f793          	zext.b	a5,a5
+  200c90:	00f707b3          	add	a5,a4,a5
+  200c94:	0007c783          	lbu	a5,0(a5)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:660
+    text[1] = hex[value & 0x0FU];
+  200c98:	00f47413          	andi	s0,s0,15
+  200c9c:	00870733          	add	a4,a4,s0
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:659
+    text[0] = hex[(value >> 4) & 0x0FU];
+  200ca0:	00f10023          	sb	a5,0(sp)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:660
+    text[1] = hex[value & 0x0FU];
+  200ca4:	00074783          	lbu	a5,0(a4)
+baro_uart_print():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:660
+  200ca8:	00010513          	mv	a0,sp
+baro_uart_print_hex8():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:661
+    text[2] = '\0';
+  200cac:	00010123          	sb	zero,2(sp)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:660
+    text[1] = hex[value & 0x0FU];
+  200cb0:	00f100a3          	sb	a5,1(sp)
+baro_uart_print():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:643
+    if (text == NULL)
+  200cb4:	ed8ff0ef          	jal	20038c <baro_uart_print.part.0>
+  200cb8:	00001517          	auipc	a0,0x1
+  200cbc:	afc50513          	addi	a0,a0,-1284 # 2017b4 <__clzsi2+0x21c>
+  200cc0:	eccff0ef          	jal	20038c <baro_uart_print.part.0>
+  200cc4:	00001517          	auipc	a0,0x1
+  200cc8:	b0450513          	addi	a0,a0,-1276 # 2017c8 <__clzsi2+0x230>
+  200ccc:	ec0ff0ef          	jal	20038c <baro_uart_print.part.0>
+baro_run():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:958 (discriminator 1)
+            baro_uart_print("Check SPI2 wiring: SCK, MOSI, MISO and CSB\r\n");
+        }
+
+        for (;;)
+        {
+            baro_delay_ms(1000U);
+  200cd0:	3e800513          	li	a0,1000
+  200cd4:	c8cff0ef          	jal	200160 <baro_delay_ms>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:956
+        for (;;)
+  200cd8:	ff9ff06f          	j	200cd0 <baro_run+0x134>
+baro_uart_print():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:643
+    if (text == NULL)
+  200cdc:	00001517          	auipc	a0,0x1
+  200ce0:	b1c50513          	addi	a0,a0,-1252 # 2017f8 <__clzsi2+0x260>
+bmp280_pressure_to_altitude_cm():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:524
+    if (pressure_pa <= BMP280_ALT_BASE_PA)
+  200ce4:	00007937          	lui	s2,0x7
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:526
+        return altitude_cm_table[0];
+  200ce8:	000e09b7          	lui	s3,0xe0
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:529
+    if (pressure_pa >= (BMP280_ALT_BASE_PA +
+  200cec:	0001ba37          	lui	s4,0x1b
+baro_uart_print():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:529
+  200cf0:	e9cff0ef          	jal	20038c <baro_uart_print.part.0>
+bmp280_pressure_to_altitude_cm():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:524
+    if (pressure_pa <= BMP280_ALT_BASE_PA)
+  200cf4:	53090913          	addi	s2,s2,1328 # 7530 <STACK_SIZE+0x3530>
+baro_run():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:982
+         * Keep altitude on the integer path: the soft-float conversions on
+         * this target are not dependable (see the note in bmp280_read()).
+         */
+        altitude_cm = bmp280_pressure_to_altitude_cm(dev.last_pressure_pa);
+
+        if (++sample_count >= BARO_PRINT_EVERY)
+  200cf8:	00400b13          	li	s6,4
+baro_uart_print():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:982
+  200cfc:	00001b97          	auipc	s7,0x1
+  200d00:	b50b8b93          	addi	s7,s7,-1200 # 20184c <__clzsi2+0x2b4>
+  200d04:	00001c17          	auipc	s8,0x1
+  200d08:	b50c0c13          	addi	s8,s8,-1200 # 201854 <__clzsi2+0x2bc>
+  200d0c:	00001c97          	auipc	s9,0x1
+  200d10:	b58c8c93          	addi	s9,s9,-1192 # 201864 <__clzsi2+0x2cc>
+bmp280_pressure_to_altitude_cm():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:526
+        return altitude_cm_table[0];
+  200d14:	a2798993          	addi	s3,s3,-1497 # dfa27 <RAM_SIZE+0x9fa27>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:529
+    if (pressure_pa >= (BMP280_ALT_BASE_PA +
+  200d18:	dafa0a13          	addi	s4,s4,-593 # 1adaf <STACK_SIZE+0x16daf>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:540
+    delta = altitude_cm_table[index + 1U] - altitude_cm_table[index];
+  200d1c:	00001a97          	auipc	s5,0x1
+  200d20:	b80a8a93          	addi	s5,s5,-1152 # 20189c <altitude_cm_table.0>
+bmp280_read():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:215
+    if (dev == NULL)
+  200d24:	00000613          	li	a2,0
+  200d28:	00000593          	li	a1,0
+  200d2c:	00410513          	addi	a0,sp,4
+  200d30:	839ff0ef          	jal	200568 <bmp280_read.part.0>
+  200d34:	00050413          	mv	s0,a0
+baro_run():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:967
+        if (err != BMP280_OK)
+  200d38:	02050863          	beqz	a0,200d68 <baro_run+0x1cc>
+baro_uart_print():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:643
+    if (text == NULL)
+  200d3c:	00001517          	auipc	a0,0x1
+  200d40:	af450513          	addi	a0,a0,-1292 # 201830 <__clzsi2+0x298>
+  200d44:	e48ff0ef          	jal	20038c <baro_uart_print.part.0>
+baro_run():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:970
+            baro_uart_print_error(err);
+  200d48:	00040513          	mv	a0,s0
+  200d4c:	e74ff0ef          	jal	2003c0 <baro_uart_print_error>
+baro_uart_print():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:643
+    if (text == NULL)
+  200d50:	00001517          	auipc	a0,0x1
+  200d54:	97850513          	addi	a0,a0,-1672 # 2016c8 <__clzsi2+0x130>
+  200d58:	e34ff0ef          	jal	20038c <baro_uart_print.part.0>
+baro_run():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:999
+            
+
+
+        }
+
+        baro_delay_ms(BARO_SAMPLE_PERIOD_MS);
+  200d5c:	06400513          	li	a0,100
+  200d60:	c00ff0ef          	jal	200160 <baro_delay_ms>
+  200d64:	fc1ff06f          	j	200d24 <baro_run+0x188>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:980
+        altitude_cm = bmp280_pressure_to_altitude_cm(dev.last_pressure_pa);
+  200d68:	02c12d03          	lw	s10,44(sp)
+bmp280_pressure_to_altitude_cm():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:526
+        return altitude_cm_table[0];
+  200d6c:	00098413          	mv	s0,s3
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:524
+    if (pressure_pa <= BMP280_ALT_BASE_PA)
+  200d70:	07a97063          	bgeu	s2,s10,200dd0 <baro_run+0x234>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:532
+        return altitude_cm_table[entry_count - 1U];
+  200d74:	fffef437          	lui	s0,0xfffef
+  200d78:	f5640413          	addi	s0,s0,-170 # fffeef56 <__stack_top+0xffde9036>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:529
+    if (pressure_pa >= (BMP280_ALT_BASE_PA +
+  200d7c:	05aa6a63          	bltu	s4,s10,200dd0 <baro_run+0x234>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:536
+    index = offset / BMP280_ALT_STEP_PA;
+  200d80:	0fa00593          	li	a1,250
+  200d84:	412d0533          	sub	a0,s10,s2
+  200d88:	764000ef          	jal	2014ec <__hidden___udivsi3>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:540
+    delta = altitude_cm_table[index + 1U] - altitude_cm_table[index];
+  200d8c:	00251793          	slli	a5,a0,0x2
+  200d90:	00150513          	addi	a0,a0,1
+  200d94:	00251513          	slli	a0,a0,0x2
+  200d98:	00fa87b3          	add	a5,s5,a5
+  200d9c:	00aa8533          	add	a0,s5,a0
+  200da0:	0007a403          	lw	s0,0(a5)
+  200da4:	00052d83          	lw	s11,0(a0)
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:537
+    remainder = offset % BMP280_ALT_STEP_PA;
+  200da8:	0fa00593          	li	a1,250
+  200dac:	412d0533          	sub	a0,s10,s2
+  200db0:	784000ef          	jal	201534 <__umodsi3>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:540
+    delta = altitude_cm_table[index + 1U] - altitude_cm_table[index];
+  200db4:	408d8db3          	sub	s11,s11,s0
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:537
+    remainder = offset % BMP280_ALT_STEP_PA;
+  200db8:	00050593          	mv	a1,a0
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:543
+           ((delta * (int32_t)remainder) / (int32_t)BMP280_ALT_STEP_PA);
+  200dbc:	000d8513          	mv	a0,s11
+  200dc0:	674000ef          	jal	201434 <__mulsi3>
+  200dc4:	0fa00593          	li	a1,250
+  200dc8:	71c000ef          	jal	2014e4 <__divsi3>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:542
+    return altitude_cm_table[index] +
+  200dcc:	00850433          	add	s0,a0,s0
+baro_run():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:982
+        if (++sample_count >= BARO_PRINT_EVERY)
+  200dd0:	00148493          	addi	s1,s1,1
+  200dd4:	f89b74e3          	bgeu	s6,s1,200d5c <baro_run+0x1c0>
+baro_uart_print():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:643
+    if (text == NULL)
+  200dd8:	000b8513          	mv	a0,s7
+  200ddc:	db0ff0ef          	jal	20038c <baro_uart_print.part.0>
+baro_run():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:987
+            baro_uart_print_centi(dev.last_temp_centi);
+  200de0:	02812483          	lw	s1,40(sp)
+baro_uart_print_centi():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:687
+    if (centi < 0)
+  200de4:	0004d863          	bgez	s1,200df4 <baro_run+0x258>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:689
+        baro_uart_putc('-');
+  200de8:	02d00513          	li	a0,45
+  200dec:	bb0ff0ef          	jal	20019c <baro_uart_putc>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:690
+        magnitude = (uint32_t)(-(centi + 1)) + 1U;
+  200df0:	409004b3          	neg	s1,s1
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:697
+    baro_uart_print_u32(magnitude / 100U);
+  200df4:	06400593          	li	a1,100
+  200df8:	00048513          	mv	a0,s1
+  200dfc:	6f0000ef          	jal	2014ec <__hidden___udivsi3>
+  200e00:	bb8ff0ef          	jal	2001b8 <baro_uart_print_u32>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:698
+    baro_uart_putc('.');
+  200e04:	02e00513          	li	a0,46
+  200e08:	b94ff0ef          	jal	20019c <baro_uart_putc>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:699
+    baro_uart_putc((char)('0' + ((magnitude % 100U) / 10U)));
+  200e0c:	06400593          	li	a1,100
+  200e10:	00048513          	mv	a0,s1
+  200e14:	720000ef          	jal	201534 <__umodsi3>
+  200e18:	00a00593          	li	a1,10
+  200e1c:	6d0000ef          	jal	2014ec <__hidden___udivsi3>
+  200e20:	03050513          	addi	a0,a0,48
+  200e24:	0ff57513          	zext.b	a0,a0
+  200e28:	b74ff0ef          	jal	20019c <baro_uart_putc>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:700
+    baro_uart_putc((char)('0' + (magnitude % 10U)));
+  200e2c:	00a00593          	li	a1,10
+  200e30:	00048513          	mv	a0,s1
+  200e34:	700000ef          	jal	201534 <__umodsi3>
+  200e38:	03050513          	addi	a0,a0,48
+  200e3c:	0ff57513          	zext.b	a0,a0
+  200e40:	b5cff0ef          	jal	20019c <baro_uart_putc>
+baro_uart_print():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:643
+    if (text == NULL)
+  200e44:	000c0513          	mv	a0,s8
+  200e48:	d44ff0ef          	jal	20038c <baro_uart_print.part.0>
+baro_run():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:989
+            baro_uart_print_u32(dev.last_pressure_pa);
+  200e4c:	000d0513          	mv	a0,s10
+  200e50:	b68ff0ef          	jal	2001b8 <baro_uart_print_u32>
+baro_uart_print():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:643
+    if (text == NULL)
+  200e54:	000c8513          	mv	a0,s9
+  200e58:	d34ff0ef          	jal	20038c <baro_uart_print.part.0>
+baro_uart_print_i32():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:708
+    if (value < 0)
+  200e5c:	00045863          	bgez	s0,200e6c <baro_run+0x2d0>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:710
+        baro_uart_putc('-');
+  200e60:	02d00513          	li	a0,45
+  200e64:	b38ff0ef          	jal	20019c <baro_uart_putc>
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:711
+        magnitude = (uint32_t)(-(value + 1)) + 1U;
+  200e68:	40800433          	neg	s0,s0
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:718
+    baro_uart_print_u32(magnitude);
+  200e6c:	00040513          	mv	a0,s0
+  200e70:	b48ff0ef          	jal	2001b8 <baro_uart_print_u32>
+baro_uart_print():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:643
+    if (text == NULL)
+  200e74:	00001517          	auipc	a0,0x1
+  200e78:	a0050513          	addi	a0,a0,-1536 # 201874 <__clzsi2+0x2dc>
+  200e7c:	d10ff0ef          	jal	20038c <baro_uart_print.part.0>
+baro_run():
+/home/adithyan/test-lattice/baro/../driver/src/barometer/barometer.c:984
+            sample_count = 0U;
+  200e80:	00000493          	li	s1,0
+  200e84:	ed9ff06f          	j	200d5c <baro_run+0x1c0>
+
+00200e88 <SPI_init>:
+SPI_init():
+/home/adithyan/test-lattice/baro/../common/src/spi.c:51 (discriminator 2)
+ @param[Out] No output parameter
+ */
+
+void SPI_init(UC spi_number) {
+
+	SPIreg(spi_number).Baudrate = (SPI_BAUD_CFD_16<<4);		// Baud divisor
+  200e88:	10200737          	lui	a4,0x10200
+/home/adithyan/test-lattice/baro/../common/src/spi.c:51
+  200e8c:	00100793          	li	a5,1
+/home/adithyan/test-lattice/baro/../common/src/spi.c:51 (discriminator 2)
+  200e90:	10070713          	addi	a4,a4,256 # 10200100 <__stack_top+0xfffa1e0>
+/home/adithyan/test-lattice/baro/../common/src/spi.c:51
+  200e94:	00a7e663          	bltu	a5,a0,200ea0 <SPI_init+0x18>
+/home/adithyan/test-lattice/baro/../common/src/spi.c:51 (discriminator 1)
+  200e98:	10000737          	lui	a4,0x10000
+  200e9c:	60070713          	addi	a4,a4,1536 # 10000600 <__stack_top+0xfdfa6e0>
+/home/adithyan/test-lattice/baro/../common/src/spi.c:51 (discriminator 4)
+  200ea0:	00157793          	andi	a5,a0,1
+  200ea4:	00879793          	slli	a5,a5,0x8
+  200ea8:	00e787b3          	add	a5,a5,a4
+/home/adithyan/test-lattice/baro/../common/src/spi.c:61
+	gSPItransfer.Bits.SPIrxTxIntr = RX_TX_INTR_DIS;	// Both Rx & Tx interrupts disabled.
+
+	gSPItransfer.Bits.Mode = 3;			// Mode set as '3'
+	gSPItransfer.Bits.DataOrder = MSB;			// MSB bit is transferred first.
+	gSPItransfer.Bits.PeriphType = 0;	// Peripheral type is Fixed peripheral.
+	gSPItransfer.Bits.PeriphChipSelect = 0;	// Peripheral chip select is '0'.
+  200eac:	82818613          	addi	a2,gp,-2008 # 201f18 <gSPItransfer>
+/home/adithyan/test-lattice/baro/../common/src/spi.c:51 (discriminator 4)
+	SPIreg(spi_number).Baudrate = (SPI_BAUD_CFD_16<<4);		// Baud divisor
+  200eb0:	02000713          	li	a4,32
+  200eb4:	00e7a423          	sw	a4,8(a5)
+/home/adithyan/test-lattice/baro/../common/src/spi.c:61
+	gSPItransfer.Bits.PeriphChipSelect = 0;	// Peripheral chip select is '0'.
+  200eb8:	00065703          	lhu	a4,0(a2)
+  200ebc:	ffffe6b7          	lui	a3,0xffffe
+  200ec0:	00d77733          	and	a4,a4,a3
+  200ec4:	000016b7          	lui	a3,0x1
+  200ec8:	03068693          	addi	a3,a3,48 # 1030 <STACK_SIZE-0x2fd0>
+  200ecc:	00d76733          	or	a4,a4,a3
+  200ed0:	00e61023          	sh	a4,0(a2)
+/home/adithyan/test-lattice/baro/../common/src/spi.c:63 (discriminator 4)
+
+	SPIreg(spi_number).Control.hword = gSPItransfer.Value;	// Update value to register
+  200ed4:	00e79023          	sh	a4,0(a5)
+/home/adithyan/test-lattice/baro/../common/src/spi.c:64
+	__asm__ __volatile__ ("fence");
+  200ed8:	0ff0000f          	fence
+/home/adithyan/test-lattice/baro/../common/src/spi.c:66
+	return;
+}
+  200edc:	00008067          	ret
+
+00200ee0 <SPI_config>:
+SPI_config():
+/home/adithyan/test-lattice/baro/../common/src/spi.c:136 (discriminator 2)
+
+ */
+
+void SPI_config(UC spi_number, SPIcntrlRegType spi_control_reg) {
+
+	SPIreg(spi_number).Control.hword = spi_control_reg.Value;// Update value to register
+  200ee0:	102007b7          	lui	a5,0x10200
+/home/adithyan/test-lattice/baro/../common/src/spi.c:136
+  200ee4:	00100713          	li	a4,1
+/home/adithyan/test-lattice/baro/../common/src/spi.c:136 (discriminator 2)
+  200ee8:	10078793          	addi	a5,a5,256 # 10200100 <__stack_top+0xfffa1e0>
+/home/adithyan/test-lattice/baro/../common/src/spi.c:136
+  200eec:	00a76663          	bltu	a4,a0,200ef8 <SPI_config+0x18>
+/home/adithyan/test-lattice/baro/../common/src/spi.c:136 (discriminator 1)
+  200ef0:	100007b7          	lui	a5,0x10000
+  200ef4:	60078793          	addi	a5,a5,1536 # 10000600 <__stack_top+0xfdfa6e0>
+/home/adithyan/test-lattice/baro/../common/src/spi.c:136 (discriminator 4)
+  200ef8:	00157513          	andi	a0,a0,1
+  200efc:	00851513          	slli	a0,a0,0x8
+  200f00:	00f50533          	add	a0,a0,a5
+  200f04:	00b51023          	sh	a1,0(a0)
+/home/adithyan/test-lattice/baro/../common/src/spi.c:139
+	//printf("\n\r version %x", version);
+
+	__asm__ __volatile__ ("fence");
+  200f08:	0ff0000f          	fence
+/home/adithyan/test-lattice/baro/../common/src/spi.c:141
+	return;
+}
+  200f0c:	00008067          	ret
+
+00200f10 <SPI_set_baud>:
+SPI_set_baud():
+/home/adithyan/test-lattice/baro/../common/src/spi.c:167 (discriminator 2)
+ unsigned char bBaudCFD: The baud frequency divisor value.
+ @param[Out] No output parameter 
+ */
+void SPI_set_baud(UC spi_number, UC bBaudCFD) {
+
+	SPIreg(spi_number).Baudrate = (bBaudCFD << 4); //Set the baud frequency divider value
+  200f10:	102007b7          	lui	a5,0x10200
+/home/adithyan/test-lattice/baro/../common/src/spi.c:167
+  200f14:	00100713          	li	a4,1
+/home/adithyan/test-lattice/baro/../common/src/spi.c:167 (discriminator 2)
+  200f18:	10078793          	addi	a5,a5,256 # 10200100 <__stack_top+0xfffa1e0>
+/home/adithyan/test-lattice/baro/../common/src/spi.c:167
+  200f1c:	00a76663          	bltu	a4,a0,200f28 <SPI_set_baud+0x18>
+/home/adithyan/test-lattice/baro/../common/src/spi.c:167 (discriminator 1)
+  200f20:	100007b7          	lui	a5,0x10000
+  200f24:	60078793          	addi	a5,a5,1536 # 10000600 <__stack_top+0xfdfa6e0>
+/home/adithyan/test-lattice/baro/../common/src/spi.c:167 (discriminator 4)
+  200f28:	00157513          	andi	a0,a0,1
+  200f2c:	00851513          	slli	a0,a0,0x8
+  200f30:	00f50533          	add	a0,a0,a5
+  200f34:	00459593          	slli	a1,a1,0x4
+  200f38:	00b52423          	sw	a1,8(a0)
+/home/adithyan/test-lattice/baro/../common/src/spi.c:168
+	__asm__ __volatile__ ("fence");
+  200f3c:	0ff0000f          	fence
+/home/adithyan/test-lattice/baro/../common/src/spi.c:170
+	return;
+}
+  200f40:	00008067          	ret
+
+00200f44 <SPI_set_CSAAT_pin>:
+SPI_set_CSAAT_pin():
+/home/adithyan/test-lattice/baro/../common/src/spi.c:310 (discriminator 2)
+ @param[Out] No output parameter.
+ */
+void SPI_set_CSAAT_pin(UC spi_number, UC status) {
+
+	if (status == 1)
+		SPIreg(spi_number).Control.hword |= (1 << 8);// Setting CSAAT bit high.
+  200f44:	10200737          	lui	a4,0x10200
+/home/adithyan/test-lattice/baro/../common/src/spi.c:309
+	if (status == 1)
+  200f48:	00100693          	li	a3,1
+  200f4c:	00157793          	andi	a5,a0,1
+/home/adithyan/test-lattice/baro/../common/src/spi.c:310 (discriminator 2)
+		SPIreg(spi_number).Control.hword |= (1 << 8);// Setting CSAAT bit high.
+  200f50:	10070713          	addi	a4,a4,256 # 10200100 <__stack_top+0xfffa1e0>
+/home/adithyan/test-lattice/baro/../common/src/spi.c:309
+	if (status == 1)
+  200f54:	02d59663          	bne	a1,a3,200f80 <SPI_set_CSAAT_pin+0x3c>
+/home/adithyan/test-lattice/baro/../common/src/spi.c:310
+		SPIreg(spi_number).Control.hword |= (1 << 8);// Setting CSAAT bit high.
+  200f58:	00a5e663          	bltu	a1,a0,200f64 <SPI_set_CSAAT_pin+0x20>
+/home/adithyan/test-lattice/baro/../common/src/spi.c:310 (discriminator 1)
+  200f5c:	10000737          	lui	a4,0x10000
+  200f60:	60070713          	addi	a4,a4,1536 # 10000600 <__stack_top+0xfdfa6e0>
+/home/adithyan/test-lattice/baro/../common/src/spi.c:310 (discriminator 4)
+  200f64:	00879793          	slli	a5,a5,0x8
+  200f68:	00e787b3          	add	a5,a5,a4
+  200f6c:	0007d703          	lhu	a4,0(a5)
+/home/adithyan/test-lattice/baro/../common/src/spi.c:310 (discriminator 8)
+  200f70:	10076713          	ori	a4,a4,256
+/home/adithyan/test-lattice/baro/../common/src/spi.c:312 (discriminator 8)
+	else
+		SPIreg(spi_number).Control.hword &= ~(1 << 8);	// Setting CSAAT bit low.
+  200f74:	00e79023          	sh	a4,0(a5)
+/home/adithyan/test-lattice/baro/../common/src/spi.c:313
+	__asm__ __volatile__ ("fence");
+  200f78:	0ff0000f          	fence
+/home/adithyan/test-lattice/baro/../common/src/spi.c:315
+	return;
+}
+  200f7c:	00008067          	ret
+/home/adithyan/test-lattice/baro/../common/src/spi.c:312
+		SPIreg(spi_number).Control.hword &= ~(1 << 8);	// Setting CSAAT bit low.
+  200f80:	00a6e663          	bltu	a3,a0,200f8c <SPI_set_CSAAT_pin+0x48>
+/home/adithyan/test-lattice/baro/../common/src/spi.c:312 (discriminator 1)
+  200f84:	10000737          	lui	a4,0x10000
+  200f88:	60070713          	addi	a4,a4,1536 # 10000600 <__stack_top+0xfdfa6e0>
+/home/adithyan/test-lattice/baro/../common/src/spi.c:312 (discriminator 4)
+  200f8c:	00879793          	slli	a5,a5,0x8
+  200f90:	00e787b3          	add	a5,a5,a4
+  200f94:	0007d703          	lhu	a4,0(a5)
+/home/adithyan/test-lattice/baro/../common/src/spi.c:312 (discriminator 8)
+  200f98:	000106b7          	lui	a3,0x10
+  200f9c:	eff68693          	addi	a3,a3,-257 # feff <STACK_SIZE+0xbeff>
+  200fa0:	00d77733          	and	a4,a4,a3
+  200fa4:	fd1ff06f          	j	200f74 <SPI_set_CSAAT_pin+0x30>
+
+00200fa8 <__divsf3>:
+__divsf3():
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:34
+  200fa8:	fd010113          	addi	sp,sp,-48
+  200fac:	02912223          	sw	s1,36(sp)
+  200fb0:	01755493          	srli	s1,a0,0x17
+  200fb4:	01312e23          	sw	s3,28(sp)
+  200fb8:	01512a23          	sw	s5,20(sp)
+  200fbc:	01612823          	sw	s6,16(sp)
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:42
+  200fc0:	00951a93          	slli	s5,a0,0x9
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:34
+  200fc4:	02112623          	sw	ra,44(sp)
+  200fc8:	02812423          	sw	s0,40(sp)
+  200fcc:	03212023          	sw	s2,32(sp)
+  200fd0:	01412c23          	sw	s4,24(sp)
+  200fd4:	01712623          	sw	s7,12(sp)
+  200fd8:	01812423          	sw	s8,8(sp)
+  200fdc:	0ff4f493          	zext.b	s1,s1
+  200fe0:	00058b13          	mv	s6,a1
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:42
+  200fe4:	009ada93          	srli	s5,s5,0x9
+  200fe8:	01f55993          	srli	s3,a0,0x1f
+  200fec:	08048463          	beqz	s1,201074 <__divsf3+0xcc>
+  200ff0:	0ff00793          	li	a5,255
+  200ff4:	0af48063          	beq	s1,a5,201094 <__divsf3+0xec>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:42 (discriminator 5)
+  200ff8:	003a9a93          	slli	s5,s5,0x3
+  200ffc:	040007b7          	lui	a5,0x4000
+  201000:	00faeab3          	or	s5,s5,a5
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:42 (discriminator 7)
+  201004:	f8148493          	addi	s1,s1,-127
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:42 (discriminator 27)
+  201008:	00000b93          	li	s7,0
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:43
+  20100c:	017b5793          	srli	a5,s6,0x17
+  201010:	009b1413          	slli	s0,s6,0x9
+  201014:	0ff7f793          	zext.b	a5,a5
+  201018:	00945413          	srli	s0,s0,0x9
+  20101c:	01fb5b13          	srli	s6,s6,0x1f
+  201020:	08078a63          	beqz	a5,2010b4 <__divsf3+0x10c>
+  201024:	0ff00713          	li	a4,255
+  201028:	0ae78663          	beq	a5,a4,2010d4 <__divsf3+0x12c>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:43 (discriminator 5)
+  20102c:	00341413          	slli	s0,s0,0x3
+  201030:	04000737          	lui	a4,0x4000
+  201034:	00e46433          	or	s0,s0,a4
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:43 (discriminator 7)
+  201038:	f8178793          	addi	a5,a5,-127 # 3ffff81 <__stack_top+0x3dfa061>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:43 (discriminator 27)
+  20103c:	00000713          	li	a4,0
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:44
+  201040:	40f48a33          	sub	s4,s1,a5
+  201044:	002b9793          	slli	a5,s7,0x2
+  201048:	00e7e7b3          	or	a5,a5,a4
+  20104c:	fff78793          	addi	a5,a5,-1
+  201050:	00e00693          	li	a3,14
+  201054:	0169c933          	xor	s2,s3,s6
+  201058:	08f6ee63          	bltu	a3,a5,2010f4 <__divsf3+0x14c>
+  20105c:	002026b7          	lui	a3,0x202
+  201060:	00279793          	slli	a5,a5,0x2
+  201064:	db468693          	addi	a3,a3,-588 # 201db4 <hex.1+0x14>
+  201068:	00d787b3          	add	a5,a5,a3
+  20106c:	0007a783          	lw	a5,0(a5)
+  201070:	00078067          	jr	a5
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:42 (discriminator 2)
+  201074:	020a8a63          	beqz	s5,2010a8 <__divsf3+0x100>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:42 (discriminator 15)
+  201078:	000a8513          	mv	a0,s5
+  20107c:	51c000ef          	jal	201598 <__clzsi2>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:42 (discriminator 21)
+  201080:	ffb50793          	addi	a5,a0,-5
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:42 (discriminator 27)
+  201084:	f8a00493          	li	s1,-118
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:42 (discriminator 25)
+  201088:	00fa9ab3          	sll	s5,s5,a5
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:42 (discriminator 27)
+  20108c:	40a484b3          	sub	s1,s1,a0
+  201090:	f79ff06f          	j	201008 <__divsf3+0x60>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:42
+  201094:	0ff00493          	li	s1,255
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:42 (discriminator 29)
+  201098:	00200b93          	li	s7,2
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:42 (discriminator 3)
+  20109c:	f60a88e3          	beqz	s5,20100c <__divsf3+0x64>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:42 (discriminator 30)
+  2010a0:	00300b93          	li	s7,3
+  2010a4:	f69ff06f          	j	20100c <__divsf3+0x64>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:42
+  2010a8:	00000493          	li	s1,0
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:42 (discriminator 9)
+  2010ac:	00100b93          	li	s7,1
+  2010b0:	f5dff06f          	j	20100c <__divsf3+0x64>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:43 (discriminator 2)
+  2010b4:	02040a63          	beqz	s0,2010e8 <__divsf3+0x140>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:43 (discriminator 15)
+  2010b8:	00040513          	mv	a0,s0
+  2010bc:	4dc000ef          	jal	201598 <__clzsi2>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:43 (discriminator 21)
+  2010c0:	ffb50793          	addi	a5,a0,-5
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:43 (discriminator 25)
+  2010c4:	00f41433          	sll	s0,s0,a5
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:43 (discriminator 27)
+  2010c8:	f8a00793          	li	a5,-118
+  2010cc:	40a787b3          	sub	a5,a5,a0
+  2010d0:	f6dff06f          	j	20103c <__divsf3+0x94>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:43
+  2010d4:	0ff00793          	li	a5,255
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:43 (discriminator 29)
+  2010d8:	00200713          	li	a4,2
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:43 (discriminator 3)
+  2010dc:	f60402e3          	beqz	s0,201040 <__divsf3+0x98>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:43 (discriminator 30)
+  2010e0:	00300713          	li	a4,3
+  2010e4:	f5dff06f          	j	201040 <__divsf3+0x98>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:43
+  2010e8:	00000793          	li	a5,0
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:43 (discriminator 9)
+  2010ec:	00100713          	li	a4,1
+  2010f0:	f51ff06f          	j	201040 <__divsf3+0x98>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:44 (discriminator 2)
+  2010f4:	00541c13          	slli	s8,s0,0x5
+  2010f8:	168af863          	bgeu	s5,s0,201268 <__divsf3+0x2c0>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:44 (discriminator 10)
+  2010fc:	fffa0a13          	addi	s4,s4,-1
+  201100:	00000413          	li	s0,0
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:44 (discriminator 13)
+  201104:	010c5b13          	srli	s6,s8,0x10
+  201108:	000109b7          	lui	s3,0x10
+  20110c:	000b0593          	mv	a1,s6
+  201110:	fe098993          	addi	s3,s3,-32 # ffe0 <STACK_SIZE+0xbfe0>
+  201114:	000a8513          	mv	a0,s5
+  201118:	3d4000ef          	jal	2014ec <__hidden___udivsi3>
+  20111c:	013c79b3          	and	s3,s8,s3
+  201120:	00050593          	mv	a1,a0
+  201124:	00050b93          	mv	s7,a0
+  201128:	00098513          	mv	a0,s3
+  20112c:	308000ef          	jal	201434 <__mulsi3>
+  201130:	00050493          	mv	s1,a0
+  201134:	000b0593          	mv	a1,s6
+  201138:	000a8513          	mv	a0,s5
+  20113c:	3f8000ef          	jal	201534 <__umodsi3>
+  201140:	01045793          	srli	a5,s0,0x10
+  201144:	01051513          	slli	a0,a0,0x10
+  201148:	00a7e7b3          	or	a5,a5,a0
+  20114c:	000b8413          	mv	s0,s7
+  201150:	0097fe63          	bgeu	a5,s1,20116c <__divsf3+0x1c4>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:44 (discriminator 14)
+  201154:	00fc07b3          	add	a5,s8,a5
+  201158:	fffb8413          	addi	s0,s7,-1
+  20115c:	0187e863          	bltu	a5,s8,20116c <__divsf3+0x1c4>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:44 (discriminator 16)
+  201160:	0097f663          	bgeu	a5,s1,20116c <__divsf3+0x1c4>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:44 (discriminator 18)
+  201164:	ffeb8413          	addi	s0,s7,-2
+  201168:	018787b3          	add	a5,a5,s8
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:44 (discriminator 20)
+  20116c:	409784b3          	sub	s1,a5,s1
+  201170:	000b0593          	mv	a1,s6
+  201174:	00048513          	mv	a0,s1
+  201178:	374000ef          	jal	2014ec <__hidden___udivsi3>
+  20117c:	00050593          	mv	a1,a0
+  201180:	00050a93          	mv	s5,a0
+  201184:	00098513          	mv	a0,s3
+  201188:	2ac000ef          	jal	201434 <__mulsi3>
+  20118c:	00050993          	mv	s3,a0
+  201190:	000b0593          	mv	a1,s6
+  201194:	00048513          	mv	a0,s1
+  201198:	39c000ef          	jal	201534 <__umodsi3>
+  20119c:	01051793          	slli	a5,a0,0x10
+  2011a0:	000a8713          	mv	a4,s5
+  2011a4:	0337f263          	bgeu	a5,s3,2011c8 <__divsf3+0x220>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:44 (discriminator 21)
+  2011a8:	018786b3          	add	a3,a5,s8
+  2011ac:	00f6b633          	sltu	a2,a3,a5
+  2011b0:	fffa8713          	addi	a4,s5,-1
+  2011b4:	00068793          	mv	a5,a3
+  2011b8:	00061863          	bnez	a2,2011c8 <__divsf3+0x220>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:44 (discriminator 23)
+  2011bc:	0136f663          	bgeu	a3,s3,2011c8 <__divsf3+0x220>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:44 (discriminator 25)
+  2011c0:	ffea8713          	addi	a4,s5,-2
+  2011c4:	018687b3          	add	a5,a3,s8
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:44 (discriminator 27)
+  2011c8:	01041413          	slli	s0,s0,0x10
+  2011cc:	413787b3          	sub	a5,a5,s3
+  2011d0:	00e46433          	or	s0,s0,a4
+  2011d4:	00f037b3          	snez	a5,a5
+  2011d8:	00f46433          	or	s0,s0,a5
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:45 (discriminator 2)
+  2011dc:	07fa0713          	addi	a4,s4,127
+  2011e0:	0ce05e63          	blez	a4,2012bc <__divsf3+0x314>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:45 (discriminator 6)
+  2011e4:	00747793          	andi	a5,s0,7
+  2011e8:	00078a63          	beqz	a5,2011fc <__divsf3+0x254>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:45
+  2011ec:	00f47793          	andi	a5,s0,15
+  2011f0:	00400693          	li	a3,4
+  2011f4:	00d78463          	beq	a5,a3,2011fc <__divsf3+0x254>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:45 (discriminator 10)
+  2011f8:	00440413          	addi	s0,s0,4
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:45 (discriminator 9)
+  2011fc:	00441793          	slli	a5,s0,0x4
+  201200:	0007da63          	bgez	a5,201214 <__divsf3+0x26c>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:45 (discriminator 24)
+  201204:	f80007b7          	lui	a5,0xf8000
+  201208:	fff78793          	addi	a5,a5,-1 # f7ffffff <__stack_top+0xf7dfa0df>
+  20120c:	00f47433          	and	s0,s0,a5
+  201210:	080a0713          	addi	a4,s4,128
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:45 (discriminator 26)
+  201214:	0fe00793          	li	a5,254
+  201218:	08e7c063          	blt	a5,a4,201298 <__divsf3+0x2f0>
+  20121c:	00345793          	srli	a5,s0,0x3
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:49
+  201220:	02c12083          	lw	ra,44(sp)
+  201224:	02812403          	lw	s0,40(sp)
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:45 (discriminator 111)
+  201228:	00979793          	slli	a5,a5,0x9
+  20122c:	01771713          	slli	a4,a4,0x17
+  201230:	0097d793          	srli	a5,a5,0x9
+  201234:	01f91513          	slli	a0,s2,0x1f
+  201238:	00f76733          	or	a4,a4,a5
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:49
+  20123c:	02412483          	lw	s1,36(sp)
+  201240:	02012903          	lw	s2,32(sp)
+  201244:	01c12983          	lw	s3,28(sp)
+  201248:	01812a03          	lw	s4,24(sp)
+  20124c:	01412a83          	lw	s5,20(sp)
+  201250:	01012b03          	lw	s6,16(sp)
+  201254:	00c12b83          	lw	s7,12(sp)
+  201258:	00812c03          	lw	s8,8(sp)
+  20125c:	00a76533          	or	a0,a4,a0
+  201260:	03010113          	addi	sp,sp,48
+  201264:	00008067          	ret
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:44 (discriminator 11)
+  201268:	01fa9413          	slli	s0,s5,0x1f
+  20126c:	001ada93          	srli	s5,s5,0x1
+  201270:	e95ff06f          	j	201104 <__divsf3+0x15c>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:42
+  201274:	00098913          	mv	s2,s3
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:44 (discriminator 8)
+  201278:	000a8413          	mv	s0,s5
+  20127c:	000b8713          	mv	a4,s7
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:45
+  201280:	00300793          	li	a5,3
+  201284:	08f70663          	beq	a4,a5,201310 <__divsf3+0x368>
+  201288:	00100793          	li	a5,1
+  20128c:	08f70a63          	beq	a4,a5,201320 <__divsf3+0x378>
+  201290:	00200793          	li	a5,2
+  201294:	f4f714e3          	bne	a4,a5,2011dc <__divsf3+0x234>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:45 (discriminator 4)
+  201298:	00000793          	li	a5,0
+  20129c:	0ff00713          	li	a4,255
+  2012a0:	f81ff06f          	j	201220 <__divsf3+0x278>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:43
+  2012a4:	000b0913          	mv	s2,s6
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:44
+  2012a8:	fd9ff06f          	j	201280 <__divsf3+0x2d8>
+  2012ac:	00400437          	lui	s0,0x400
+  2012b0:	00000913          	li	s2,0
+  2012b4:	00300713          	li	a4,3
+  2012b8:	fc9ff06f          	j	201280 <__divsf3+0x2d8>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:45 (discriminator 59)
+  2012bc:	00100793          	li	a5,1
+  2012c0:	40e787b3          	sub	a5,a5,a4
+  2012c4:	01b00713          	li	a4,27
+  2012c8:	04f74c63          	blt	a4,a5,201320 <__divsf3+0x378>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:45 (discriminator 65)
+  2012cc:	09ea0493          	addi	s1,s4,158
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:45 (discriminator 60)
+  2012d0:	00f457b3          	srl	a5,s0,a5
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:45 (discriminator 65)
+  2012d4:	00941433          	sll	s0,s0,s1
+  2012d8:	00803433          	snez	s0,s0
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:45 (discriminator 67)
+  2012dc:	0087e7b3          	or	a5,a5,s0
+  2012e0:	0077f713          	andi	a4,a5,7
+  2012e4:	00070a63          	beqz	a4,2012f8 <__divsf3+0x350>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:45
+  2012e8:	00f7f713          	andi	a4,a5,15
+  2012ec:	00400693          	li	a3,4
+  2012f0:	00d70463          	beq	a4,a3,2012f8 <__divsf3+0x350>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:45 (discriminator 70)
+  2012f4:	00478793          	addi	a5,a5,4
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:45 (discriminator 69)
+  2012f8:	00579713          	slli	a4,a5,0x5
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:45 (discriminator 85)
+  2012fc:	0037d793          	srli	a5,a5,0x3
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:45 (discriminator 69)
+  201300:	02075263          	bgez	a4,201324 <__divsf3+0x37c>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:45 (discriminator 84)
+  201304:	00000793          	li	a5,0
+  201308:	00100713          	li	a4,1
+  20130c:	f15ff06f          	j	201220 <__divsf3+0x278>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:45
+  201310:	004007b7          	lui	a5,0x400
+  201314:	0ff00713          	li	a4,255
+  201318:	00000913          	li	s2,0
+  20131c:	f05ff06f          	j	201220 <__divsf3+0x278>
+  201320:	00000793          	li	a5,0
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/divsf3.c:45 (discriminator 61)
+  201324:	00000713          	li	a4,0
+  201328:	ef9ff06f          	j	201220 <__divsf3+0x278>
+
+0020132c <__floatsisf>:
+__floatsisf():
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/floatsisf.c:34
+  20132c:	ff010113          	addi	sp,sp,-16
+  201330:	00112623          	sw	ra,12(sp)
+  201334:	00812423          	sw	s0,8(sp)
+  201338:	00912223          	sw	s1,4(sp)
+  20133c:	00050793          	mv	a5,a0
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/floatsisf.c:40
+  201340:	0e050063          	beqz	a0,201420 <__floatsisf+0xf4>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/floatsisf.c:40 (discriminator 3)
+  201344:	41f55713          	srai	a4,a0,0x1f
+  201348:	00a74433          	xor	s0,a4,a0
+  20134c:	40e40433          	sub	s0,s0,a4
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/floatsisf.c:40 (discriminator 1)
+  201350:	01f55493          	srli	s1,a0,0x1f
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/floatsisf.c:40 (discriminator 6)
+  201354:	00040513          	mv	a0,s0
+  201358:	240000ef          	jal	201598 <__clzsi2>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/floatsisf.c:40 (discriminator 12)
+  20135c:	09e00793          	li	a5,158
+  201360:	40a787b3          	sub	a5,a5,a0
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/floatsisf.c:40 (discriminator 14)
+  201364:	09600713          	li	a4,150
+  201368:	04f74063          	blt	a4,a5,2013a8 <__floatsisf+0x7c>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/floatsisf.c:40 (discriminator 28)
+  20136c:	00800713          	li	a4,8
+  201370:	0ae50e63          	beq	a0,a4,20142c <__floatsisf+0x100>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/floatsisf.c:40 (discriminator 30)
+  201374:	ff850513          	addi	a0,a0,-8
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/floatsisf.c:40 (discriminator 35)
+  201378:	00a41433          	sll	s0,s0,a0
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/floatsisf.c:41
+  20137c:	00941413          	slli	s0,s0,0x9
+  201380:	00945413          	srli	s0,s0,0x9
+  201384:	01779793          	slli	a5,a5,0x17
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/floatsisf.c:45
+  201388:	00c12083          	lw	ra,12(sp)
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/floatsisf.c:41
+  20138c:	0087e7b3          	or	a5,a5,s0
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/floatsisf.c:45
+  201390:	00812403          	lw	s0,8(sp)
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/floatsisf.c:41
+  201394:	01f49513          	slli	a0,s1,0x1f
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/floatsisf.c:45
+  201398:	00a7e533          	or	a0,a5,a0
+  20139c:	00412483          	lw	s1,4(sp)
+  2013a0:	01010113          	addi	sp,sp,16
+  2013a4:	00008067          	ret
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/floatsisf.c:40 (discriminator 29)
+  2013a8:	09900713          	li	a4,153
+  2013ac:	06f75463          	bge	a4,a5,201414 <__floatsisf+0xe8>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/floatsisf.c:40 (discriminator 38)
+  2013b0:	00500713          	li	a4,5
+  2013b4:	40a70733          	sub	a4,a4,a0
+  2013b8:	01b50693          	addi	a3,a0,27
+  2013bc:	00e45733          	srl	a4,s0,a4
+  2013c0:	00d41433          	sll	s0,s0,a3
+  2013c4:	00803433          	snez	s0,s0
+  2013c8:	00876733          	or	a4,a4,s0
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/floatsisf.c:40 (discriminator 48)
+  2013cc:	fc000437          	lui	s0,0xfc000
+  2013d0:	fff40413          	addi	s0,s0,-1 # fbffffff <__stack_top+0xfbdfa0df>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/floatsisf.c:40 (discriminator 85)
+  2013d4:	00777693          	andi	a3,a4,7
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/floatsisf.c:40 (discriminator 48)
+  2013d8:	00877433          	and	s0,a4,s0
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/floatsisf.c:40 (discriminator 85)
+  2013dc:	00068a63          	beqz	a3,2013f0 <__floatsisf+0xc4>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/floatsisf.c:40 (discriminator 89)
+  2013e0:	00f77713          	andi	a4,a4,15
+  2013e4:	00400693          	li	a3,4
+  2013e8:	00d70463          	beq	a4,a3,2013f0 <__floatsisf+0xc4>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/floatsisf.c:40 (discriminator 93)
+  2013ec:	00440413          	addi	s0,s0,4
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/floatsisf.c:40 (discriminator 111)
+  2013f0:	00541713          	slli	a4,s0,0x5
+  2013f4:	00075c63          	bgez	a4,20140c <__floatsisf+0xe0>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/floatsisf.c:40 (discriminator 112)
+  2013f8:	fc0007b7          	lui	a5,0xfc000
+  2013fc:	fff78793          	addi	a5,a5,-1 # fbffffff <__stack_top+0xfbdfa0df>
+  201400:	00f47433          	and	s0,s0,a5
+  201404:	09f00793          	li	a5,159
+  201408:	40a787b3          	sub	a5,a5,a0
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/floatsisf.c:40 (discriminator 128)
+  20140c:	00345413          	srli	s0,s0,0x3
+  201410:	f6dff06f          	j	20137c <__floatsisf+0x50>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/floatsisf.c:40 (discriminator 41)
+  201414:	ffb50713          	addi	a4,a0,-5
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/floatsisf.c:40 (discriminator 46)
+  201418:	00e41733          	sll	a4,s0,a4
+  20141c:	fb1ff06f          	j	2013cc <__floatsisf+0xa0>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/floatsisf.c:40 (discriminator 2)
+  201420:	00000493          	li	s1,0
+  201424:	00000413          	li	s0,0
+  201428:	f55ff06f          	j	20137c <__floatsisf+0x50>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/soft-fp/floatsisf.c:40 (discriminator 12)
+  20142c:	09600793          	li	a5,150
+  201430:	f4dff06f          	j	20137c <__floatsisf+0x50>
+
+00201434 <__mulsi3>:
+__mulsi3():
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/muldi3.S:37
+  201434:	00050613          	mv	a2,a0
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/muldi3.S:38
+  201438:	00000513          	li	a0,0
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/muldi3.S:40
+  20143c:	0015f693          	andi	a3,a1,1
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/muldi3.S:41
+  201440:	00068463          	beqz	a3,201448 <__mulsi3+0x14>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/muldi3.S:42
+  201444:	00c50533          	add	a0,a0,a2
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/muldi3.S:44
+  201448:	0015d593          	srli	a1,a1,0x1
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/muldi3.S:45
+  20144c:	00161613          	slli	a2,a2,0x1
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/muldi3.S:46
+  201450:	fe0596e3          	bnez	a1,20143c <__mulsi3+0x8>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/muldi3.S:47
+  201454:	00008067          	ret
+
+00201458 <__muldi3>:
+__muldi3():
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/multi3.c:42
+  201458:	00050e13          	mv	t3,a0
+  20145c:	ff010113          	addi	sp,sp,-16
+  201460:	00068313          	mv	t1,a3
+  201464:	00112623          	sw	ra,12(sp)
+  201468:	00060513          	mv	a0,a2
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/multi3.c:46
+  20146c:	000e0893          	mv	a7,t3
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/multi3.c:47
+  201470:	00060693          	mv	a3,a2
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/multi3.c:52
+  201474:	00000713          	li	a4,0
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/multi3.c:51
+  201478:	00000793          	li	a5,0
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/multi3.c:49
+  20147c:	00000813          	li	a6,0
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/multi3.c:63
+  201480:	0016fe93          	andi	t4,a3,1
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/multi3.c:61
+  201484:	00171613          	slli	a2,a4,0x1
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/multi3.c:63
+  201488:	000e8a63          	beqz	t4,20149c <__muldi3+0x44>
+  20148c:	01088833          	add	a6,a7,a6
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/multi3.c:62
+  201490:	00e787b3          	add	a5,a5,a4
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/multi3.c:65
+  201494:	01183733          	sltu	a4,a6,a7
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/multi3.c:67
+  201498:	00f707b3          	add	a5,a4,a5
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/multi3.c:69
+  20149c:	01f8d713          	srli	a4,a7,0x1f
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/multi3.c:70
+  2014a0:	0016d693          	srli	a3,a3,0x1
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/multi3.c:72
+  2014a4:	00e66733          	or	a4,a2,a4
+  2014a8:	00189893          	slli	a7,a7,0x1
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/multi3.c:74
+  2014ac:	fc069ae3          	bnez	a3,201480 <__muldi3+0x28>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/multi3.c:79
+  2014b0:	00058663          	beqz	a1,2014bc <__muldi3+0x64>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/multi3.c:80
+  2014b4:	f81ff0ef          	jal	201434 <__mulsi3>
+  2014b8:	00a787b3          	add	a5,a5,a0
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/multi3.c:82
+  2014bc:	00030a63          	beqz	t1,2014d0 <__muldi3+0x78>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/multi3.c:83
+  2014c0:	000e0513          	mv	a0,t3
+  2014c4:	00030593          	mv	a1,t1
+  2014c8:	f6dff0ef          	jal	201434 <__mulsi3>
+  2014cc:	00f507b3          	add	a5,a0,a5
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/multi3.c:86
+  2014d0:	00c12083          	lw	ra,12(sp)
+  2014d4:	00080513          	mv	a0,a6
+  2014d8:	00078593          	mv	a1,a5
+  2014dc:	01010113          	addi	sp,sp,16
+  2014e0:	00008067          	ret
+
+002014e4 <__divsi3>:
+__divsi3():
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:69
+  2014e4:	06054063          	bltz	a0,201544 <__umodsi3+0x10>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:70
+  2014e8:	0605c663          	bltz	a1,201554 <__umodsi3+0x20>
+
+002014ec <__hidden___udivsi3>:
+__hidden___udivsi3():
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:74
+  2014ec:	00058613          	mv	a2,a1
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:75
+  2014f0:	00050593          	mv	a1,a0
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:76
+  2014f4:	fff00513          	li	a0,-1
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:77
+  2014f8:	02060c63          	beqz	a2,201530 <__hidden___udivsi3+0x44>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:78
+  2014fc:	00100693          	li	a3,1
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:79
+  201500:	00b67a63          	bgeu	a2,a1,201514 <__hidden___udivsi3+0x28>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:81
+  201504:	00c05863          	blez	a2,201514 <__hidden___udivsi3+0x28>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:82
+  201508:	00161613          	slli	a2,a2,0x1
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:83
+  20150c:	00169693          	slli	a3,a3,0x1
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:84
+  201510:	feb66ae3          	bltu	a2,a1,201504 <__hidden___udivsi3+0x18>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:86
+  201514:	00000513          	li	a0,0
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:88
+  201518:	00c5e663          	bltu	a1,a2,201524 <__hidden___udivsi3+0x38>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:89
+  20151c:	40c585b3          	sub	a1,a1,a2
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:90
+  201520:	00d56533          	or	a0,a0,a3
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:92
+  201524:	0016d693          	srli	a3,a3,0x1
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:93
+  201528:	00165613          	srli	a2,a2,0x1
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:94
+  20152c:	fe0696e3          	bnez	a3,201518 <__hidden___udivsi3+0x2c>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:96
+  201530:	00008067          	ret
+
+00201534 <__umodsi3>:
+__umodsi3():
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:102
+  201534:	00008293          	mv	t0,ra
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:103
+  201538:	fb5ff0ef          	jal	2014ec <__hidden___udivsi3>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:104
+  20153c:	00058513          	mv	a0,a1
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:105
+  201540:	00028067          	jr	t0
+__divsi3():
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:110
+  201544:	40a00533          	neg	a0,a0
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:112
+  201548:	00b04863          	bgtz	a1,201558 <__umodsi3+0x24>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:114
+  20154c:	40b005b3          	neg	a1,a1
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:115
+  201550:	f9dff06f          	j	2014ec <__hidden___udivsi3>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:117
+  201554:	40b005b3          	neg	a1,a1
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:119
+  201558:	00008293          	mv	t0,ra
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:120
+  20155c:	f91ff0ef          	jal	2014ec <__hidden___udivsi3>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:121
+  201560:	40a00533          	neg	a0,a0
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:122
+  201564:	00028067          	jr	t0
+
+00201568 <__modsi3>:
+__modsi3():
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:126
+  201568:	00008293          	mv	t0,ra
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:127
+  20156c:	0005ca63          	bltz	a1,201580 <__modsi3+0x18>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:128
+  201570:	00054c63          	bltz	a0,201588 <__modsi3+0x20>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:130
+  201574:	f79ff0ef          	jal	2014ec <__hidden___udivsi3>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:131
+  201578:	00058513          	mv	a0,a1
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:132
+  20157c:	00028067          	jr	t0
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:134
+  201580:	40b005b3          	neg	a1,a1
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:135
+  201584:	fe0558e3          	bgez	a0,201574 <__modsi3+0xc>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:137
+  201588:	40a00533          	neg	a0,a0
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:138
+  20158c:	f61ff0ef          	jal	2014ec <__hidden___udivsi3>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:139
+  201590:	40b00533          	neg	a0,a1
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/config/riscv/div.S:140
+  201594:	00028067          	jr	t0
+
+00201598 <__clzsi2>:
+__clzsi2():
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/libgcc2.c:690 (discriminator 1)
+  201598:	000107b7          	lui	a5,0x10
+  20159c:	02f57a63          	bgeu	a0,a5,2015d0 <__clzsi2+0x38>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/libgcc2.c:690 (discriminator 3)
+  2015a0:	10053793          	sltiu	a5,a0,256
+  2015a4:	0017b793          	seqz	a5,a5
+  2015a8:	00379793          	slli	a5,a5,0x3
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/libgcc2.c:690 (discriminator 21)
+  2015ac:	00202737          	lui	a4,0x202
+  2015b0:	02000693          	li	a3,32
+  2015b4:	40f686b3          	sub	a3,a3,a5
+  2015b8:	00f55533          	srl	a0,a0,a5
+  2015bc:	df070793          	addi	a5,a4,-528 # 201df0 <__clz_tab>
+  2015c0:	00a787b3          	add	a5,a5,a0
+  2015c4:	0007c503          	lbu	a0,0(a5) # 10000 <STACK_SIZE+0xc000>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/libgcc2.c:693
+  2015c8:	40a68533          	sub	a0,a3,a0
+  2015cc:	00008067          	ret
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/libgcc2.c:690 (discriminator 4)
+  2015d0:	01000737          	lui	a4,0x1000
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/libgcc2.c:690 (discriminator 11)
+  2015d4:	01800793          	li	a5,24
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/libgcc2.c:690 (discriminator 4)
+  2015d8:	fce57ae3          	bgeu	a0,a4,2015ac <__clzsi2+0x14>
+/home/premjith/Desktop/bin/uart_fifo_test/riscv-gnu-toolchain/build-gcc-newlib-stage2/riscv32-vega-elf/libgcc/../../.././gcc/libgcc/libgcc2.c:690 (discriminator 10)
+  2015dc:	01000793          	li	a5,16
+  2015e0:	fcdff06f          	j	2015ac <__clzsi2+0x14>
+	...
+  2015f0:	00004b4f          	.insn	4, 0x4b4f
+  2015f4:	0000                	.insn	2, 0x
+  2015f6:	0000                	.insn	2, 0x
+  2015f8:	756e                	.insn	2, 0x756e
+  2015fa:	6c6c                	.insn	2, 0x6c6c
+  2015fc:	6820                	.insn	2, 0x6820
+  2015fe:	6e61                	.insn	2, 0x6e61
+  201600:	6c64                	.insn	2, 0x6c64
+  201602:	0065                	.insn	2, 0x0065
+  201604:	756e                	.insn	2, 0x756e
+  201606:	6c6c                	.insn	2, 0x6c6c
+  201608:	7020                	.insn	2, 0x7020
+  20160a:	0074726f          	jal	tp,248e10 <__stack_top+0x42ef0>
+  20160e:	0000                	.insn	2, 0x
+  201610:	756e                	.insn	2, 0x756e
+  201612:	6c6c                	.insn	2, 0x6c6c
+  201614:	6120                	.insn	2, 0x6120
+  201616:	6772                	.insn	2, 0x6772
+  201618:	6d75                	.insn	2, 0x6d75
+  20161a:	6e65                	.insn	2, 0x6e65
+  20161c:	0074                	.insn	2, 0x0074
+  20161e:	0000                	.insn	2, 0x
+  201620:	6e75                	.insn	2, 0x6e75
+  201622:	7865                	.insn	2, 0x7865
+  201624:	6570                	.insn	2, 0x6570
+  201626:	64657463          	bgeu	a0,t1,201c6e <altitude_cm_table.0+0x3d2>
+  20162a:	6320                	.insn	2, 0x6320
+  20162c:	6968                	.insn	2, 0x6968
+  20162e:	2070                	.insn	2, 0x2070
+  201630:	4449                	.insn	2, 0x4449
+  201632:	0000                	.insn	2, 0x
+  201634:	6974                	.insn	2, 0x6974
+  201636:	656d                	.insn	2, 0x656d
+  201638:	0074756f          	jal	a0,248e3e <__stack_top+0x42f1e>
+  20163c:	6e69                	.insn	2, 0x6e69
+  20163e:	6176                	.insn	2, 0x6176
+  201640:	696c                	.insn	2, 0x696c
+  201642:	2064                	.insn	2, 0x2064
+  201644:	696c6163          	bltu	s8,s6,201cc6 <altitude_cm_table.0+0x42a>
+  201648:	7262                	.insn	2, 0x7262
+  20164a:	7461                	.insn	2, 0x7461
+  20164c:	6f69                	.insn	2, 0x6f69
+  20164e:	206e                	.insn	2, 0x206e
+  201650:	6164                	.insn	2, 0x6164
+  201652:	6174                	.insn	2, 0x6174
+  201654:	0000                	.insn	2, 0x
+  201656:	0000                	.insn	2, 0x
+  201658:	6f6e                	.insn	2, 0x6f6e
+  20165a:	7620                	.insn	2, 0x7620
+  20165c:	6c61                	.insn	2, 0x6c61
+  20165e:	6469                	.insn	2, 0x6469
+  201660:	6d20                	.insn	2, 0x6d20
+  201662:	6165                	.insn	2, 0x6165
+  201664:	65727573          	.insn	4, 0x65727573
+  201668:	656d                	.insn	2, 0x656d
+  20166a:	746e                	.insn	2, 0x746e
+  20166c:	6420                	.insn	2, 0x6420
+  20166e:	7461                	.insn	2, 0x7461
+  201670:	0061                	.insn	2, 0x0061
+  201672:	0000                	.insn	2, 0x
+  201674:	6e75                	.insn	2, 0x6e75
+  201676:	776f6e6b          	.insn	4, 0x776f6e6b
+  20167a:	206e                	.insn	2, 0x206e
+  20167c:	7265                	.insn	2, 0x7265
+  20167e:	6f72                	.insn	2, 0x6f72
+  201680:	0072                	.insn	2, 0x0072
+  201682:	0000                	.insn	2, 0x
+  201684:	0a0d                	.insn	2, 0x0a0d
+  201686:	4d42                	.insn	2, 0x4d42
+  201688:	3250                	.insn	2, 0x3250
+  20168a:	3038                	.insn	2, 0x3038
+  20168c:	6220                	.insn	2, 0x6220
+  20168e:	7261                	.insn	2, 0x7261
+  201690:	74656d6f          	jal	s10,257dd6 <__stack_top+0x51eb6>
+  201694:	7265                	.insn	2, 0x7265
+  201696:	2820                	.insn	2, 0x2820
+  201698:	5241                	.insn	2, 0x5241
+  20169a:	4549                	.insn	2, 0x4549
+  20169c:	33762053          	.insn	4, 0x33762053
+  2016a0:	202c                	.insn	2, 0x202c
+  2016a2:	32495053          	.insn	4, 0x32495053
+  2016a6:	0d29                	.insn	2, 0x0d29
+  2016a8:	000a                	.insn	2, 0x000a
+  2016aa:	0000                	.insn	2, 0x
+  2016ac:	5245                	.insn	2, 0x5245
+  2016ae:	4f52                	.insn	2, 0x4f52
+  2016b0:	3a52                	.insn	2, 0x3a52
+  2016b2:	4220                	.insn	2, 0x4220
+  2016b4:	504d                	.insn	2, 0x504d
+  2016b6:	3832                	.insn	2, 0x3832
+  2016b8:	2030                	.insn	2, 0x2030
+  2016ba:	6e69                	.insn	2, 0x6e69
+  2016bc:	7469                	.insn	2, 0x7469
+  2016be:	6620                	.insn	2, 0x6620
+  2016c0:	6961                	.insn	2, 0x6961
+  2016c2:	656c                	.insn	2, 0x656c
+  2016c4:	2064                	.insn	2, 0x2064
+  2016c6:	0028                	.insn	2, 0x0028
+  2016c8:	0d29                	.insn	2, 0x0d29
+  2016ca:	000a                	.insn	2, 0x000a
+  2016cc:	32495053          	.insn	4, 0x32495053
+  2016d0:	6e20                	.insn	2, 0x6e20
+  2016d2:	7665                	.insn	2, 0x7665
+  2016d4:	7265                	.insn	2, 0x7265
+  2016d6:	6320                	.insn	2, 0x6320
+  2016d8:	6c706d6f          	jal	s10,20859e <__stack_top+0x267e>
+  2016dc:	7465                	.insn	2, 0x7465
+  2016de:	6465                	.insn	2, 0x6465
+  2016e0:	6120                	.insn	2, 0x6120
+  2016e2:	7420                	.insn	2, 0x7420
+  2016e4:	6172                	.insn	2, 0x6172
+  2016e6:	736e                	.insn	2, 0x736e
+  2016e8:	6566                	.insn	2, 0x6566
+  2016ea:	3b72                	.insn	2, 0x3b72
+  2016ec:	6320                	.insn	2, 0x6320
+  2016ee:	6568                	.insn	2, 0x6568
+  2016f0:	74206b63          	bltu	zero,sp,201e46 <__clz_tab+0x56>
+  2016f4:	6168                	.insn	2, 0x6168
+  2016f6:	2074                	.insn	2, 0x2074
+  2016f8:	6874                	.insn	2, 0x6874
+  2016fa:	2065                	.insn	2, 0x2065
+  2016fc:	4d42                	.insn	2, 0x4d42
+  2016fe:	3250                	.insn	2, 0x3250
+  201700:	3038                	.insn	2, 0x3038
+  201702:	6920                	.insn	2, 0x6920
+  201704:	6e6f2073          	.insn	4, 0x6e6f2073
+  201708:	4a20                	.insn	2, 0x4a20
+  20170a:	2034                	.insn	2, 0x2034
+  20170c:	6e61                	.insn	2, 0x6e61
+  20170e:	2064                	.insn	2, 0x2064
+  201710:	6874                	.insn	2, 0x6874
+  201712:	2065                	.insn	2, 0x2065
+  201714:	32495053          	.insn	4, 0x32495053
+  201718:	7020                	.insn	2, 0x7020
+  20171a:	6e69                	.insn	2, 0x6e69
+  20171c:	72612073          	.insn	4, 0x72612073
+  201720:	2065                	.insn	2, 0x2065
+  201722:	65726977          	.insn	4, 0x65726977
+  201726:	2064                	.insn	2, 0x2064
+  201728:	72726f63          	bltu	tp,t2,201e66 <__clz_tab+0x76>
+  20172c:	6365                	.insn	2, 0x6365
+  20172e:	6c74                	.insn	2, 0x6c74
+  201730:	0d79                	.insn	2, 0x0d79
+  201732:	000a                	.insn	2, 0x000a
+  201734:	696c6143          	.insn	4, 0x696c6143
+  201738:	7262                	.insn	2, 0x7262
+  20173a:	7461                	.insn	2, 0x7461
+  20173c:	6f69                	.insn	2, 0x6f69
+  20173e:	206e                	.insn	2, 0x206e
+  201740:	6572                	.insn	2, 0x6572
+  201742:	74736967          	.insn	4, 0x74736967
+  201746:	7265                	.insn	2, 0x7265
+  201748:	78302073          	.insn	4, 0x78302073
+  20174c:	3838                	.insn	2, 0x3838
+  20174e:	2e2e                	.insn	2, 0x2e2e
+  201750:	7830                	.insn	2, 0x7830
+  201752:	4639                	.insn	2, 0x4639
+  201754:	7220                	.insn	2, 0x7220
+  201756:	6165                	.insn	2, 0x6165
+  201758:	2064                	.insn	2, 0x2064
+  20175a:	7361                	.insn	2, 0x7361
+  20175c:	6120                	.insn	2, 0x6120
+  20175e:	6c6c                	.insn	2, 0x6c6c
+  201760:	3020                	.insn	2, 0x3020
+  201762:	3078                	.insn	2, 0x3078
+  201764:	2030                	.insn	2, 0x2030
+  201766:	6120726f          	jal	tp,208d78 <__stack_top+0x2e58>
+  20176a:	6c6c                	.insn	2, 0x6c6c
+  20176c:	3020                	.insn	2, 0x3020
+  20176e:	4678                	.insn	2, 0x4678
+  201770:	3b46                	.insn	2, 0x3b46
+  201772:	6320                	.insn	2, 0x6320
+  201774:	6568                	.insn	2, 0x6568
+  201776:	42206b63          	bltu	zero,sp,201bac <altitude_cm_table.0+0x310>
+  20177a:	504d                	.insn	2, 0x504d
+  20177c:	3832                	.insn	2, 0x3832
+  20177e:	2030                	.insn	2, 0x2030
+  201780:	70707573          	.insn	4, 0x70707573
+  201784:	796c                	.insn	2, 0x796c
+  201786:	202c                	.insn	2, 0x202c
+  201788:	20425343          	.insn	4, 0x20425343
+  20178c:	4a206e6f          	jal	t3,207c2e <__stack_top+0x1d0e>
+  201790:	5f34                	.insn	2, 0x5f34
+  201792:	2036                	.insn	2, 0x2036
+  201794:	6e61                	.insn	2, 0x6e61
+  201796:	2064                	.insn	2, 0x2064
+  201798:	32495053          	.insn	4, 0x32495053
+  20179c:	7720                	.insn	2, 0x7720
+  20179e:	7269                	.insn	2, 0x7269
+  2017a0:	6e69                	.insn	2, 0x6e69
+  2017a2:	000a0d67          	jalr	s10,s4
+  2017a6:	0000                	.insn	2, 0x
+  2017a8:	70696863          	bltu	s2,t1,201eb8 <__clz_tab+0xc8>
+  2017ac:	4920                	.insn	2, 0x4920
+  2017ae:	2044                	.insn	2, 0x2044
+  2017b0:	7830                	.insn	2, 0x7830
+  2017b2:	0000                	.insn	2, 0x
+  2017b4:	2820                	.insn	2, 0x2820
+  2017b6:	7865                	.insn	2, 0x7865
+  2017b8:	6570                	.insn	2, 0x6570
+  2017ba:	64657463          	bgeu	a0,t1,201e02 <__clz_tab+0x12>
+  2017be:	3020                	.insn	2, 0x3020
+  2017c0:	3578                	.insn	2, 0x3578
+  2017c2:	2938                	.insn	2, 0x2938
+  2017c4:	0a0d                	.insn	2, 0x0a0d
+  2017c6:	0000                	.insn	2, 0x
+  2017c8:	63656843          	.insn	4, 0x63656843
+  2017cc:	5053206b          	.insn	4, 0x5053206b
+  2017d0:	3249                	.insn	2, 0x3249
+  2017d2:	7720                	.insn	2, 0x7720
+  2017d4:	7269                	.insn	2, 0x7269
+  2017d6:	6e69                	.insn	2, 0x6e69
+  2017d8:	53203a67          	.insn	4, 0x53203a67
+  2017dc:	202c4b43          	.insn	4, 0x202c4b43
+  2017e0:	4f4d                	.insn	2, 0x4f4d
+  2017e2:	202c4953          	.insn	4, 0x202c4953
+  2017e6:	494d                	.insn	2, 0x494d
+  2017e8:	61204f53          	.insn	4, 0x61204f53
+  2017ec:	646e                	.insn	2, 0x646e
+  2017ee:	4320                	.insn	2, 0x4320
+  2017f0:	0a0d4253          	.insn	4, 0x0a0d4253
+  2017f4:	0000                	.insn	2, 0x
+  2017f6:	0000                	.insn	2, 0x
+  2017f8:	6552                	.insn	2, 0x6552
+  2017fa:	6461                	.insn	2, 0x6461
+  2017fc:	3a79                	.insn	2, 0x3a79
+  2017fe:	6620                	.insn	2, 0x6620
+  201800:	6563726f          	jal	tp,238e56 <__stack_top+0x32f36>
+  201804:	2064                	.insn	2, 0x2064
+  201806:	6f6d                	.insn	2, 0x6f6d
+  201808:	6564                	.insn	2, 0x6564
+  20180a:	202c                	.insn	2, 0x202c
+  20180c:	6574                	.insn	2, 0x6574
+  20180e:	706d                	.insn	2, 0x706d
+  201810:	7820                	.insn	2, 0x7820
+  201812:	2c32                	.insn	2, 0x2c32
+  201814:	7020                	.insn	2, 0x7020
+  201816:	6572                	.insn	2, 0x6572
+  201818:	72757373          	.insn	4, 0x72757373
+  20181c:	2065                	.insn	2, 0x2065
+  20181e:	3178                	.insn	2, 0x3178
+  201820:	2c36                	.insn	2, 0x2c36
+  201822:	4920                	.insn	2, 0x4920
+  201824:	5249                	.insn	2, 0x5249
+  201826:	7820                	.insn	2, 0x7820
+  201828:	3631                	.insn	2, 0x3631
+  20182a:	0a0d                	.insn	2, 0x0a0d
+  20182c:	0000                	.insn	2, 0x
+  20182e:	0000                	.insn	2, 0x
+  201830:	5245                	.insn	2, 0x5245
+  201832:	4f52                	.insn	2, 0x4f52
+  201834:	3a52                	.insn	2, 0x3a52
+  201836:	4220                	.insn	2, 0x4220
+  201838:	504d                	.insn	2, 0x504d
+  20183a:	3832                	.insn	2, 0x3832
+  20183c:	2030                	.insn	2, 0x2030
+  20183e:	6572                	.insn	2, 0x6572
+  201840:	6461                	.insn	2, 0x6461
+  201842:	6620                	.insn	2, 0x6620
+  201844:	6961                	.insn	2, 0x6961
+  201846:	656c                	.insn	2, 0x656c
+  201848:	2064                	.insn	2, 0x2064
+  20184a:	0028                	.insn	2, 0x0028
+  20184c:	6574                	.insn	2, 0x6574
+  20184e:	706d                	.insn	2, 0x706d
+  201850:	003d                	.insn	2, 0x003d
+  201852:	0000                	.insn	2, 0x
+  201854:	4320                	.insn	2, 0x4320
+  201856:	2020                	.insn	2, 0x2020
+  201858:	7270                	.insn	2, 0x7270
+  20185a:	7365                	.insn	2, 0x7365
+  20185c:	65727573          	.insn	4, 0x65727573
+  201860:	003d                	.insn	2, 0x003d
+  201862:	0000                	.insn	2, 0x
+  201864:	5020                	.insn	2, 0x5020
+  201866:	2061                	.insn	2, 0x2061
+  201868:	6120                	.insn	2, 0x6120
+  20186a:	746c                	.insn	2, 0x746c
+  20186c:	7469                	.insn	2, 0x7469
+  20186e:	6475                	.insn	2, 0x6475
+  201870:	3d65                	.insn	2, 0x3d65
+  201872:	0000                	.insn	2, 0x
+  201874:	6320                	.insn	2, 0x6320
+  201876:	0d6d                	.insn	2, 0x0d6d
+  201878:	000a                	.insn	2, 0x000a
+  20187a:	0000                	.insn	2, 0x
+  20187c:	eb68                	.insn	2, 0xeb68
+  20187e:	ffff                	.insn	2, 0xffff
+  201880:	eb74                	.insn	2, 0xeb74
+  201882:	ffff                	.insn	2, 0xffff
+  201884:	eb80                	.insn	2, 0xeb80
+  201886:	ffff                	.insn	2, 0xffff
+  201888:	eb8c                	.insn	2, 0xeb8c
+  20188a:	ffff                	.insn	2, 0xffff
+  20188c:	eb98                	.insn	2, 0xeb98
+  20188e:	ffff                	.insn	2, 0xffff
+  201890:	eba4                	.insn	2, 0xeba4
+  201892:	ffff                	.insn	2, 0xffff
+  201894:	ebb0                	.insn	2, 0xebb0
+  201896:	ffff                	.insn	2, 0xffff
+  201898:	ebbc                	.insn	2, 0xebbc
+  20189a:	ffff                	.insn	2, 0xffff
+
+0020189c <altitude_cm_table.0>:
+  20189c:	fa27 000d e474 000d cee7 000d b97e 000d     '...t.......~...
+  2018ac:	a439 000d 8f17 000d 7a18 000d 653c 000d     9........z..<e..
+  2018bc:	5081 000d 3be8 000d 2770 000d 1319 000d     .P...;..p'......
+  2018cc:	fee2 000c eaca 000c d6d1 000c c2f8 000c     ................
+  2018dc:	af3d 000c 9ba0 000c 8820 000c 74bd 000c     =....... ....t..
+  2018ec:	6178 000c 4e4e 000c 3b42 000c 2850 000c     xa..NN..B;..P(..
+  2018fc:	157a 000c 02bf 000c f01f 000b dd99 000b     z...............
+  20190c:	cb2d 000b b8db 000b a6a2 000b 9483 000b     -...............
+  20191c:	827c 000b 708e 000b 5eb8 000b 4cfa 000b     |....p...^...L..
+  20192c:	3b53 000b 29c4 000b 184d 000b 06eb 000b     S;...)..M.......
+  20193c:	f5a1 000a e46d 000a d34f 000a c247 000a     ....m...O...G...
+  20194c:	b154 000a a077 000a 8faf 000a 7efc 000a     T...w........~..
+  20195c:	6e5d 000a 5dd3 000a 4d5e 000a 3cfc 000a     ]n...]..^M...<..
+  20196c:	2cae 000a 1c74 000a 0c4d 000a fc39 0009     .,..t...M...9...
+  20197c:	ec39 0009 dc4a 0009 cc6f 0009 bca6 0009     9...J...o.......
+  20198c:	acef 0009 9d4b 0009 8db8 0009 7e37 0009     ....K.......7~..
+  20199c:	6ec7 0009 5f6a 0009 501c 0009 40e0 0009     .n..j_...P...@..
+  2019ac:	31b5 0009 229b 0009 1391 0009 0498 0009     .1..."..........
+  2019bc:	f5ae 0008 e6d5 0008 d80c 0008 c952 0008     ............R...
+  2019cc:	baa8 0008 ac0e 0008 9d83 0008 8f07 0008     ................
+  2019dc:	809a 0008 723c 0008 63ed 0008 55ac 0008     ....<r...c...U..
+  2019ec:	477a 0008 3957 0008 2b41 0008 1d3a 0008     zG..W9..A+..:...
+  2019fc:	0f41 0008 0156 0008 f378 0007 e5a8 0007     A...V...x.......
+  201a0c:	d7e6 0007 ca32 0007 bc8a 0007 aef0 0007     ....2...........
+  201a1c:	a163 0007 93e3 0007 866f 0007 7908 0007     c.......o....y..
+  201a2c:	6bae 0007 5e61 0007 5120 0007 43eb 0007     .k..a^.. Q...C..
+  201a3c:	36c3 0007 29a7 0007 1c97 0007 0f93 0007     .6...)..........
+  201a4c:	029a 0007 f5ae 0006 e8cd 0006 dbf7 0006     ................
+  201a5c:	cf2e 0006 c26f 0006 b5bc 0006 a915 0006     ....o...........
+  201a6c:	9c78 0006 8fe7 0006 8360 0006 76e4 0006     x.......`....v..
+  201a7c:	6a73 0006 5e0d 0006 51b1 0006 4560 0006     sj...^...Q..`E..
+  201a8c:	391a 0006 2cde 0006 20ac 0006 1484 0006     .9...,... ......
+  201a9c:	0867 0006 fc54 0005 f04b 0005 e44b 0005     g...T...K...K...
+  201aac:	d856 0005 cc6a 0005 c089 0005 b4b1 0005     V...j...........
+  201abc:	a8e2 0005 9d1d 0005 9162 0005 85b0 0005     ........b.......
+  201acc:	7a07 0005 6e68 0005 62d1 0005 5744 0005     .z..hn...b..DW..
+  201adc:	4bc1 0005 4046 0005 34d4 0005 296a 0005     .K..F@...4..j)..
+  201aec:	1e0b 0005 12b3 0005 0764 0005 fc1e 0004     ........d.......
+  201afc:	f0e1 0004 e5ac 0004 da80 0004 cf5c 0004     ............\...
+  201b0c:	c440 0004 b92d 0004 ae22 0004 a31f 0004     @...-...".......
+  201b1c:	9825 0004 8d33 0004 8248 0004 7766 0004     %...3...H...fw..
+  201b2c:	6c8b 0004 61b9 0004 56ef 0004 4c2b 0004     .l...a...V..+L..
+  201b3c:	4171 0004 36bd 0004 2c11 0004 216e 0004     qA...6...,..n!..
+  201b4c:	16d1 0004 0c3c 0004 01af 0004 f729 0003     ....<.......)...
+  201b5c:	ecaa 0003 e232 0003 d7c2 0003 cd5a 0003     ....2.......Z...
+  201b6c:	c2f8 0003 b89e 0003 ae4a 0003 a3fe 0003     ........J.......
+  201b7c:	99b9 0003 8f7b 0003 8544 0003 7b13 0003     ....{...D....{..
+  201b8c:	70ea 0003 66c7 0003 5cac 0003 5296 0003     .p...f...\...R..
+  201b9c:	4888 0003 3e80 0003 347f 0003 2a85 0003     .H...>...4...*..
+  201bac:	2091 0003 16a3 0003 0cbc 0003 02dc 0003     . ..............
+  201bbc:	f902 0002 ef2e 0002 e561 0002 db9a 0002     ........a.......
+  201bcc:	d1d9 0002 c81f 0002 be6a 0002 b4bc 0002     ........j.......
+  201bdc:	ab14 0002 a172 0002 97d6 0002 8e40 0002     ....r.......@...
+  201bec:	84b1 0002 7b27 0002 71a3 0002 6825 0002     ....'{...q..%h..
+  201bfc:	5eac 0002 553a 0002 4bce 0002 4267 0002     .^..:U...K..gB..
+  201c0c:	3906 0002 2faa 0002 2655 0002 1d05 0002     .9.../..U&......
+  201c1c:	13ba 0002 0a76 0002 0136 0002 f7fd 0001     ....v...6.......
+  201c2c:	eec8 0001 e59a 0001 dc70 0001 d34c 0001     ........p...L...
+  201c3c:	ca2e 0001 c115 0001 b801 0001 aef3 0001     ................
+  201c4c:	a5ea 0001 9ce6 0001 93e7 0001 8aed 0001     ................
+  201c5c:	81f9 0001 790a 0001 7020 0001 673b 0001     .....y.. p..;g..
+  201c6c:	5e5b 0001 5580 0001 4cab 0001 43da 0001     [^...U...L...C..
+  201c7c:	3b0e 0001 3247 0001 2985 0001 20c8 0001     .;..G2...)... ..
+  201c8c:	1810 0001 0f5d 0001 06ae 0001 fe04 0000     ....]...........
+  201c9c:	f55f 0000 ecbf 0000 e424 0000 db8d 0000     _.......$.......
+  201cac:	d2fb 0000 ca6e 0000 c1e5 0000 b961 0000     ....n.......a...
+  201cbc:	b0e2 0000 a867 0000 9ff1 0000 977f 0000     ....g...........
+  201ccc:	8f12 0000 86a9 0000 7e45 0000 75e5 0000     ........E~...u..
+  201cdc:	6d89 0000 6533 0000 5ce0 0000 5492 0000     .m..3e...\...T..
+  201cec:	4c48 0000 4402 0000 3bc1 0000 3384 0000     HL...D...;...3..
+  201cfc:	2b4c 0000 2317 0000 1ae7 0000 12bb 0000     L+...#..........
+  201d0c:	0a93 0000 0270 0000 fa51 ffff f236 ffff     ....p...Q...6...
+  201d1c:	ea1f ffff e20c ffff d9fd ffff d1f2 ffff     ................
+  201d2c:	c9eb ffff c1e9 ffff b9ea ffff b1ef ffff     ................
+  201d3c:	a9f8 ffff a206 ffff 9a17 ffff 922c ffff     ............,...
+  201d4c:	8a45 ffff 8262 ffff 7a83 ffff 72a7 ffff     E...b....z...r..
+  201d5c:	6ad0 ffff 62fc ffff 5b2c ffff 5360 ffff     .j...b..,[..`S..
+  201d6c:	4b98 ffff 43d3 ffff 3c13 ffff 3455 ffff     .K...C...<..U4..
+  201d7c:	2c9c ffff 24e7 ffff 1d35 ffff 1587 ffff     .,...$..5.......
+  201d8c:	0ddc ffff 0635 ffff fe92 fffe f6f2 fffe     ....5...........
+  201d9c:	ef56 fffe                                   V...
+
+00201da0 <hex.1>:
+  201da0:	3130 3332 3534 3736 3938 4241 4443 4645     0123456789ABCDEF
+  201db0:	0000 0000 1298 0020 1320 0020 12a4 0020     ...... . . ... .
+  201dc0:	1320 0020 12ac 0020 1320 0020 12a4 0020      . ... . . ... .
+  201dd0:	1298 0020 1298 0020 12ac 0020 12a4 0020     .. ... ... ... .
+  201de0:	1274 0020 1274 0020 1274 0020 12ac 0020     t. .t. .t. ... .
+
+00201df0 <__clz_tab>:
+  201df0:	0100 0202 0303 0303 0404 0404 0404 0404     ................
+  201e00:	0505 0505 0505 0505 0505 0505 0505 0505     ................
+  201e10:	0606 0606 0606 0606 0606 0606 0606 0606     ................
+  201e20:	0606 0606 0606 0606 0606 0606 0606 0606     ................
+  201e30:	0707 0707 0707 0707 0707 0707 0707 0707     ................
+  201e40:	0707 0707 0707 0707 0707 0707 0707 0707     ................
+  201e50:	0707 0707 0707 0707 0707 0707 0707 0707     ................
+  201e60:	0707 0707 0707 0707 0707 0707 0707 0707     ................
+  201e70:	0808 0808 0808 0808 0808 0808 0808 0808     ................
+  201e80:	0808 0808 0808 0808 0808 0808 0808 0808     ................
+  201e90:	0808 0808 0808 0808 0808 0808 0808 0808     ................
+  201ea0:	0808 0808 0808 0808 0808 0808 0808 0808     ................
+  201eb0:	0808 0808 0808 0808 0808 0808 0808 0808     ................
+  201ec0:	0808 0808 0808 0808 0808 0808 0808 0808     ................
+  201ed0:	0808 0808 0808 0808 0808 0808 0808 0808     ................
+  201ee0:	0808 0808 0808 0808 0808 0808 0808 0808     ................
