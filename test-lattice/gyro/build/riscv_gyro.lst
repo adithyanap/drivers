@@ -1,12 +1,12 @@
 
-/home/adithyan/test-lattice/gyro/build/riscv_gyro.elf:     file format elf32-littleriscv
-/home/adithyan/test-lattice/gyro/build/riscv_gyro.elf
+/home/adithyan/drivers/test-lattice/gyro/build/riscv_gyro.elf:     file format elf32-littleriscv
+/home/adithyan/drivers/test-lattice/gyro/build/riscv_gyro.elf
 architecture: riscv:rv32, flags 0x00000112:
 EXEC_P, HAS_SYMS, D_PAGED
 start address 0x00200000
 
 Program Header:
-0x70000003 off    0x0000c77c vaddr 0x00000000 paddr 0x00000000 align 2**0
+0x70000003 off    0x0000c784 vaddr 0x00000000 paddr 0x00000000 align 2**0
          filesz 0x00000029 memsz 0x00000000 flags r--
     LOAD off    0x00001000 vaddr 0x00200000 paddr 0x00200000 align 2**12
          filesz 0x00001d80 memsz 0x00005d90 flags rwx
@@ -25,11 +25,11 @@ Idx Name              Size      VMA       LMA       File off  Algn  Flags
   9 .debug_rnglists   000003cb  00000000  00000000  000071c8  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
  10 .debug_line       0000426a  00000000  00000000  00007593  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
  11 .debug_str        00000bb1  00000000  00000000  0000b7fd  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
- 12 .debug_line_str   000003b3  00000000  00000000  0000c3ae  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
- 13 .comment          0000001b  00000000  00000000  0000c761  2**0  CONTENTS, READONLY
- 14 .riscv.attributes 00000029  00000000  00000000  0000c77c  2**0  CONTENTS, READONLY
- 15 .debug_frame      00000444  00000000  00000000  0000c7a8  2**2  CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_loclists   00001a98  00000000  00000000  0000cbec  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 12 .debug_line_str   000003bb  00000000  00000000  0000c3ae  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 13 .comment          0000001b  00000000  00000000  0000c769  2**0  CONTENTS, READONLY
+ 14 .riscv.attributes 00000029  00000000  00000000  0000c784  2**0  CONTENTS, READONLY
+ 15 .debug_frame      00000444  00000000  00000000  0000c7b0  2**2  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 16 .debug_loclists   00001a98  00000000  00000000  0000cbf4  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
 SYMBOL TABLE:
 00200000 l    d  .text	00000000 .text
 00201d60 l    d  .sdata	00000000 .sdata
@@ -163,7 +163,7 @@ trap_handler():
 
 00200050 <main>:
 main():
-/home/adithyan/test-lattice/gyro/main.c:11
+/home/adithyan/drivers/test-lattice/gyro/main.c:11
  */
 
 #include "lsm6dso.h"
@@ -172,10 +172,10 @@ int main(void)
 {
   200050:	ff010113          	addi	sp,sp,-16
   200054:	00112623          	sw	ra,12(sp)
-/home/adithyan/test-lattice/gyro/main.c:12
+/home/adithyan/drivers/test-lattice/gyro/main.c:12
     imu_run();
   200058:	628000ef          	jal	200680 <imu_run>
-/home/adithyan/test-lattice/gyro/main.c:14
+/home/adithyan/drivers/test-lattice/gyro/main.c:14
     return 0;
 }
   20005c:	00c12083          	lw	ra,12(sp)
@@ -185,7 +185,7 @@ int main(void)
 
 0020006c <delay_ms>:
 delay_ms():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:53
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:53
 /* THEJAS32 machine timer: 100 MHz / 4000 = 25 kHz. */
 #define MTIME_ADDR  0x20010580UL
 #define MTIME_HZ    25000UL
@@ -194,7 +194,7 @@ static void delay_ms(uint32_t ms)
 {
   20006c:	ff010113          	addi	sp,sp,-16
   200070:	00812423          	sw	s0,8(sp)
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:55
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:55
     volatile uint64_t *mtime = (volatile uint64_t *)MTIME_ADDR;
     uint64_t deadline = *mtime + (((uint64_t)ms * MTIME_HZ) / 1000U);
   200074:	00006637          	lui	a2,0x6
@@ -203,12 +203,12 @@ static void delay_ms(uint32_t ms)
   200080:	1a860613          	addi	a2,a2,424 # 61a8 <STACK_SIZE+0x21a8>
   200084:	00000693          	li	a3,0
   200088:	00000593          	li	a1,0
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:53
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:53
 {
   20008c:	00112623          	sw	ra,12(sp)
   200090:	01212223          	sw	s2,4(sp)
   200094:	01312023          	sw	s3,0(sp)
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:55
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:55
     uint64_t deadline = *mtime + (((uint64_t)ms * MTIME_HZ) / 1000U);
   200098:	00042903          	lw	s2,0(s0)
   20009c:	109010ef          	jal	2019a4 <__muldi3>
@@ -220,7 +220,7 @@ static void delay_ms(uint32_t ms)
   2000b4:	00a6b533          	sltu	a0,a3,a0
   2000b8:	013585b3          	add	a1,a1,s3
   2000bc:	00b50533          	add	a0,a0,a1
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:57 (discriminator 1)
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:57 (discriminator 1)
 
     while (*mtime < deadline)
   2000c0:	00042703          	lw	a4,0(s0)
@@ -228,7 +228,7 @@ static void delay_ms(uint32_t ms)
   2000c8:	fea7ece3          	bltu	a5,a0,2000c0 <delay_ms+0x54>
   2000cc:	00f51463          	bne	a0,a5,2000d4 <delay_ms+0x68>
   2000d0:	fed768e3          	bltu	a4,a3,2000c0 <delay_ms+0x54>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:60
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:60
     {
     }
 }
@@ -241,7 +241,7 @@ static void delay_ms(uint32_t ms)
 
 002000ec <uart_init>:
 uart_init():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:66
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:66
 
 static void uart_init(void)
 {
@@ -251,30 +251,30 @@ static void uart_init(void)
   2000ec:	100007b7          	lui	a5,0x10000
   2000f0:	08300713          	li	a4,131
   2000f4:	10e7a623          	sw	a4,268(a5) # 1000010c <__stack_top+0xfdfa37c>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:67
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:67
     UART0_REGS->dr = divisor & 0xFFU;        /* divisor low byte  */
   2000f8:	03600713          	li	a4,54
   2000fc:	10e7a023          	sw	a4,256(a5)
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:68
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:68
     UART0_REGS->ie = (divisor >> 8) & 0xFFU; /* divisor high byte */
   200100:	1007a223          	sw	zero,260(a5)
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:69
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:69
     UART0_REGS->lcr = 0x03U;                 /* 8N1, DLAB = 0 */
   200104:	00300713          	li	a4,3
   200108:	10e7a623          	sw	a4,268(a5)
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:70
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:70
     UART0_REGS->ie = 0x00U;
   20010c:	1007a223          	sw	zero,260(a5)
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:71
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:71
     UART0_REGS->iir_fcr = 0x00U;
   200110:	1007a423          	sw	zero,264(a5)
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:72
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:72
 }
   200114:	00008067          	ret
 
 00200118 <uart_print.part.0>:
 uart_putc():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:76 (discriminator 1)
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:76 (discriminator 1)
 
 static void uart_putc(char c)
 {
@@ -282,7 +282,7 @@ static void uart_putc(char c)
   200118:	100007b7          	lui	a5,0x10000
   20011c:	10078793          	addi	a5,a5,256 # 10000100 <__stack_top+0xfdfa370>
 uart_print():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:89
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:89
     if (text == NULL)
     {
         return;
@@ -291,31 +291,31 @@ uart_print():
     while (*text != '\0')
   200120:	00054683          	lbu	a3,0(a0)
   200124:	00069463          	bnez	a3,20012c <uart_print.part.0+0x14>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:93
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:93
     {
         uart_putc(*text++);
     }
 }
   200128:	00008067          	ret
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:91
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:91
         uart_putc(*text++);
   20012c:	00150513          	addi	a0,a0,1
 uart_putc():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:76 (discriminator 1)
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:76 (discriminator 1)
     while ((UART0_REGS->lsr & UART_LSR_THRE) == 0U)
   200130:	0147a703          	lw	a4,20(a5)
   200134:	02077713          	andi	a4,a4,32
   200138:	fe070ce3          	beqz	a4,200130 <uart_print.part.0+0x18>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:79
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:79
     UART0_REGS->dr = (uint32_t)(uint8_t)c;
   20013c:	00d7a023          	sw	a3,0(a5)
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:80
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:80
 }
   200140:	fe1ff06f          	j	200120 <uart_print.part.0+0x8>
 
 00200144 <uart_print_fixed2>:
 uart_print_fixed2():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:108
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:108
     uart_print(text);
 }
 
@@ -323,7 +323,7 @@ uart_print_fixed2():
 static void uart_print_fixed2(float value)
 {
   200144:	fc010113          	addi	sp,sp,-64
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:118
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:118
     uint32_t magnitude;
     uint32_t whole;
     uint32_t fraction;
@@ -332,7 +332,7 @@ static void uart_print_fixed2(float value)
     scaled = (int32_t)(value * 100.0f + (value >= 0.0f ? 0.5f : -0.5f));
   200148:	00002597          	auipc	a1,0x2
   20014c:	c205a583          	lw	a1,-992(a1) # 201d68 <__sdata_load+0x8>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:108
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:108
 {
   200150:	02812c23          	sw	s0,56(sp)
   200154:	02912a23          	sw	s1,52(sp)
@@ -342,7 +342,7 @@ static void uart_print_fixed2(float value)
   200164:	03412423          	sw	s4,40(sp)
   200168:	03512223          	sw	s5,36(sp)
   20016c:	00050493          	mv	s1,a0
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:118
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:118
     scaled = (int32_t)(value * 100.0f + (value >= 0.0f ? 0.5f : -0.5f));
   200170:	34c010ef          	jal	2014bc <__mulsf3>
   200174:	00050413          	mv	s0,a0
@@ -350,33 +350,33 @@ static void uart_print_fixed2(float value)
   20017c:	00048513          	mv	a0,s1
   200180:	290010ef          	jal	201410 <__gesf2>
   200184:	10054663          	bltz	a0,200290 <uart_print_fixed2+0x14c>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:118 (discriminator 1)
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:118 (discriminator 1)
   200188:	00002597          	auipc	a1,0x2
   20018c:	bd85a583          	lw	a1,-1064(a1) # 201d60 <__sdata_load>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:118 (discriminator 4)
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:118 (discriminator 4)
   200190:	00040513          	mv	a0,s0
   200194:	65d000ef          	jal	200ff0 <__addsf3>
   200198:	670010ef          	jal	201808 <__fixsfsi>
   20019c:	00050913          	mv	s2,a0
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:111
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:111
     char *p = buffer;
   2001a0:	01010413          	addi	s0,sp,16
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:120
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:120
 
     if (scaled < 0)
   2001a4:	00055a63          	bgez	a0,2001b8 <uart_print_fixed2+0x74>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:122
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:122
     {
         *p++ = '-';
   2001a8:	02d00793          	li	a5,45
   2001ac:	00f10823          	sb	a5,16(sp)
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:123
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:123
         magnitude = (uint32_t)(-(scaled + 1)) + 1U;
   2001b0:	40a00933          	neg	s2,a0
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:122
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:122
         *p++ = '-';
   2001b4:	01110413          	addi	s0,sp,17
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:130
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:130
     else
     {
         magnitude = (uint32_t)scaled;
@@ -387,16 +387,16 @@ static void uart_print_fixed2(float value)
   2001bc:	00090513          	mv	a0,s2
   2001c0:	079010ef          	jal	201a38 <__hidden___udivsi3>
   2001c4:	00050493          	mv	s1,a0
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:131
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:131
     fraction = magnitude % 100U;
   2001c8:	06400593          	li	a1,100
   2001cc:	00090513          	mv	a0,s2
   2001d0:	0b1010ef          	jal	201a80 <__umodsi3>
   2001d4:	00050993          	mv	s3,a0
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:116
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:116
     uint8_t count = 0U;
   2001d8:	00000913          	li	s2,0
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:137 (discriminator 1)
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:137 (discriminator 1)
 
     do
     {
@@ -404,7 +404,7 @@ static void uart_print_fixed2(float value)
         whole /= 10U;
     } while (whole != 0U);
   2001dc:	00900a93          	li	s5,9
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:135
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:135
         digits[count++] = (char)('0' + (whole % 10U));
   2001e0:	00090793          	mv	a5,s2
   2001e4:	02078793          	addi	a5,a5,32
@@ -414,34 +414,34 @@ static void uart_print_fixed2(float value)
   2001f4:	08d010ef          	jal	201a80 <__umodsi3>
   2001f8:	03050513          	addi	a0,a0,48
   2001fc:	feaa0223          	sb	a0,-28(s4)
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:136
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:136
         whole /= 10U;
   200200:	00a00593          	li	a1,10
   200204:	00048513          	mv	a0,s1
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:135
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:135
         digits[count++] = (char)('0' + (whole % 10U));
   200208:	00190913          	addi	s2,s2,1
   20020c:	00048a13          	mv	s4,s1
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:136
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:136
         whole /= 10U;
   200210:	029010ef          	jal	201a38 <__hidden___udivsi3>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:135
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:135
         digits[count++] = (char)('0' + (whole % 10U));
   200214:	0ff97913          	zext.b	s2,s2
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:136
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:136
         whole /= 10U;
   200218:	00050493          	mv	s1,a0
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:137 (discriminator 1)
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:137 (discriminator 1)
     } while (whole != 0U);
   20021c:	fd4ae2e3          	bltu	s5,s4,2001e0 <uart_print_fixed2+0x9c>
   200220:	00040713          	mv	a4,s0
   200224:	00090793          	mv	a5,s2
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:139
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:139
 
     while (count != 0U)
   200228:	06079a63          	bnez	a5,20029c <uart_print_fixed2+0x158>
   20022c:	01240433          	add	s0,s0,s2
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:144
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:144
     {
         *p++ = digits[--count];
     }
@@ -449,30 +449,30 @@ static void uart_print_fixed2(float value)
     *p++ = '.';
   200230:	02e00793          	li	a5,46
   200234:	00f40023          	sb	a5,0(s0)
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:145
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:145
     *p++ = (char)('0' + (fraction / 10U));
   200238:	00a00593          	li	a1,10
   20023c:	00098513          	mv	a0,s3
   200240:	7f8010ef          	jal	201a38 <__hidden___udivsi3>
   200244:	03050513          	addi	a0,a0,48
   200248:	00a400a3          	sb	a0,1(s0)
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:146
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:146
     *p++ = (char)('0' + (fraction % 10U));
   20024c:	00a00593          	li	a1,10
   200250:	00098513          	mv	a0,s3
   200254:	02d010ef          	jal	201a80 <__umodsi3>
   200258:	03050513          	addi	a0,a0,48
   20025c:	00a40123          	sb	a0,2(s0)
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:147
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:147
     *p = '\0';
   200260:	000401a3          	sb	zero,3(s0)
 uart_print():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:84
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:84
     if (text == NULL)
   200264:	01010513          	addi	a0,sp,16
   200268:	eb1ff0ef          	jal	200118 <uart_print.part.0>
 uart_print_fixed2():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:150
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:150
 
     uart_print(buffer);
 }
@@ -485,12 +485,12 @@ uart_print_fixed2():
   200284:	02412a83          	lw	s5,36(sp)
   200288:	04010113          	addi	sp,sp,64
   20028c:	00008067          	ret
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:118 (discriminator 2)
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:118 (discriminator 2)
     scaled = (int32_t)(value * 100.0f + (value >= 0.0f ? 0.5f : -0.5f));
   200290:	00002597          	auipc	a1,0x2
   200294:	ad45a583          	lw	a1,-1324(a1) # 201d64 <__sdata_load+0x4>
   200298:	ef9ff06f          	j	200190 <uart_print_fixed2+0x4c>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:141
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:141
         *p++ = digits[--count];
   20029c:	fff78793          	addi	a5,a5,-1
   2002a0:	0ff7f793          	zext.b	a5,a5
@@ -503,7 +503,7 @@ uart_print_fixed2():
 
 002002bc <imu_spi_write_read>:
 imu_spi_write_read():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:211
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:211
 
     initialized = 1;
 }
@@ -513,7 +513,7 @@ static int imu_spi_write_read(const uint8_t *tx, uint8_t *rx, uint16_t len)
   2002bc:	fe010113          	addi	sp,sp,-32
   2002c0:	01312623          	sw	s3,12(sp)
   2002c4:	00050993          	mv	s3,a0
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:219
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:219
     if ((tx == NULL) || (rx == NULL) || (len == 0U))
     {
         return -1;
@@ -521,7 +521,7 @@ static int imu_spi_write_read(const uint8_t *tx, uint8_t *rx, uint16_t len)
 
     SPI_wait_if_busy(IMU_SPI_BUS);
   2002c8:	00100513          	li	a0,1
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:211
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:211
 {
   2002cc:	00112e23          	sw	ra,28(sp)
   2002d0:	00812c23          	sw	s0,24(sp)
@@ -529,10 +529,10 @@ static int imu_spi_write_read(const uint8_t *tx, uint8_t *rx, uint16_t len)
   2002d8:	01212823          	sw	s2,16(sp)
   2002dc:	00060493          	mv	s1,a2
   2002e0:	00058913          	mv	s2,a1
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:219
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:219
     SPI_wait_if_busy(IMU_SPI_BUS);
   2002e4:	644000ef          	jal	200928 <SPI_wait_if_busy>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:222
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:222
 
     /* Keep SPI1CSN asserted for the complete transfer. */
     SPI_set_CSAAT_pin(IMU_SPI_BUS, HIGH);
@@ -540,7 +540,7 @@ static int imu_spi_write_read(const uint8_t *tx, uint8_t *rx, uint16_t len)
   2002ec:	00100513          	li	a0,1
   2002f0:	6d8000ef          	jal	2009c8 <SPI_set_CSAAT_pin>
   2002f4:	00000413          	li	s0,0
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:226
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:226
 
     for (i = 0U; i < len; ++i)
     {
@@ -549,31 +549,31 @@ static int imu_spi_write_read(const uint8_t *tx, uint8_t *rx, uint16_t len)
   2002fc:	0007c583          	lbu	a1,0(a5)
   200300:	00100513          	li	a0,1
   200304:	658000ef          	jal	20095c <SPI_transmit>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:227
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:227
         rx[i] = (uint8_t)SPI_receive(IMU_SPI_BUS);
   200308:	00100513          	li	a0,1
   20030c:	5dc000ef          	jal	2008e8 <SPI_receive>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:227 (discriminator 1)
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:227 (discriminator 1)
   200310:	008907b3          	add	a5,s2,s0
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:224 (discriminator 1)
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:224 (discriminator 1)
     for (i = 0U; i < len; ++i)
   200314:	00140413          	addi	s0,s0,1
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:227 (discriminator 1)
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:227 (discriminator 1)
         rx[i] = (uint8_t)SPI_receive(IMU_SPI_BUS);
   200318:	00a78023          	sb	a0,0(a5)
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:224 (discriminator 1)
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:224 (discriminator 1)
     for (i = 0U; i < len; ++i)
   20031c:	01041793          	slli	a5,s0,0x10
   200320:	0107d793          	srli	a5,a5,0x10
   200324:	fc97eae3          	bltu	a5,s1,2002f8 <imu_spi_write_read+0x3c>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:230
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:230
     }
 
     SPI_set_CSAAT_pin(IMU_SPI_BUS, LOW);
   200328:	00100513          	li	a0,1
   20032c:	00000593          	li	a1,0
   200330:	698000ef          	jal	2009c8 <SPI_set_CSAAT_pin>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:232
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:232
     return 0;
 }
   200334:	01c12083          	lw	ra,28(sp)
@@ -587,7 +587,7 @@ static int imu_spi_write_read(const uint8_t *tx, uint8_t *rx, uint16_t len)
 
 00200354 <lsm6dso_read_reg>:
 lsm6dso_read_reg():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:239
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:239
 /* -------------------------------------------------------------------------
  * Register access helpers
  * ---------------------------------------------------------------------- */
@@ -595,40 +595,40 @@ lsm6dso_read_reg():
 static int lsm6dso_read_reg(uint8_t reg, uint8_t *value)
 {
   200354:	fe010113          	addi	sp,sp,-32
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:243
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:243
     uint8_t tx[2];
     uint8_t rx[2];
 
     tx[0] = (uint8_t)(reg | LSM6DSO_SPI_READ_BIT);
   200358:	f8056513          	ori	a0,a0,-128
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:239
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:239
 {
   20035c:	00812c23          	sw	s0,24(sp)
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:243
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:243
     tx[0] = (uint8_t)(reg | LSM6DSO_SPI_READ_BIT);
   200360:	00a10423          	sb	a0,8(sp)
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:239
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:239
 {
   200364:	00058413          	mv	s0,a1
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:246
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:246
     tx[1] = 0U;
 
     if (imu_spi_write_read(tx, rx, sizeof(tx)) != 0)
   200368:	00200613          	li	a2,2
   20036c:	00c10593          	addi	a1,sp,12
   200370:	00810513          	addi	a0,sp,8
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:239
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:239
 {
   200374:	00112e23          	sw	ra,28(sp)
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:244
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:244
     tx[1] = 0U;
   200378:	000104a3          	sb	zero,9(sp)
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:246
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:246
     if (imu_spi_write_read(tx, rx, sizeof(tx)) != 0)
   20037c:	f41ff0ef          	jal	2002bc <imu_spi_write_read>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:246 (discriminator 1)
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:246 (discriminator 1)
   200380:	00051e63          	bnez	a0,20039c <lsm6dso_read_reg+0x48>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:251
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:251
     {
         return -1;
     }
@@ -636,53 +636,53 @@ static int lsm6dso_read_reg(uint8_t reg, uint8_t *value)
     *value = rx[1];
   200384:	00d14783          	lbu	a5,13(sp)
   200388:	00f40023          	sb	a5,0(s0)
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:253
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:253
     return 0;
 }
   20038c:	01c12083          	lw	ra,28(sp)
   200390:	01812403          	lw	s0,24(sp)
   200394:	02010113          	addi	sp,sp,32
   200398:	00008067          	ret
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:248
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:248
         return -1;
   20039c:	fff00513          	li	a0,-1
   2003a0:	fedff06f          	j	20038c <lsm6dso_read_reg+0x38>
 
 002003a4 <lsm6dso_write_reg>:
 lsm6dso_write_reg():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:256
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:256
 
 static int lsm6dso_write_reg(uint8_t reg, uint8_t value)
 {
   2003a4:	fe010113          	addi	sp,sp,-32
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:260
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:260
     uint8_t tx[2];
     uint8_t rx[2];
 
     tx[0] = (uint8_t)(reg & 0x7FU);
   2003a8:	00a10423          	sb	a0,8(sp)
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:261
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:261
     tx[1] = value;
   2003ac:	00b104a3          	sb	a1,9(sp)
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:263
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:263
 
     return (imu_spi_write_read(tx, rx, sizeof(tx)) == 0) ? 0 : -1;
   2003b0:	00810513          	addi	a0,sp,8
   2003b4:	00c10593          	addi	a1,sp,12
   2003b8:	00200613          	li	a2,2
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:256
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:256
 {
   2003bc:	00112e23          	sw	ra,28(sp)
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:263
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:263
     return (imu_spi_write_read(tx, rx, sizeof(tx)) == 0) ? 0 : -1;
   2003c0:	efdff0ef          	jal	2002bc <imu_spi_write_read>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:264
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:264
 }
   2003c4:	01c12083          	lw	ra,28(sp)
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:263 (discriminator 1)
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:263 (discriminator 1)
     return (imu_spi_write_read(tx, rx, sizeof(tx)) == 0) ? 0 : -1;
   2003c8:	00a03533          	snez	a0,a0
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:264
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:264
 }
   2003cc:	40a00533          	neg	a0,a0
   2003d0:	02010113          	addi	sp,sp,32
@@ -690,7 +690,7 @@ static int lsm6dso_write_reg(uint8_t reg, uint8_t value)
 
 002003d8 <imu_read_who_am_i>:
 imu_read_who_am_i():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:271
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:271
 /* -------------------------------------------------------------------------
  * Public driver API
  * ---------------------------------------------------------------------- */
@@ -698,65 +698,65 @@ imu_read_who_am_i():
 int imu_read_who_am_i(uint8_t *value)
 {
   2003d8:	00050593          	mv	a1,a0
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:272
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:272
     if (value == NULL)
   2003dc:	00050663          	beqz	a0,2003e8 <imu_read_who_am_i+0x10>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:276
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:276
     {
         return -1;
     }
     return lsm6dso_read_reg(LSM6DSO_REG_WHO_AM_I, value);
   2003e0:	00f00513          	li	a0,15
   2003e4:	f71ff06f          	j	200354 <lsm6dso_read_reg>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:277
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:277
 }
   2003e8:	fff00513          	li	a0,-1
   2003ec:	00008067          	ret
 
 002003f0 <imu_init>:
 imu_init():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:280
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:280
 
 int imu_init(void)
 {
   2003f0:	fe010113          	addi	sp,sp,-32
   2003f4:	00812c23          	sw	s0,24(sp)
 imu_hw_init():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:179
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:179
     if (initialized != 0)
   2003f8:	82018413          	addi	s0,gp,-2016 # 201d80 <initialized.1>
   2003fc:	00042783          	lw	a5,0(s0)
 imu_init():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:280
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:280
 {
   200400:	00112e23          	sw	ra,28(sp)
 imu_hw_init():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:179
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:179
     if (initialized != 0)
   200404:	02079863          	bnez	a5,200434 <imu_init+0x44>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:184
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:184
     uart_init();
   200408:	ce5ff0ef          	jal	2000ec <uart_init>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:187
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:187
     SPI_init(IMU_SPI_BUS);
   20040c:	00100513          	li	a0,1
   200410:	41c000ef          	jal	20082c <SPI_init>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:202
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:202
     SPI_config(IMU_SPI_BUS, control);
   200414:	03000593          	li	a1,48
   200418:	00100513          	li	a0,1
   20041c:	468000ef          	jal	200884 <SPI_config>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:205
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:205
     SPI_set_baud(IMU_SPI_BUS, SPI_BAUD_CFD_32);
   200420:	00300593          	li	a1,3
   200424:	00100513          	li	a0,1
   200428:	48c000ef          	jal	2008b4 <SPI_set_baud>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:207
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:207
     initialized = 1;
   20042c:	00100793          	li	a5,1
   200430:	00f42023          	sw	a5,0(s0)
 imu_init():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:287
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:287
     uint8_t ctrl3;
 
     imu_hw_init();
@@ -766,26 +766,26 @@ imu_init():
   200434:	00f10593          	addi	a1,sp,15
   200438:	00f00513          	li	a0,15
   20043c:	f19ff0ef          	jal	200354 <lsm6dso_read_reg>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:289
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:289
     {
         return -1;
   200440:	fff00413          	li	s0,-1
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:287 (discriminator 1)
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:287 (discriminator 1)
     if (lsm6dso_read_reg(LSM6DSO_REG_WHO_AM_I, &who_am_i) != 0)
   200444:	06051a63          	bnez	a0,2004b8 <imu_init+0xc8>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:291
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:291
     }
     if (who_am_i != LSM6DSO_WHO_AM_I_VALUE)
   200448:	00f14703          	lbu	a4,15(sp)
   20044c:	06c00793          	li	a5,108
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:293
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:293
     {
         return -2;
   200450:	ffe00413          	li	s0,-2
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:291
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:291
     if (who_am_i != LSM6DSO_WHO_AM_I_VALUE)
   200454:	06f71263          	bne	a4,a5,2004b8 <imu_init+0xc8>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:297
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:297
     }
 
     /* Soft reset; the reset bit self-clears after the device boot time. */
@@ -793,19 +793,19 @@ imu_init():
   200458:	00100593          	li	a1,1
   20045c:	01200513          	li	a0,18
   200460:	f45ff0ef          	jal	2003a4 <lsm6dso_write_reg>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:299
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:299
     {
         return -3;
   200464:	ffd00413          	li	s0,-3
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:297 (discriminator 1)
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:297 (discriminator 1)
     if (lsm6dso_write_reg(LSM6DSO_REG_CTRL3_C, LSM6DSO_CTRL3_SW_RESET) != 0)
   200468:	04051863          	bnez	a0,2004b8 <imu_init+0xc8>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:301
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:301
     }
     delay_ms(10U);
   20046c:	00a00513          	li	a0,10
   200470:	bfdff0ef          	jal	20006c <delay_ms>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:305
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:305
 
     /* Coherent 16-bit outputs and automatic address increment for bursts. */
     ctrl3 = (uint8_t)(LSM6DSO_CTRL3_BDU | LSM6DSO_CTRL3_IF_INC);
@@ -813,14 +813,14 @@ imu_init():
   200474:	04400593          	li	a1,68
   200478:	01200513          	li	a0,18
   20047c:	f29ff0ef          	jal	2003a4 <lsm6dso_write_reg>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:307
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:307
     {
         return -4;
   200480:	ffc00413          	li	s0,-4
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:305 (discriminator 1)
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:305 (discriminator 1)
     if (lsm6dso_write_reg(LSM6DSO_REG_CTRL3_C, ctrl3) != 0)
   200484:	02051a63          	bnez	a0,2004b8 <imu_init+0xc8>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:311
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:311
     }
 
     /* Accel: 1.666 kHz, +/-16 g. */
@@ -828,14 +828,14 @@ imu_init():
   200488:	08400593          	li	a1,132
   20048c:	01000513          	li	a0,16
   200490:	f15ff0ef          	jal	2003a4 <lsm6dso_write_reg>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:313
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:313
     {
         return -5;
   200494:	ffb00413          	li	s0,-5
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:311 (discriminator 1)
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:311 (discriminator 1)
     if (lsm6dso_write_reg(LSM6DSO_REG_CTRL1_XL, LSM6DSO_CTRL1_XL_VALUE) != 0)
   200498:	02051063          	bnez	a0,2004b8 <imu_init+0xc8>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:317
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:317
     }
 
     /* Gyro: 1.666 kHz, +/-2000 dps. */
@@ -844,9 +844,9 @@ imu_init():
   2004a0:	01100513          	li	a0,17
   2004a4:	f01ff0ef          	jal	2003a4 <lsm6dso_write_reg>
   2004a8:	00050413          	mv	s0,a0
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:317 (discriminator 1)
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:317 (discriminator 1)
   2004ac:	02051063          	bnez	a0,2004cc <imu_init+0xdc>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:323
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:323
     {
         return -6;
     }
@@ -855,7 +855,7 @@ imu_init():
     delay_ms(50U);
   2004b0:	03200513          	li	a0,50
   2004b4:	bb9ff0ef          	jal	20006c <delay_ms>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:325
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:325
     return 0;
 }
   2004b8:	01c12083          	lw	ra,28(sp)
@@ -863,34 +863,34 @@ imu_init():
   2004c0:	01812403          	lw	s0,24(sp)
   2004c4:	02010113          	addi	sp,sp,32
   2004c8:	00008067          	ret
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:319
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:319
         return -6;
   2004cc:	ffa00413          	li	s0,-6
   2004d0:	fe9ff06f          	j	2004b8 <imu_init+0xc8>
 
 002004d4 <imu_data_ready>:
 imu_data_ready():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:328
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:328
 
 int imu_data_ready(void)
 {
   2004d4:	fe010113          	addi	sp,sp,-32
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:331
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:331
     uint8_t status;
 
     if (lsm6dso_read_reg(LSM6DSO_REG_STATUS, &status) != 0)
   2004d8:	00f10593          	addi	a1,sp,15
   2004dc:	01e00513          	li	a0,30
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:328
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:328
 {
   2004e0:	00112e23          	sw	ra,28(sp)
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:331
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:331
     if (lsm6dso_read_reg(LSM6DSO_REG_STATUS, &status) != 0)
   2004e4:	e71ff0ef          	jal	200354 <lsm6dso_read_reg>
   2004e8:	fff00793          	li	a5,-1
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:331 (discriminator 1)
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:331 (discriminator 1)
   2004ec:	00051a63          	bnez	a0,200500 <imu_data_ready+0x2c>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:337
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:337
     {
         return -1;
     }
@@ -901,7 +901,7 @@ int imu_data_ready(void)
   2004f4:	0037f793          	andi	a5,a5,3
   2004f8:	ffd78793          	addi	a5,a5,-3
   2004fc:	0017b793          	seqz	a5,a5
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:338
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:338
 }
   200500:	01c12083          	lw	ra,28(sp)
   200504:	00078513          	mv	a0,a5
@@ -910,12 +910,12 @@ int imu_data_ready(void)
 
 00200510 <imu_read>:
 imu_read():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:341
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:341
 
 int imu_read(imu_data_t *data)
 {
   200510:	fd010113          	addi	sp,sp,-48
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:347
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:347
     /*
      * One SPI transaction:
      *   byte 0: read | OUTX_L_G (auto-increment enabled in CTRL3_C)
@@ -923,18 +923,18 @@ int imu_read(imu_data_t *data)
      */
     uint8_t tx[LSM6DSO_DATA_BURST_LEN + 1U] = {
   200514:	0a200793          	li	a5,162
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:341
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:341
 {
   200518:	02912223          	sw	s1,36(sp)
   20051c:	02112623          	sw	ra,44(sp)
   200520:	02812423          	sw	s0,40(sp)
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:347
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:347
     uint8_t tx[LSM6DSO_DATA_BURST_LEN + 1U] = {
   200524:	00f12023          	sw	a5,0(sp)
   200528:	00012223          	sw	zero,4(sp)
   20052c:	00012423          	sw	zero,8(sp)
   200530:	00010623          	sb	zero,12(sp)
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:354
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:354
     };
     uint8_t rx[LSM6DSO_DATA_BURST_LEN + 1U];
 
@@ -942,11 +942,11 @@ int imu_read(imu_data_t *data)
     {
         return -1;
   200534:	fff00493          	li	s1,-1
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:352
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:352
     if (data == NULL)
   200538:	12050463          	beqz	a0,200660 <imu_read+0x150>
   20053c:	00050413          	mv	s0,a0
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:357
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:357
     }
 
     if (imu_spi_write_read(tx, rx, sizeof(tx)) != 0)
@@ -955,9 +955,9 @@ int imu_read(imu_data_t *data)
   200548:	00010513          	mv	a0,sp
   20054c:	d71ff0ef          	jal	2002bc <imu_spi_write_read>
   200550:	00050493          	mv	s1,a0
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:357 (discriminator 1)
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:357 (discriminator 1)
   200554:	12051263          	bnez	a0,200678 <imu_read+0x168>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:362
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:362
     {
         return -2;
     }
@@ -974,7 +974,7 @@ int imu_read(imu_data_t *data)
   200578:	7f85a583          	lw	a1,2040(a1) # 201d6c <__sdata_load+0xc>
   20057c:	741000ef          	jal	2014bc <__mulsf3>
   200580:	00a42023          	sw	a0,0(s0)
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:364
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:364
                    LSM6DSO_GYRO_DPS_PER_LSB;
     data->gyro_y = (float)LSM6DSO_MAKE_INT16(rx[3], rx[4]) *
   200584:	01414503          	lbu	a0,20(sp)
@@ -988,7 +988,7 @@ int imu_read(imu_data_t *data)
   2005a4:	7cc5a583          	lw	a1,1996(a1) # 201d6c <__sdata_load+0xc>
   2005a8:	715000ef          	jal	2014bc <__mulsf3>
   2005ac:	00a42223          	sw	a0,4(s0)
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:366
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:366
                    LSM6DSO_GYRO_DPS_PER_LSB;
     data->gyro_z = (float)LSM6DSO_MAKE_INT16(rx[5], rx[6]) *
   2005b0:	01614503          	lbu	a0,22(sp)
@@ -1002,7 +1002,7 @@ int imu_read(imu_data_t *data)
   2005d0:	7a05a583          	lw	a1,1952(a1) # 201d6c <__sdata_load+0xc>
   2005d4:	6e9000ef          	jal	2014bc <__mulsf3>
   2005d8:	00a42423          	sw	a0,8(s0)
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:369
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:369
                    LSM6DSO_GYRO_DPS_PER_LSB;
 
     data->accel_x = (float)LSM6DSO_MAKE_INT16(rx[7], rx[8]) *
@@ -1017,7 +1017,7 @@ int imu_read(imu_data_t *data)
   2005fc:	7785a583          	lw	a1,1912(a1) # 201d70 <__sdata_load+0x10>
   200600:	6bd000ef          	jal	2014bc <__mulsf3>
   200604:	00a42623          	sw	a0,12(s0)
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:371
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:371
                     LSM6DSO_ACCEL_G_PER_LSB;
     data->accel_y = (float)LSM6DSO_MAKE_INT16(rx[9], rx[10]) *
   200608:	01a14503          	lbu	a0,26(sp)
@@ -1031,7 +1031,7 @@ int imu_read(imu_data_t *data)
   200628:	74c5a583          	lw	a1,1868(a1) # 201d70 <__sdata_load+0x10>
   20062c:	691000ef          	jal	2014bc <__mulsf3>
   200630:	00a42823          	sw	a0,16(s0)
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:373
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:373
                     LSM6DSO_ACCEL_G_PER_LSB;
     data->accel_z = (float)LSM6DSO_MAKE_INT16(rx[11], rx[12]) *
   200634:	01c14503          	lbu	a0,28(sp)
@@ -1045,7 +1045,7 @@ int imu_read(imu_data_t *data)
   200654:	7205a583          	lw	a1,1824(a1) # 201d70 <__sdata_load+0x10>
   200658:	665000ef          	jal	2014bc <__mulsf3>
   20065c:	00a42a23          	sw	a0,20(s0)
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:377
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:377
                     LSM6DSO_ACCEL_G_PER_LSB;
 
     return 0;
@@ -1056,14 +1056,14 @@ int imu_read(imu_data_t *data)
   20066c:	02412483          	lw	s1,36(sp)
   200670:	03010113          	addi	sp,sp,48
   200674:	00008067          	ret
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:359
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:359
         return -2;
   200678:	ffe00493          	li	s1,-2
   20067c:	fe5ff06f          	j	200660 <imu_read+0x150>
 
 00200680 <imu_run>:
 imu_run():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:384
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:384
 /* -------------------------------------------------------------------------
  * Top-level IMU output loop
  * ---------------------------------------------------------------------- */
@@ -1080,89 +1080,89 @@ void imu_run(void)
   20069c:	03512a23          	sw	s5,52(sp)
   2006a0:	03612823          	sw	s6,48(sp)
   2006a4:	03712623          	sw	s7,44(sp)
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:388
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:388
     imu_data_t data;
     uint32_t sample_count = 0U;
 
     uart_init();
   2006a8:	a45ff0ef          	jal	2000ec <uart_init>
 uart_print():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:84
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:84
     if (text == NULL)
   2006ac:	00001517          	auipc	a0,0x1
   2006b0:	48450513          	addi	a0,a0,1156 # 201b30 <__clzsi2+0x4c>
   2006b4:	a65ff0ef          	jal	200118 <uart_print.part.0>
 imu_run():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:391
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:391
     uart_print("\r\nLSM6DSO IMU (ARIES v3, SPI1/J7)\r\n");
 
     if (imu_init() != 0)
   2006b8:	d39ff0ef          	jal	2003f0 <imu_init>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:391 (discriminator 1)
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:391 (discriminator 1)
   2006bc:	06050e63          	beqz	a0,200738 <imu_run+0xb8>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:395
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:395
     {
         uint8_t who = 0U;
 
         if (imu_read_who_am_i(&who) == 0)
   2006c0:	00710513          	addi	a0,sp,7
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:393
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:393
         uint8_t who = 0U;
   2006c4:	000103a3          	sb	zero,7(sp)
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:395
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:395
         if (imu_read_who_am_i(&who) == 0)
   2006c8:	d11ff0ef          	jal	2003d8 <imu_read_who_am_i>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:395 (discriminator 1)
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:395 (discriminator 1)
   2006cc:	04051a63          	bnez	a0,200720 <imu_run+0xa0>
 uart_print():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:84
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:84
     if (text == NULL)
   2006d0:	00001517          	auipc	a0,0x1
   2006d4:	48450513          	addi	a0,a0,1156 # 201b54 <__clzsi2+0x70>
   2006d8:	a41ff0ef          	jal	200118 <uart_print.part.0>
 imu_run():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:398
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:398
         {
             uart_print("WHO_AM_I returned 0x");
             uart_print_hex8(who);
   2006dc:	00714703          	lbu	a4,7(sp)
 uart_print_hex8():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:100
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:100
     text[0] = hex[(value >> 4) & 0x0FU];
   2006e0:	00001797          	auipc	a5,0x1
   2006e4:	56c78793          	addi	a5,a5,1388 # 201c4c <hex.0>
 uart_print():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:100
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:100
   2006e8:	00810513          	addi	a0,sp,8
 uart_print_hex8():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:100
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:100
   2006ec:	00475693          	srli	a3,a4,0x4
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:101
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:101
     text[1] = hex[value & 0x0FU];
   2006f0:	00f77713          	andi	a4,a4,15
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:100
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:100
     text[0] = hex[(value >> 4) & 0x0FU];
   2006f4:	00d786b3          	add	a3,a5,a3
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:101
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:101
     text[1] = hex[value & 0x0FU];
   2006f8:	00e787b3          	add	a5,a5,a4
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:100
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:100
     text[0] = hex[(value >> 4) & 0x0FU];
   2006fc:	0006c683          	lbu	a3,0(a3)
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:101
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:101
     text[1] = hex[value & 0x0FU];
   200700:	0007c783          	lbu	a5,0(a5)
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:102
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:102
     text[2] = '\0';
   200704:	00010523          	sb	zero,10(sp)
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:100
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:100
     text[0] = hex[(value >> 4) & 0x0FU];
   200708:	00d10423          	sb	a3,8(sp)
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:101
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:101
     text[1] = hex[value & 0x0FU];
   20070c:	00f104a3          	sb	a5,9(sp)
 uart_print():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:84
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:84
     if (text == NULL)
   200710:	a09ff0ef          	jal	200118 <uart_print.part.0>
   200714:	00001517          	auipc	a0,0x1
@@ -1172,7 +1172,7 @@ uart_print():
   200724:	46050513          	addi	a0,a0,1120 # 201b80 <__clzsi2+0x9c>
   200728:	9f1ff0ef          	jal	200118 <uart_print.part.0>
 imu_run():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:405 (discriminator 1)
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:405 (discriminator 1)
         }
 
         uart_print("ERROR: LSM6DSO init failed (check SPI1 wiring and CS)\r\n");
@@ -1181,20 +1181,20 @@ imu_run():
             delay_ms(1000U);
   20072c:	3e800513          	li	a0,1000
   200730:	93dff0ef          	jal	20006c <delay_ms>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:403
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:403
         for (;;)
   200734:	ff9ff06f          	j	20072c <imu_run+0xac>
 uart_print():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:84
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:84
     if (text == NULL)
   200738:	00001517          	auipc	a0,0x1
   20073c:	48050513          	addi	a0,a0,1152 # 201bb8 <__clzsi2+0xd4>
   200740:	9d9ff0ef          	jal	200118 <uart_print.part.0>
 imu_run():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:386
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:386
     uint32_t sample_count = 0U;
   200744:	00000413          	li	s0,0
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:434
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:434
             uart_print("ERROR: SPI burst read failed\r\n");
             delay_ms(100U);
             continue;
@@ -1203,7 +1203,7 @@ imu_run():
         if (++sample_count >= IMU_PRINT_EVERY)
   200748:	06300b13          	li	s6,99
 uart_print():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:434
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:434
   20074c:	00001a97          	auipc	s5,0x1
   200750:	4d4a8a93          	addi	s5,s5,1236 # 201c20 <__clzsi2+0x13c>
   200754:	00001917          	auipc	s2,0x1
@@ -1217,126 +1217,126 @@ uart_print():
   200774:	00001b97          	auipc	s7,0x1
   200778:	48cb8b93          	addi	s7,s7,1164 # 201c00 <__clzsi2+0x11c>
 imu_run():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:413
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:413
         int ready = imu_data_ready();
   20077c:	d59ff0ef          	jal	2004d4 <imu_data_ready>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:415
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:415
         if (ready < 0)
   200780:	00055e63          	bgez	a0,20079c <imu_run+0x11c>
 uart_print():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:84
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:84
     if (text == NULL)
   200784:	00001517          	auipc	a0,0x1
   200788:	45c50513          	addi	a0,a0,1116 # 201be0 <__clzsi2+0xfc>
   20078c:	98dff0ef          	jal	200118 <uart_print.part.0>
 imu_run():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:430
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:430
             delay_ms(100U);
   200790:	06400513          	li	a0,100
   200794:	8d9ff0ef          	jal	20006c <delay_ms>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:431
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:431
             continue;
   200798:	fe5ff06f          	j	20077c <imu_run+0xfc>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:422
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:422
         if (ready == 0)
   20079c:	fe0500e3          	beqz	a0,20077c <imu_run+0xfc>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:427
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:427
         if (imu_read(&data) != 0)
   2007a0:	00810513          	addi	a0,sp,8
   2007a4:	d6dff0ef          	jal	200510 <imu_read>
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:427 (discriminator 1)
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:427 (discriminator 1)
   2007a8:	00050663          	beqz	a0,2007b4 <imu_run+0x134>
 uart_print():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:84
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:84
     if (text == NULL)
   2007ac:	000b8513          	mv	a0,s7
   2007b0:	fddff06f          	j	20078c <imu_run+0x10c>
 imu_run():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:434
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:434
         if (++sample_count >= IMU_PRINT_EVERY)
   2007b4:	00140413          	addi	s0,s0,1
   2007b8:	fc8b72e3          	bgeu	s6,s0,20077c <imu_run+0xfc>
 uart_print():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:84
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:84
     if (text == NULL)
   2007bc:	000a8513          	mv	a0,s5
   2007c0:	959ff0ef          	jal	200118 <uart_print.part.0>
 uart_print_imu():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:155
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:155
     uart_print_fixed2(data->gyro_x);
   2007c4:	00812503          	lw	a0,8(sp)
 imu_run():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:436
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:436
         {
             sample_count = 0U;
   2007c8:	00000413          	li	s0,0
 uart_print_imu():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:155
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:155
     uart_print_fixed2(data->gyro_x);
   2007cc:	979ff0ef          	jal	200144 <uart_print_fixed2>
 uart_print():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:84
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:84
     if (text == NULL)
   2007d0:	00090513          	mv	a0,s2
   2007d4:	945ff0ef          	jal	200118 <uart_print.part.0>
 uart_print_imu():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:157
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:157
     uart_print_fixed2(data->gyro_y);
   2007d8:	00c12503          	lw	a0,12(sp)
   2007dc:	969ff0ef          	jal	200144 <uart_print_fixed2>
 uart_print():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:84
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:84
     if (text == NULL)
   2007e0:	00048513          	mv	a0,s1
   2007e4:	935ff0ef          	jal	200118 <uart_print.part.0>
 uart_print_imu():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:159
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:159
     uart_print_fixed2(data->gyro_z);
   2007e8:	01012503          	lw	a0,16(sp)
   2007ec:	959ff0ef          	jal	200144 <uart_print_fixed2>
 uart_print():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:84
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:84
     if (text == NULL)
   2007f0:	000a0513          	mv	a0,s4
   2007f4:	925ff0ef          	jal	200118 <uart_print.part.0>
 uart_print_imu():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:162
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:162
     uart_print_fixed2(data->accel_x);
   2007f8:	01412503          	lw	a0,20(sp)
   2007fc:	949ff0ef          	jal	200144 <uart_print_fixed2>
 uart_print():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:84
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:84
     if (text == NULL)
   200800:	00090513          	mv	a0,s2
   200804:	915ff0ef          	jal	200118 <uart_print.part.0>
 uart_print_imu():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:164
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:164
     uart_print_fixed2(data->accel_y);
   200808:	01812503          	lw	a0,24(sp)
   20080c:	939ff0ef          	jal	200144 <uart_print_fixed2>
 uart_print():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:84
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:84
     if (text == NULL)
   200810:	00048513          	mv	a0,s1
   200814:	905ff0ef          	jal	200118 <uart_print.part.0>
 uart_print_imu():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:166
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:166
     uart_print_fixed2(data->accel_z);
   200818:	01c12503          	lw	a0,28(sp)
   20081c:	929ff0ef          	jal	200144 <uart_print_fixed2>
 uart_print():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:84
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:84
     if (text == NULL)
   200820:	00098513          	mv	a0,s3
   200824:	8f5ff0ef          	jal	200118 <uart_print.part.0>
 uart_print_imu():
-/home/adithyan/test-lattice/gyro/../driver/src/imu/lsm6dso.c:168
+/home/adithyan/drivers/test-lattice/gyro/../driver/src/imu/lsm6dso.c:168
 }
   200828:	f55ff06f          	j	20077c <imu_run+0xfc>
 
 0020082c <SPI_init>:
 SPI_init():
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:51 (discriminator 2)
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:51 (discriminator 2)
  @param[Out] No output parameter
  */
 
@@ -1344,20 +1344,20 @@ void SPI_init(UC spi_number) {
 
 	SPIreg(spi_number).Baudrate = (SPI_BAUD_CFD_16<<4);		// Baud divisor
   20082c:	10200737          	lui	a4,0x10200
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:51
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:51
   200830:	00100793          	li	a5,1
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:51 (discriminator 2)
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:51 (discriminator 2)
   200834:	10070713          	addi	a4,a4,256 # 10200100 <__stack_top+0xfffa370>
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:51
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:51
   200838:	00a7e663          	bltu	a5,a0,200844 <SPI_init+0x18>
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:51 (discriminator 1)
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:51 (discriminator 1)
   20083c:	10000737          	lui	a4,0x10000
   200840:	60070713          	addi	a4,a4,1536 # 10000600 <__stack_top+0xfdfa870>
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:51 (discriminator 4)
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:51 (discriminator 4)
   200844:	00157793          	andi	a5,a0,1
   200848:	00879793          	slli	a5,a5,0x8
   20084c:	00e787b3          	add	a5,a5,a4
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:61
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:61
 	gSPItransfer.Bits.SPIrxTxIntr = RX_TX_INTR_DIS;	// Both Rx & Tx interrupts disabled.
 
 	gSPItransfer.Bits.Mode = 3;			// Mode set as '3'
@@ -1365,11 +1365,11 @@ void SPI_init(UC spi_number) {
 	gSPItransfer.Bits.PeriphType = 0;	// Peripheral type is Fixed peripheral.
 	gSPItransfer.Bits.PeriphChipSelect = 0;	// Peripheral chip select is '0'.
   200850:	82418613          	addi	a2,gp,-2012 # 201d84 <gSPItransfer>
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:51 (discriminator 4)
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:51 (discriminator 4)
 	SPIreg(spi_number).Baudrate = (SPI_BAUD_CFD_16<<4);		// Baud divisor
   200854:	02000713          	li	a4,32
   200858:	00e7a423          	sw	a4,8(a5)
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:61
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:61
 	gSPItransfer.Bits.PeriphChipSelect = 0;	// Peripheral chip select is '0'.
   20085c:	00065703          	lhu	a4,0(a2)
   200860:	ffffe6b7          	lui	a3,0xffffe
@@ -1378,21 +1378,21 @@ void SPI_init(UC spi_number) {
   20086c:	03068693          	addi	a3,a3,48 # 1030 <STACK_SIZE-0x2fd0>
   200870:	00d76733          	or	a4,a4,a3
   200874:	00e61023          	sh	a4,0(a2)
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:63 (discriminator 4)
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:63 (discriminator 4)
 
 	SPIreg(spi_number).Control.hword = gSPItransfer.Value;	// Update value to register
   200878:	00e79023          	sh	a4,0(a5)
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:64
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:64
 	__asm__ __volatile__ ("fence");
   20087c:	0ff0000f          	fence
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:66
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:66
 	return;
 }
   200880:	00008067          	ret
 
 00200884 <SPI_config>:
 SPI_config():
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:136 (discriminator 2)
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:136 (discriminator 2)
 
  */
 
@@ -1400,33 +1400,33 @@ void SPI_config(UC spi_number, SPIcntrlRegType spi_control_reg) {
 
 	SPIreg(spi_number).Control.hword = spi_control_reg.Value;// Update value to register
   200884:	102007b7          	lui	a5,0x10200
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:136
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:136
   200888:	00100713          	li	a4,1
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:136 (discriminator 2)
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:136 (discriminator 2)
   20088c:	10078793          	addi	a5,a5,256 # 10200100 <__stack_top+0xfffa370>
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:136
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:136
   200890:	00a76663          	bltu	a4,a0,20089c <SPI_config+0x18>
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:136 (discriminator 1)
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:136 (discriminator 1)
   200894:	100007b7          	lui	a5,0x10000
   200898:	60078793          	addi	a5,a5,1536 # 10000600 <__stack_top+0xfdfa870>
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:136 (discriminator 4)
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:136 (discriminator 4)
   20089c:	00157513          	andi	a0,a0,1
   2008a0:	00851513          	slli	a0,a0,0x8
   2008a4:	00f50533          	add	a0,a0,a5
   2008a8:	00b51023          	sh	a1,0(a0)
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:139
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:139
 	//printf("\n\r version %x", version);
 
 	__asm__ __volatile__ ("fence");
   2008ac:	0ff0000f          	fence
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:141
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:141
 	return;
 }
   2008b0:	00008067          	ret
 
 002008b4 <SPI_set_baud>:
 SPI_set_baud():
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:167 (discriminator 2)
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:167 (discriminator 2)
  unsigned char bBaudCFD: The baud frequency divisor value.
  @param[Out] No output parameter 
  */
@@ -1434,32 +1434,32 @@ void SPI_set_baud(UC spi_number, UC bBaudCFD) {
 
 	SPIreg(spi_number).Baudrate = (bBaudCFD << 4); //Set the baud frequency divider value
   2008b4:	102007b7          	lui	a5,0x10200
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:167
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:167
   2008b8:	00100713          	li	a4,1
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:167 (discriminator 2)
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:167 (discriminator 2)
   2008bc:	10078793          	addi	a5,a5,256 # 10200100 <__stack_top+0xfffa370>
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:167
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:167
   2008c0:	00a76663          	bltu	a4,a0,2008cc <SPI_set_baud+0x18>
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:167 (discriminator 1)
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:167 (discriminator 1)
   2008c4:	100007b7          	lui	a5,0x10000
   2008c8:	60078793          	addi	a5,a5,1536 # 10000600 <__stack_top+0xfdfa870>
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:167 (discriminator 4)
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:167 (discriminator 4)
   2008cc:	00157513          	andi	a0,a0,1
   2008d0:	00851513          	slli	a0,a0,0x8
   2008d4:	00f50533          	add	a0,a0,a5
   2008d8:	00459593          	slli	a1,a1,0x4
   2008dc:	00b52423          	sw	a1,8(a0)
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:168
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:168
 	__asm__ __volatile__ ("fence");
   2008e0:	0ff0000f          	fence
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:170
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:170
 	return;
 }
   2008e4:	00008067          	ret
 
 002008e8 <SPI_receive>:
 SPI_receive():
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:253 (discriminator 4)
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:253 (discriminator 4)
  @param[Out] read data as 16 bit value. 
  */
 US SPI_receive(UC spi_number) {
@@ -1478,11 +1478,11 @@ US SPI_receive(UC spi_number) {
   20090c:	0047a703          	lw	a4,4(a5)
   200910:	04077713          	andi	a4,a4,64
   200914:	fe070ce3          	beqz	a4,20090c <SPI_receive+0x24>
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:255 (discriminator 4)
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:255 (discriminator 4)
 		;	//  Waiting for RX complete bit to set.
 	bRxData = SPIreg(spi_number).RxData;				//  Read data.
   200918:	0107a503          	lw	a0,16(a5)
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:257
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:257
 	return bRxData;
 }
   20091c:	01051513          	slli	a0,a0,0x10
@@ -1491,7 +1491,7 @@ US SPI_receive(UC spi_number) {
 
 00200928 <SPI_wait_if_busy>:
 SPI_wait_if_busy():
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:292 (discriminator 4)
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:292 (discriminator 4)
  @param[in] unsigned char spi_number: Denotes the selected SPI
  @param[Out] No output parameter.
  */
@@ -1510,7 +1510,7 @@ void SPI_wait_if_busy(UC spi_number) {
   20094c:	0047a703          	lw	a4,4(a5)
   200950:	01077713          	andi	a4,a4,16
   200954:	fe071ce3          	bnez	a4,20094c <SPI_wait_if_busy+0x24>
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:296
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:296
 		; // Read SPI controller status register to check if its busy or not.
 	//printf("\n\r SPI idle");
 	return;
@@ -1519,7 +1519,7 @@ void SPI_wait_if_busy(UC spi_number) {
 
 0020095c <SPI_transmit>:
 SPI_transmit():
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:267
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:267
 void SPI_transmit(UC spi_number, US bData) {
   20095c:	ff010113          	addi	sp,sp,-16
   200960:	00812423          	sw	s0,8(sp)
@@ -1527,10 +1527,10 @@ void SPI_transmit(UC spi_number, US bData) {
   200968:	00050413          	mv	s0,a0
   20096c:	00112623          	sw	ra,12(sp)
   200970:	00058493          	mv	s1,a1
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:269
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:269
 	SPI_wait_if_busy(spi_number);// Checking if SPI controller is busy or not. Waits if busy.
   200974:	fb5ff0ef          	jal	200928 <SPI_wait_if_busy>
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:270 (discriminator 4)
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:270 (discriminator 4)
 	while (!(SPIreg(spi_number).Status & SPI_TX_HOLD_EMPTY_BIT))
   200978:	00147793          	andi	a5,s0,1
   20097c:	00243413          	sltiu	s0,s0,2
@@ -1542,13 +1542,13 @@ void SPI_transmit(UC spi_number, US bData) {
   200994:	0047a703          	lw	a4,4(a5)
   200998:	08077713          	andi	a4,a4,128
   20099c:	fe070ce3          	beqz	a4,200994 <SPI_transmit+0x38>
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:272 (discriminator 4)
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:272 (discriminator 4)
 	SPIreg(spi_number).TxData = bData;	// Write the data (can be a command or actual data to be written to spi device)
   2009a0:	0097a623          	sw	s1,12(a5)
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:273
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:273
 	__asm__ __volatile__ ("fence");
   2009a4:	0ff0000f          	fence
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:276
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:276
 }
   2009a8:	00c12083          	lw	ra,12(sp)
   2009ac:	00812403          	lw	s0,8(sp)
@@ -1561,7 +1561,7 @@ void SPI_transmit(UC spi_number, US bData) {
 
 002009c8 <SPI_set_CSAAT_pin>:
 SPI_set_CSAAT_pin():
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:310 (discriminator 2)
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:310 (discriminator 2)
  @param[Out] No output parameter.
  */
 void SPI_set_CSAAT_pin(UC spi_number, UC status) {
@@ -1569,50 +1569,50 @@ void SPI_set_CSAAT_pin(UC spi_number, UC status) {
 	if (status == 1)
 		SPIreg(spi_number).Control.hword |= (1 << 8);// Setting CSAAT bit high.
   2009c8:	10200737          	lui	a4,0x10200
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:309
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:309
 	if (status == 1)
   2009cc:	00100693          	li	a3,1
   2009d0:	00157793          	andi	a5,a0,1
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:310 (discriminator 2)
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:310 (discriminator 2)
 		SPIreg(spi_number).Control.hword |= (1 << 8);// Setting CSAAT bit high.
   2009d4:	10070713          	addi	a4,a4,256 # 10200100 <__stack_top+0xfffa370>
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:309
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:309
 	if (status == 1)
   2009d8:	02d59663          	bne	a1,a3,200a04 <SPI_set_CSAAT_pin+0x3c>
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:310
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:310
 		SPIreg(spi_number).Control.hword |= (1 << 8);// Setting CSAAT bit high.
   2009dc:	00a5e663          	bltu	a1,a0,2009e8 <SPI_set_CSAAT_pin+0x20>
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:310 (discriminator 1)
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:310 (discriminator 1)
   2009e0:	10000737          	lui	a4,0x10000
   2009e4:	60070713          	addi	a4,a4,1536 # 10000600 <__stack_top+0xfdfa870>
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:310 (discriminator 4)
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:310 (discriminator 4)
   2009e8:	00879793          	slli	a5,a5,0x8
   2009ec:	00e787b3          	add	a5,a5,a4
   2009f0:	0007d703          	lhu	a4,0(a5)
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:310 (discriminator 8)
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:310 (discriminator 8)
   2009f4:	10076713          	ori	a4,a4,256
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:312 (discriminator 8)
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:312 (discriminator 8)
 	else
 		SPIreg(spi_number).Control.hword &= ~(1 << 8);	// Setting CSAAT bit low.
   2009f8:	00e79023          	sh	a4,0(a5)
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:313
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:313
 	__asm__ __volatile__ ("fence");
   2009fc:	0ff0000f          	fence
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:315
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:315
 	return;
 }
   200a00:	00008067          	ret
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:312
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:312
 		SPIreg(spi_number).Control.hword &= ~(1 << 8);	// Setting CSAAT bit low.
   200a04:	00a6e663          	bltu	a3,a0,200a10 <SPI_set_CSAAT_pin+0x48>
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:312 (discriminator 1)
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:312 (discriminator 1)
   200a08:	10000737          	lui	a4,0x10000
   200a0c:	60070713          	addi	a4,a4,1536 # 10000600 <__stack_top+0xfdfa870>
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:312 (discriminator 4)
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:312 (discriminator 4)
   200a10:	00879793          	slli	a5,a5,0x8
   200a14:	00e787b3          	add	a5,a5,a4
   200a18:	0007d703          	lhu	a4,0(a5)
-/home/adithyan/test-lattice/gyro/../common/src/spi.c:312 (discriminator 8)
+/home/adithyan/drivers/test-lattice/gyro/../common/src/spi.c:312 (discriminator 8)
   200a1c:	000106b7          	lui	a3,0x10
   200a20:	eff68693          	addi	a3,a3,-257 # feff <STACK_SIZE+0xbeff>
   200a24:	00d77733          	and	a4,a4,a3

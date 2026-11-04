@@ -1,25 +1,25 @@
 Archive member included to satisfy reference by file (symbol)
 
 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_divdi3.o)
-                              /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o (__divdi3)
+                              /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o (__divdi3)
 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_udivdi3.o)
-                              /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o (__udivdi3)
+                              /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o (__udivdi3)
 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(addsf3.o)
-                              /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o (__addsf3)
+                              /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o (__addsf3)
 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(gesf2.o)
-                              /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o (__gesf2)
+                              /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o (__gesf2)
 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(mulsf3.o)
-                              /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o (__mulsf3)
+                              /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o (__mulsf3)
 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(fixsfsi.o)
-                              /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o (__fixsfsi)
+                              /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o (__fixsfsi)
 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatsisf.o)
-                              /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o (__floatsisf)
+                              /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o (__floatsisf)
 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(muldi3.o)
                               /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_divdi3.o) (__mulsi3)
 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(multi3.o)
-                              /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o (__muldi3)
+                              /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o (__muldi3)
 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(div.o)
-                              /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o (__divsi3)
+                              /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o (__divsi3)
 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clz.o)
                               /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_divdi3.o) (__clz_tab)
 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clzsi2.o)
@@ -27,34 +27,34 @@ Archive member included to satisfy reference by file (symbol)
 
 Discarded input sections
 
- .text          0x00000000        0x0 /home/adithyan/test-lattice/gyro/build/main.o
- .data          0x00000000        0x0 /home/adithyan/test-lattice/gyro/build/main.o
- .bss           0x00000000        0x0 /home/adithyan/test-lattice/gyro/build/main.o
- .text          0x00000000        0x0 /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
- .data          0x00000000        0x0 /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
- .bss           0x00000000        0x0 /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
- .text          0x00000000        0x0 /home/adithyan/test-lattice/gyro/build/common/src/spi.o
- .data          0x00000000        0x0 /home/adithyan/test-lattice/gyro/build/common/src/spi.o
- .bss           0x00000000        0x0 /home/adithyan/test-lattice/gyro/build/common/src/spi.o
+ .text          0x00000000        0x0 /home/adithyan/drivers/test-lattice/gyro/build/main.o
+ .data          0x00000000        0x0 /home/adithyan/drivers/test-lattice/gyro/build/main.o
+ .bss           0x00000000        0x0 /home/adithyan/drivers/test-lattice/gyro/build/main.o
+ .text          0x00000000        0x0 /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
+ .data          0x00000000        0x0 /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
+ .bss           0x00000000        0x0 /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
+ .text          0x00000000        0x0 /home/adithyan/drivers/test-lattice/gyro/build/common/src/spi.o
+ .data          0x00000000        0x0 /home/adithyan/drivers/test-lattice/gyro/build/common/src/spi.o
+ .bss           0x00000000        0x0 /home/adithyan/drivers/test-lattice/gyro/build/common/src/spi.o
  .text.SPI_get_slave_select
-                0x00000000       0x38 /home/adithyan/test-lattice/gyro/build/common/src/spi.o
+                0x00000000       0x38 /home/adithyan/drivers/test-lattice/gyro/build/common/src/spi.o
  .text.SPI_set_slave_select
-                0x00000000       0x38 /home/adithyan/test-lattice/gyro/build/common/src/spi.o
+                0x00000000       0x38 /home/adithyan/drivers/test-lattice/gyro/build/common/src/spi.o
  .text.SPI_check_overrun
-                0x00000000       0x38 /home/adithyan/test-lattice/gyro/build/common/src/spi.o
+                0x00000000       0x38 /home/adithyan/drivers/test-lattice/gyro/build/common/src/spi.o
  .text.SPI_set_intr
-                0x00000000       0x54 /home/adithyan/test-lattice/gyro/build/common/src/spi.o
+                0x00000000       0x54 /home/adithyan/drivers/test-lattice/gyro/build/common/src/spi.o
  .text.SPI_read_rx_reg
-                0x00000000       0x38 /home/adithyan/test-lattice/gyro/build/common/src/spi.o
+                0x00000000       0x38 /home/adithyan/drivers/test-lattice/gyro/build/common/src/spi.o
  .text.SPI_write_tx_reg
-                0x00000000        0x8 /home/adithyan/test-lattice/gyro/build/common/src/spi.o
+                0x00000000        0x8 /home/adithyan/drivers/test-lattice/gyro/build/common/src/spi.o
  .text.spi_register_isr
-                0x00000000       0x58 /home/adithyan/test-lattice/gyro/build/common/src/spi.o
+                0x00000000       0x58 /home/adithyan/drivers/test-lattice/gyro/build/common/src/spi.o
  .text.spi_intr_status
-                0x00000000       0x6c /home/adithyan/test-lattice/gyro/build/common/src/spi.o
- .text          0x00000000        0x0 /home/adithyan/test-lattice/gyro/build/startup.o
- .data          0x00000000        0x0 /home/adithyan/test-lattice/gyro/build/startup.o
- .bss           0x00000000        0x0 /home/adithyan/test-lattice/gyro/build/startup.o
+                0x00000000       0x6c /home/adithyan/drivers/test-lattice/gyro/build/common/src/spi.o
+ .text          0x00000000        0x0 /home/adithyan/drivers/test-lattice/gyro/build/startup.o
+ .data          0x00000000        0x0 /home/adithyan/drivers/test-lattice/gyro/build/startup.o
+ .bss           0x00000000        0x0 /home/adithyan/drivers/test-lattice/gyro/build/startup.o
  .text          0x00000000      0x68c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_divdi3.o)
  .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_divdi3.o)
  .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_divdi3.o)
@@ -107,10 +107,10 @@ ram              0x00200000         0x00040000         xrw
 
 Linker script and memory map
 
-LOAD /home/adithyan/test-lattice/gyro/build/main.o
-LOAD /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
-LOAD /home/adithyan/test-lattice/gyro/build/common/src/spi.o
-LOAD /home/adithyan/test-lattice/gyro/build/startup.o
+LOAD /home/adithyan/drivers/test-lattice/gyro/build/main.o
+LOAD /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
+LOAD /home/adithyan/drivers/test-lattice/gyro/build/common/src/spi.o
+LOAD /home/adithyan/drivers/test-lattice/gyro/build/startup.o
 START GROUP
 LOAD /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a
 LOAD /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a
@@ -135,62 +135,62 @@ END GROUP
 
 .text           0x00200000     0x1d60
  *(SORT_NONE(.text.entry))
- .text.entry    0x00200000       0x44 /home/adithyan/test-lattice/gyro/build/startup.o
+ .text.entry    0x00200000       0x44 /home/adithyan/drivers/test-lattice/gyro/build/startup.o
                 0x00200000                _start
                 0x00200050                        . = ALIGN (0x10)
  *fill*         0x00200044        0xc 
  *(.text .text.* .gnu.linkonce.t.*)
  .text.startup.main
-                0x00200050       0x1c /home/adithyan/test-lattice/gyro/build/main.o
+                0x00200050       0x1c /home/adithyan/drivers/test-lattice/gyro/build/main.o
                 0x00200050                main
  .text.delay_ms
-                0x0020006c       0x80 /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
+                0x0020006c       0x80 /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
  .text.uart_init
-                0x002000ec       0x2c /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
+                0x002000ec       0x2c /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
  .text.uart_print.part.0
-                0x00200118       0x2c /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
+                0x00200118       0x2c /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
  .text.uart_print_fixed2
-                0x00200144      0x178 /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
+                0x00200144      0x178 /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
  .text.imu_spi_write_read
-                0x002002bc       0x98 /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
+                0x002002bc       0x98 /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
  .text.lsm6dso_read_reg
-                0x00200354       0x50 /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
+                0x00200354       0x50 /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
  .text.lsm6dso_write_reg
-                0x002003a4       0x34 /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
+                0x002003a4       0x34 /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
  .text.imu_read_who_am_i
-                0x002003d8       0x18 /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
+                0x002003d8       0x18 /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
                 0x002003d8                imu_read_who_am_i
  .text.imu_init
-                0x002003f0       0xe4 /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
+                0x002003f0       0xe4 /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
                 0x002003f0                imu_init
  .text.imu_data_ready
-                0x002004d4       0x3c /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
+                0x002004d4       0x3c /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
                 0x002004d4                imu_data_ready
  .text.imu_read
-                0x00200510      0x170 /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
+                0x00200510      0x170 /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
                 0x00200510                imu_read
- .text.imu_run  0x00200680      0x1ac /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
+ .text.imu_run  0x00200680      0x1ac /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
                 0x00200680                imu_run
  .text.SPI_init
-                0x0020082c       0x58 /home/adithyan/test-lattice/gyro/build/common/src/spi.o
+                0x0020082c       0x58 /home/adithyan/drivers/test-lattice/gyro/build/common/src/spi.o
                 0x0020082c                SPI_init
  .text.SPI_config
-                0x00200884       0x30 /home/adithyan/test-lattice/gyro/build/common/src/spi.o
+                0x00200884       0x30 /home/adithyan/drivers/test-lattice/gyro/build/common/src/spi.o
                 0x00200884                SPI_config
  .text.SPI_set_baud
-                0x002008b4       0x34 /home/adithyan/test-lattice/gyro/build/common/src/spi.o
+                0x002008b4       0x34 /home/adithyan/drivers/test-lattice/gyro/build/common/src/spi.o
                 0x002008b4                SPI_set_baud
  .text.SPI_receive
-                0x002008e8       0x40 /home/adithyan/test-lattice/gyro/build/common/src/spi.o
+                0x002008e8       0x40 /home/adithyan/drivers/test-lattice/gyro/build/common/src/spi.o
                 0x002008e8                SPI_receive
  .text.SPI_wait_if_busy
-                0x00200928       0x34 /home/adithyan/test-lattice/gyro/build/common/src/spi.o
+                0x00200928       0x34 /home/adithyan/drivers/test-lattice/gyro/build/common/src/spi.o
                 0x00200928                SPI_wait_if_busy
  .text.SPI_transmit
-                0x0020095c       0x6c /home/adithyan/test-lattice/gyro/build/common/src/spi.o
+                0x0020095c       0x6c /home/adithyan/drivers/test-lattice/gyro/build/common/src/spi.o
                 0x0020095c                SPI_transmit
  .text.SPI_set_CSAAT_pin
-                0x002009c8       0x64 /home/adithyan/test-lattice/gyro/build/common/src/spi.o
+                0x002009c8       0x64 /home/adithyan/drivers/test-lattice/gyro/build/common/src/spi.o
                 0x002009c8                SPI_set_CSAAT_pin
  .text          0x00200a2c      0x5c4 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_udivdi3.o)
                 0x00200a2c                __udivdi3
@@ -230,9 +230,9 @@ END GROUP
  *crtend.o(.dtors)
  *(.rodata .rodata.* .gnu.linkonce.r.*)
  .rodata.imu_run.str1.4
-                0x00201b30      0x11b /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
+                0x00201b30      0x11b /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
  *fill*         0x00201c4b        0x1 
- .rodata.hex.0  0x00201c4c       0x11 /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
+ .rodata.hex.0  0x00201c4c       0x11 /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
  *fill*         0x00201c5d        0x3 
  .rodata        0x00201c60      0x100 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clz.o)
                 0x00201c60                __clz_tab
@@ -261,7 +261,7 @@ END GROUP
  *(.srodata.cst16)
  *(.srodata.cst8)
  *(.srodata.cst4)
- .srodata.cst4  0x00201d60       0x14 /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
+ .srodata.cst4  0x00201d60       0x14 /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
  *(.srodata.cst2)
  *(.srodata*)
  *(.sdata .sdata.* .gnu.linkonce.s.*)
@@ -271,7 +271,7 @@ END GROUP
 
 .rela.dyn       0x00201d80        0x0
  .rela.text.entry
-                0x00201d80        0x0 /home/adithyan/test-lattice/gyro/build/main.o
+                0x00201d80        0x0 /home/adithyan/drivers/test-lattice/gyro/build/main.o
 
 .data           0x00201d80        0x0
                 0x00201d80                        __data_load = LOADADDR (.data)
@@ -287,9 +287,9 @@ END GROUP
                 0x00201d80                        __sbss_start = .
  *(.sbss .sbss.* .gnu.linkonce.sb.*)
  .sbss.initialized.1
-                0x00201d80        0x4 /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
+                0x00201d80        0x4 /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
  .sbss.gSPItransfer
-                0x00201d84        0x2 /home/adithyan/test-lattice/gyro/build/common/src/spi.o
+                0x00201d84        0x2 /home/adithyan/drivers/test-lattice/gyro/build/common/src/spi.o
                 0x00201d84                gSPItransfer
  *(.scommon)
                 0x00201d90                        . = ALIGN (0x10)
@@ -311,12 +311,12 @@ END GROUP
                 0x00205d90                        . = (. + STACK_SIZE)
  *fill*         0x00201d90     0x4000 
                 0x00205d90                        __stack_top = .
-OUTPUT(/home/adithyan/test-lattice/gyro/build/riscv_gyro.elf elf32-littleriscv)
+OUTPUT(/home/adithyan/drivers/test-lattice/gyro/build/riscv_gyro.elf elf32-littleriscv)
 
 .debug_info     0x00000000     0x300d
- .debug_info    0x00000000       0x9c /home/adithyan/test-lattice/gyro/build/main.o
- .debug_info    0x0000009c      0xed0 /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
- .debug_info    0x00000f6c      0x5cd /home/adithyan/test-lattice/gyro/build/common/src/spi.o
+ .debug_info    0x00000000       0x9c /home/adithyan/drivers/test-lattice/gyro/build/main.o
+ .debug_info    0x0000009c      0xed0 /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
+ .debug_info    0x00000f6c      0x5cd /home/adithyan/drivers/test-lattice/gyro/build/common/src/spi.o
  .debug_info    0x00001539      0x94e /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_udivdi3.o)
  .debug_info    0x00001e87      0x2ec /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(addsf3.o)
  .debug_info    0x00002173      0x201 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(gesf2.o)
@@ -330,9 +330,9 @@ OUTPUT(/home/adithyan/test-lattice/gyro/build/riscv_gyro.elf elf32-littleriscv)
  .debug_info    0x00002ebd      0x150 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clzsi2.o)
 
 .debug_abbrev   0x00000000     0x11b5
- .debug_abbrev  0x00000000       0x61 /home/adithyan/test-lattice/gyro/build/main.o
- .debug_abbrev  0x00000061      0x3b9 /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
- .debug_abbrev  0x0000041a      0x237 /home/adithyan/test-lattice/gyro/build/common/src/spi.o
+ .debug_abbrev  0x00000000       0x61 /home/adithyan/drivers/test-lattice/gyro/build/main.o
+ .debug_abbrev  0x00000061      0x3b9 /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
+ .debug_abbrev  0x0000041a      0x237 /home/adithyan/drivers/test-lattice/gyro/build/common/src/spi.o
  .debug_abbrev  0x00000651      0x1c5 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_udivdi3.o)
  .debug_abbrev  0x00000816      0x164 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(addsf3.o)
  .debug_abbrev  0x0000097a      0x15f /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(gesf2.o)
@@ -347,11 +347,11 @@ OUTPUT(/home/adithyan/test-lattice/gyro/build/riscv_gyro.elf elf32-littleriscv)
 
 .debug_aranges  0x00000000      0x280
  .debug_aranges
-                0x00000000       0x20 /home/adithyan/test-lattice/gyro/build/main.o
+                0x00000000       0x20 /home/adithyan/drivers/test-lattice/gyro/build/main.o
  .debug_aranges
-                0x00000020       0x78 /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
+                0x00000020       0x78 /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
  .debug_aranges
-                0x00000098       0x90 /home/adithyan/test-lattice/gyro/build/common/src/spi.o
+                0x00000098       0x90 /home/adithyan/drivers/test-lattice/gyro/build/common/src/spi.o
  .debug_aranges
                 0x00000128       0x20 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_udivdi3.o)
  .debug_aranges
@@ -378,11 +378,11 @@ OUTPUT(/home/adithyan/test-lattice/gyro/build/riscv_gyro.elf elf32-littleriscv)
 .debug_rnglists
                 0x00000000      0x3cb
  .debug_rnglists
-                0x00000000       0x13 /home/adithyan/test-lattice/gyro/build/main.o
+                0x00000000       0x13 /home/adithyan/drivers/test-lattice/gyro/build/main.o
  .debug_rnglists
-                0x00000013      0x103 /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
+                0x00000013      0x103 /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
  .debug_rnglists
-                0x00000116       0x67 /home/adithyan/test-lattice/gyro/build/common/src/spi.o
+                0x00000116       0x67 /home/adithyan/drivers/test-lattice/gyro/build/common/src/spi.o
  .debug_rnglists
                 0x0000017d       0xa7 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_udivdi3.o)
  .debug_rnglists
@@ -399,9 +399,9 @@ OUTPUT(/home/adithyan/test-lattice/gyro/build/riscv_gyro.elf elf32-littleriscv)
                 0x000003b5       0x16 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clzsi2.o)
 
 .debug_line     0x00000000     0x426a
- .debug_line    0x00000000       0x7a /home/adithyan/test-lattice/gyro/build/main.o
- .debug_line    0x0000007a      0xdc6 /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
- .debug_line    0x00000e40      0x8ed /home/adithyan/test-lattice/gyro/build/common/src/spi.o
+ .debug_line    0x00000000       0x7a /home/adithyan/drivers/test-lattice/gyro/build/main.o
+ .debug_line    0x0000007a      0xdc6 /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
+ .debug_line    0x00000e40      0x8ed /home/adithyan/drivers/test-lattice/gyro/build/common/src/spi.o
  .debug_line    0x0000172d      0x955 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_udivdi3.o)
  .debug_line    0x00002082      0xc15 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(addsf3.o)
  .debug_line    0x00002c97      0x2df /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(gesf2.o)
@@ -415,10 +415,10 @@ OUTPUT(/home/adithyan/test-lattice/gyro/build/riscv_gyro.elf elf32-littleriscv)
  .debug_line    0x0000418b       0xdf /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clzsi2.o)
 
 .debug_str      0x00000000      0xbb1
- .debug_str     0x00000000      0xbb1 /home/adithyan/test-lattice/gyro/build/main.o
+ .debug_str     0x00000000      0xbb1 /home/adithyan/drivers/test-lattice/gyro/build/main.o
                                 0x16a (size before relaxing)
- .debug_str     0x00000bb1      0x4be /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
- .debug_str     0x00000bb1      0x3bb /home/adithyan/test-lattice/gyro/build/common/src/spi.o
+ .debug_str     0x00000bb1      0x4be /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
+ .debug_str     0x00000bb1      0x3bb /home/adithyan/drivers/test-lattice/gyro/build/common/src/spi.o
  .debug_str     0x00000bb1      0x28f /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_udivdi3.o)
  .debug_str     0x00000bb1      0x269 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(addsf3.o)
  .debug_str     0x00000bb1      0x1c0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(gesf2.o)
@@ -432,42 +432,42 @@ OUTPUT(/home/adithyan/test-lattice/gyro/build/riscv_gyro.elf elf32-littleriscv)
  .debug_str     0x00000bb1      0x1d0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clzsi2.o)
 
 .debug_line_str
-                0x00000000      0x3b3
+                0x00000000      0x3bb
  .debug_line_str
-                0x00000000      0x3b3 /home/adithyan/test-lattice/gyro/build/main.o
-                                 0x77 (size before relaxing)
+                0x00000000      0x3bb /home/adithyan/drivers/test-lattice/gyro/build/main.o
+                                 0x87 (size before relaxing)
  .debug_line_str
-                0x000003b3      0x1a0 /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
+                0x000003bb      0x1b0 /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
  .debug_line_str
-                0x000003b3       0x9d /home/adithyan/test-lattice/gyro/build/common/src/spi.o
+                0x000003bb       0xad /home/adithyan/drivers/test-lattice/gyro/build/common/src/spi.o
  .debug_line_str
-                0x000003b3      0x130 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_udivdi3.o)
+                0x000003bb      0x130 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_udivdi3.o)
  .debug_line_str
-                0x000003b3      0x13c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(addsf3.o)
+                0x000003bb      0x13c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(addsf3.o)
  .debug_line_str
-                0x000003b3      0x149 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(gesf2.o)
+                0x000003bb      0x149 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(gesf2.o)
  .debug_line_str
-                0x000003b3      0x146 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(mulsf3.o)
+                0x000003bb      0x146 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(mulsf3.o)
  .debug_line_str
-                0x000003b3      0x149 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(fixsfsi.o)
+                0x000003bb      0x149 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(fixsfsi.o)
  .debug_line_str
-                0x000003b3      0x14f /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatsisf.o)
+                0x000003bb      0x14f /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatsisf.o)
  .debug_line_str
-                0x000003b3       0x9a /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(muldi3.o)
+                0x000003bb       0x9a /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(muldi3.o)
  .debug_line_str
-                0x000003b3      0x15d /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(multi3.o)
+                0x000003bb      0x15d /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(multi3.o)
  .debug_line_str
-                0x000003b3       0x97 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(div.o)
+                0x000003bb       0x97 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(div.o)
  .debug_line_str
-                0x000003b3      0x130 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clz.o)
+                0x000003bb      0x130 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clz.o)
  .debug_line_str
-                0x000003b3      0x130 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clzsi2.o)
+                0x000003bb      0x130 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clzsi2.o)
 
 .comment        0x00000000       0x1b
- .comment       0x00000000       0x1b /home/adithyan/test-lattice/gyro/build/main.o
+ .comment       0x00000000       0x1b /home/adithyan/drivers/test-lattice/gyro/build/main.o
                                  0x1c (size before relaxing)
- .comment       0x0000001b       0x1c /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
- .comment       0x0000001b       0x1c /home/adithyan/test-lattice/gyro/build/common/src/spi.o
+ .comment       0x0000001b       0x1c /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
+ .comment       0x0000001b       0x1c /home/adithyan/drivers/test-lattice/gyro/build/common/src/spi.o
  .comment       0x0000001b       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_udivdi3.o)
  .comment       0x0000001b       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(addsf3.o)
  .comment       0x0000001b       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(gesf2.o)
@@ -481,13 +481,13 @@ OUTPUT(/home/adithyan/test-lattice/gyro/build/riscv_gyro.elf elf32-littleriscv)
 .riscv.attributes
                 0x00000000       0x29
  .riscv.attributes
-                0x00000000       0x25 /home/adithyan/test-lattice/gyro/build/main.o
+                0x00000000       0x25 /home/adithyan/drivers/test-lattice/gyro/build/main.o
  .riscv.attributes
-                0x00000025       0x25 /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
+                0x00000025       0x25 /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
  .riscv.attributes
-                0x0000004a       0x25 /home/adithyan/test-lattice/gyro/build/common/src/spi.o
+                0x0000004a       0x25 /home/adithyan/drivers/test-lattice/gyro/build/common/src/spi.o
  .riscv.attributes
-                0x0000006f       0x27 /home/adithyan/test-lattice/gyro/build/startup.o
+                0x0000006f       0x27 /home/adithyan/drivers/test-lattice/gyro/build/startup.o
  .riscv.attributes
                 0x00000096       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_udivdi3.o)
  .riscv.attributes
@@ -512,9 +512,9 @@ OUTPUT(/home/adithyan/test-lattice/gyro/build/riscv_gyro.elf elf32-littleriscv)
                 0x000001aa       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clzsi2.o)
 
 .debug_frame    0x00000000      0x444
- .debug_frame   0x00000000       0x2c /home/adithyan/test-lattice/gyro/build/main.o
- .debug_frame   0x0000002c      0x1a4 /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
- .debug_frame   0x000001d0      0x124 /home/adithyan/test-lattice/gyro/build/common/src/spi.o
+ .debug_frame   0x00000000       0x2c /home/adithyan/drivers/test-lattice/gyro/build/main.o
+ .debug_frame   0x0000002c      0x1a4 /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
+ .debug_frame   0x000001d0      0x124 /home/adithyan/drivers/test-lattice/gyro/build/common/src/spi.o
  .debug_frame   0x000002f4       0x40 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(addsf3.o)
  .debug_frame   0x00000334       0x20 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(gesf2.o)
  .debug_frame   0x00000354       0x4c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(mulsf3.o)
@@ -526,9 +526,9 @@ OUTPUT(/home/adithyan/test-lattice/gyro/build/riscv_gyro.elf elf32-littleriscv)
 .debug_loclists
                 0x00000000     0x1a98
  .debug_loclists
-                0x00000000      0x408 /home/adithyan/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
+                0x00000000      0x408 /home/adithyan/drivers/test-lattice/gyro/build/driver/src/imu/lsm6dso.o
  .debug_loclists
-                0x00000408      0x2f3 /home/adithyan/test-lattice/gyro/build/common/src/spi.o
+                0x00000408      0x2f3 /home/adithyan/drivers/test-lattice/gyro/build/common/src/spi.o
  .debug_loclists
                 0x000006fb      0x776 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_udivdi3.o)
  .debug_loclists

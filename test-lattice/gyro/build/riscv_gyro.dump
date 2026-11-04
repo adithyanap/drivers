@@ -1,5 +1,5 @@
 
-/home/adithyan/test-lattice/gyro/build/riscv_gyro.elf:     file format elf32-littleriscv
+/home/adithyan/drivers/test-lattice/gyro/build/riscv_gyro.elf:     file format elf32-littleriscv
 
 
 Disassembly of section .text:
