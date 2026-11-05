@@ -1,0 +1,1039 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_divdi3.o)
+                              /home/adithyan/drivers/test-lattice/compass/build/main.o (__divdi3)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_udivdi3.o)
+                              /home/adithyan/drivers/test-lattice/compass/build/main.o (__udivdi3)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(adddf3.o)
+                              /home/adithyan/drivers/test-lattice/compass/build/common/src/uart.o (__adddf3)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(fixunsdfsi.o)
+                              /home/adithyan/drivers/test-lattice/compass/build/common/src/uart.o (__fixunsdfsi)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatunsidf.o)
+                              /home/adithyan/drivers/test-lattice/compass/build/common/src/uart.o (__floatunsidf)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(muldi3.o)
+                              /home/adithyan/drivers/test-lattice/compass/build/main.o (__mulsi3)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(multi3.o)
+                              /home/adithyan/drivers/test-lattice/compass/build/main.o (__muldi3)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(div.o)
+                              /home/adithyan/drivers/test-lattice/compass/build/main.o (__divsi3)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clz.o)
+                              /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_divdi3.o) (__clz_tab)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clzsi2.o)
+                              /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(adddf3.o) (__clzsi2)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-printf.o)
+                              /home/adithyan/drivers/test-lattice/compass/build/common/src/i2c.o (printf)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-impure.o)
+                              /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-printf.o) (_impure_ptr)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-nano-vfprintf.o)
+                              /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-printf.o) (_vfprintf_r)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-nano-vfprintf_i.o)
+                              /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-nano-vfprintf.o) (_printf_i)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-findfp.o)
+                              /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-nano-vfprintf.o) (__sinit)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-fvwrite.o)
+                              /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-nano-vfprintf.o) (__sfvwrite_r)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-fwalk.o)
+                              /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-findfp.o) (_fwalk_sglue)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-stdio.o)
+                              /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-findfp.o) (__sread)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-wbuf.o)
+                              /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-nano-vfprintf.o) (__swbuf_r)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-wsetup.o)
+                              /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-nano-vfprintf.o) (__swsetup_r)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-memchr.o)
+                              /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-nano-vfprintf.o) (memchr)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-closer.o)
+                              /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-stdio.o) (_close_r)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-reent.o)
+                              /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-closer.o) (errno)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-lseekr.o)
+                              /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-stdio.o) (_lseek_r)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-readr.o)
+                              /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-stdio.o) (_read_r)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-writer.o)
+                              /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-stdio.o) (_write_r)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-memmove.o)
+                              /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-fvwrite.o) (memmove)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-memset.o)
+                              /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-findfp.o) (memset)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-memcpy-asm.o)
+                              /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-fvwrite.o) (memcpy)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-freer.o)
+                              /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-fvwrite.o) (_free_r)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-mallocr.o)
+                              /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-findfp.o) (_malloc_r)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-mlock.o)
+                              /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-freer.o) (__malloc_lock)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-reallocr.o)
+                              /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-fvwrite.o) (_realloc_r)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-fflush.o)
+                              /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-findfp.o) (_fflush_r)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-makebuf.o)
+                              /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-wsetup.o) (__smakebuf_r)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-fstatr.o)
+                              /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-makebuf.o) (_fstat_r)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-isattyr.o)
+                              /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-makebuf.o) (_isatty_r)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-sbrkr.o)
+                              /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-mallocr.o) (_sbrk_r)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-msizer.o)
+                              /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-reallocr.o) (_malloc_usable_size_r)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(close.o)
+                              /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-closer.o) (_close)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(fstat.o)
+                              /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-fstatr.o) (_fstat)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(isatty.o)
+                              /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-isattyr.o) (_isatty)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(lseek.o)
+                              /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-lseekr.o) (_lseek)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(read.o)
+                              /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-readr.o) (_read)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(sbrk.o)
+                              /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-sbrkr.o) (_sbrk)
+/home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(write.o)
+                              /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-writer.o) (_write)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 /home/adithyan/drivers/test-lattice/compass/build/main.o
+ .data          0x00000000        0x0 /home/adithyan/drivers/test-lattice/compass/build/main.o
+ .bss           0x00000000        0x0 /home/adithyan/drivers/test-lattice/compass/build/main.o
+ .text          0x00000000        0x0 /home/adithyan/drivers/test-lattice/compass/build/driver/src/magnetometer/ist8310.o
+ .data          0x00000000        0x0 /home/adithyan/drivers/test-lattice/compass/build/driver/src/magnetometer/ist8310.o
+ .bss           0x00000000        0x0 /home/adithyan/drivers/test-lattice/compass/build/driver/src/magnetometer/ist8310.o
+ .text          0x00000000        0x0 /home/adithyan/drivers/test-lattice/compass/build/common/src/i2c.o
+ .data          0x00000000        0x0 /home/adithyan/drivers/test-lattice/compass/build/common/src/i2c.o
+ .bss           0x00000000        0x0 /home/adithyan/drivers/test-lattice/compass/build/common/src/i2c.o
+ .text.I2C_enable_intr
+                0x00000000       0x30 /home/adithyan/drivers/test-lattice/compass/build/common/src/i2c.o
+ .text.I2C_intr_handler
+                0x00000000       0x28 /home/adithyan/drivers/test-lattice/compass/build/common/src/i2c.o
+ .text          0x00000000        0x0 /home/adithyan/drivers/test-lattice/compass/build/common/src/uart.o
+ .data          0x00000000        0x0 /home/adithyan/drivers/test-lattice/compass/build/common/src/uart.o
+ .bss           0x00000000        0x0 /home/adithyan/drivers/test-lattice/compass/build/common/src/uart.o
+ .text.uart_init
+                0x00000000       0x34 /home/adithyan/drivers/test-lattice/compass/build/common/src/uart.o
+ .text.uart_set_baud_rate
+                0x00000000       0x68 /home/adithyan/drivers/test-lattice/compass/build/common/src/uart.o
+ .text.uart_getchar
+                0x00000000       0x60 /home/adithyan/drivers/test-lattice/compass/build/common/src/uart.o
+ .text.uart_getchar_async
+                0x00000000       0xd0 /home/adithyan/drivers/test-lattice/compass/build/common/src/uart.o
+ .text.uart_intr_enable
+                0x00000000       0x24 /home/adithyan/drivers/test-lattice/compass/build/common/src/uart.o
+ .srodata.cst8  0x00000000        0x8 /home/adithyan/drivers/test-lattice/compass/build/common/src/uart.o
+ .text          0x00000000        0x0 /home/adithyan/drivers/test-lattice/compass/build/startup.o
+ .data          0x00000000        0x0 /home/adithyan/drivers/test-lattice/compass/build/startup.o
+ .bss           0x00000000        0x0 /home/adithyan/drivers/test-lattice/compass/build/startup.o
+ .text          0x00000000      0x68c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_divdi3.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_divdi3.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_divdi3.o)
+ .debug_info    0x00000000      0x980 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_divdi3.o)
+ .debug_abbrev  0x00000000      0x1de /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_divdi3.o)
+ .debug_loclists
+                0x00000000      0x676 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_divdi3.o)
+ .debug_aranges
+                0x00000000       0x20 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_divdi3.o)
+ .debug_rnglists
+                0x00000000       0xa0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_divdi3.o)
+ .debug_line    0x00000000      0xa14 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_divdi3.o)
+ .debug_str     0x00000000      0x28e /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_divdi3.o)
+ .debug_line_str
+                0x00000000      0x130 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_divdi3.o)
+ .comment       0x00000000       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_divdi3.o)
+ .eh_frame      0x00000000       0x68 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_divdi3.o)
+ .riscv.attributes
+                0x00000000       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_divdi3.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_udivdi3.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_udivdi3.o)
+ .eh_frame      0x00000000       0x60 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_udivdi3.o)
+ .text          0x00000000      0x79c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(adddf3.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(adddf3.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(adddf3.o)
+ .debug_info    0x00000000      0x501 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(adddf3.o)
+ .debug_abbrev  0x00000000      0x176 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(adddf3.o)
+ .debug_loclists
+                0x00000000      0xabf /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(adddf3.o)
+ .debug_aranges
+                0x00000000       0x20 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(adddf3.o)
+ .debug_rnglists
+                0x00000000       0xc7 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(adddf3.o)
+ .debug_line    0x00000000     0x1224 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(adddf3.o)
+ .debug_str     0x00000000      0x2a6 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(adddf3.o)
+ .debug_line_str
+                0x00000000      0x13c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(adddf3.o)
+ .comment       0x00000000       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(adddf3.o)
+ .debug_frame   0x00000000       0x44 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(adddf3.o)
+ .riscv.attributes
+                0x00000000       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(adddf3.o)
+ .text          0x00000000       0x7c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(fixunsdfsi.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(fixunsdfsi.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(fixunsdfsi.o)
+ .debug_info    0x00000000      0x1ad /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(fixunsdfsi.o)
+ .debug_abbrev  0x00000000      0x162 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(fixunsdfsi.o)
+ .debug_loclists
+                0x00000000       0x90 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(fixunsdfsi.o)
+ .debug_aranges
+                0x00000000       0x20 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(fixunsdfsi.o)
+ .debug_rnglists
+                0x00000000       0x16 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(fixunsdfsi.o)
+ .debug_line    0x00000000      0x1bb /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(fixunsdfsi.o)
+ .debug_str     0x00000000      0x1af /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(fixunsdfsi.o)
+ .debug_line_str
+                0x00000000      0x152 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(fixunsdfsi.o)
+ .comment       0x00000000       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(fixunsdfsi.o)
+ .debug_frame   0x00000000       0x20 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(fixunsdfsi.o)
+ .riscv.attributes
+                0x00000000       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(fixunsdfsi.o)
+ .text          0x00000000       0x84 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatunsidf.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatunsidf.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatunsidf.o)
+ .debug_info    0x00000000      0x25d /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatunsidf.o)
+ .debug_abbrev  0x00000000      0x163 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatunsidf.o)
+ .debug_loclists
+                0x00000000       0xb4 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatunsidf.o)
+ .debug_aranges
+                0x00000000       0x20 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatunsidf.o)
+ .debug_rnglists
+                0x00000000       0x2f /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatunsidf.o)
+ .debug_line    0x00000000      0x239 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatunsidf.o)
+ .debug_str     0x00000000      0x24b /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatunsidf.o)
+ .debug_line_str
+                0x00000000      0x155 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatunsidf.o)
+ .comment       0x00000000       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatunsidf.o)
+ .debug_frame   0x00000000       0x34 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatunsidf.o)
+ .riscv.attributes
+                0x00000000       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(floatunsidf.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(muldi3.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(muldi3.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(multi3.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(multi3.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(div.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(div.o)
+ .text          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clz.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clz.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clz.o)
+ .text          0x00000000       0x4c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clzsi2.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clzsi2.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clzsi2.o)
+ .debug_info    0x00000000      0x150 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clzsi2.o)
+ .debug_abbrev  0x00000000       0xca /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clzsi2.o)
+ .debug_loclists
+                0x00000000       0x44 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clzsi2.o)
+ .debug_aranges
+                0x00000000       0x20 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clzsi2.o)
+ .debug_rnglists
+                0x00000000       0x16 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clzsi2.o)
+ .debug_line    0x00000000       0xdf /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clzsi2.o)
+ .debug_str     0x00000000      0x1d0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clzsi2.o)
+ .debug_line_str
+                0x00000000      0x130 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clzsi2.o)
+ .comment       0x00000000       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clzsi2.o)
+ .debug_frame   0x00000000       0x20 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clzsi2.o)
+ .riscv.attributes
+                0x00000000       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clzsi2.o)
+ .text          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-printf.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-printf.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-printf.o)
+ .text._printf_r
+                0x00000000       0x44 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-printf.o)
+ .text          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-impure.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-impure.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-impure.o)
+ .text          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-nano-vfprintf.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-nano-vfprintf.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-nano-vfprintf.o)
+ .text.__sprint_r
+                0x00000000       0x40 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-nano-vfprintf.o)
+ .text.vfprintf
+                0x00000000       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-nano-vfprintf.o)
+ .text          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-nano-vfprintf_i.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-nano-vfprintf_i.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-nano-vfprintf_i.o)
+ .text          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-findfp.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-findfp.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-findfp.o)
+ .text.__fp_lock
+                0x00000000        0x8 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-findfp.o)
+ .text.__fp_unlock
+                0x00000000        0x8 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-findfp.o)
+ .text.__sfp    0x00000000      0x11c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-findfp.o)
+ .text.__sfp_lock_acquire
+                0x00000000        0x4 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-findfp.o)
+ .text.__sfp_lock_release
+                0x00000000        0x4 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-findfp.o)
+ .text.__fp_lock_all
+                0x00000000       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-findfp.o)
+ .text.__fp_unlock_all
+                0x00000000       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-findfp.o)
+ .text          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-fvwrite.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-fvwrite.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-fvwrite.o)
+ .text.__sfvwrite_r
+                0x00000000      0x470 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-fvwrite.o)
+ .comment       0x00000000       0x13 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-fvwrite.o)
+ .riscv.attributes
+                0x00000000       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-fvwrite.o)
+ .text          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-fwalk.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-fwalk.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-fwalk.o)
+ .text          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-stdio.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-stdio.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-stdio.o)
+ .text.__seofread
+                0x00000000        0x8 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-stdio.o)
+ .text          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-wbuf.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-wbuf.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-wbuf.o)
+ .text.__swbuf  0x00000000       0x18 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-wbuf.o)
+ .text          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-wsetup.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-wsetup.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-wsetup.o)
+ .text          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-memchr.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-memchr.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-memchr.o)
+ .text          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-closer.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-closer.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-closer.o)
+ .text          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-reent.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-reent.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-reent.o)
+ .text._reclaim_reent
+                0x00000000      0x1ac /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-reent.o)
+ .text          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-lseekr.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-lseekr.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-lseekr.o)
+ .text          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-readr.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-readr.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-readr.o)
+ .text          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-writer.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-writer.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-writer.o)
+ .text          0x00000000       0x3c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-memmove.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-memmove.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-memmove.o)
+ .riscv.attributes
+                0x00000000       0x1a /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-memmove.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-memset.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-memset.o)
+ .text          0x00000000       0x24 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-memcpy-asm.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-memcpy-asm.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-memcpy-asm.o)
+ .riscv.attributes
+                0x00000000       0x1a /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-memcpy-asm.o)
+ .text          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-freer.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-freer.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-freer.o)
+ .text          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-mallocr.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-mallocr.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-mallocr.o)
+ .text          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-mlock.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-mlock.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-mlock.o)
+ .text          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-reallocr.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-reallocr.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-reallocr.o)
+ .text._realloc_r
+                0x00000000       0xf0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-reallocr.o)
+ .comment       0x00000000       0x13 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-reallocr.o)
+ .riscv.attributes
+                0x00000000       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-reallocr.o)
+ .text          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-fflush.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-fflush.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-fflush.o)
+ .text.fflush   0x00000000       0x38 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-fflush.o)
+ .text          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-makebuf.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-makebuf.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-makebuf.o)
+ .text          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-fstatr.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-fstatr.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-fstatr.o)
+ .text          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-isattyr.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-isattyr.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-isattyr.o)
+ .text          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-sbrkr.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-sbrkr.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-sbrkr.o)
+ .text          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-msizer.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-msizer.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-msizer.o)
+ .text._malloc_usable_size_r
+                0x00000000       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-msizer.o)
+ .comment       0x00000000       0x13 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-msizer.o)
+ .riscv.attributes
+                0x00000000       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-msizer.o)
+ .text          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(close.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(close.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(close.o)
+ .gnu.warning._close
+                0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(close.o)
+ .text          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(fstat.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(fstat.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(fstat.o)
+ .gnu.warning._fstat
+                0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(fstat.o)
+ .text          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(isatty.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(isatty.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(isatty.o)
+ .gnu.warning._isatty
+                0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(isatty.o)
+ .text          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(lseek.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(lseek.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(lseek.o)
+ .gnu.warning._lseek
+                0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(lseek.o)
+ .text          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(read.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(read.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(read.o)
+ .gnu.warning._read
+                0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(read.o)
+ .text          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(sbrk.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(sbrk.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(sbrk.o)
+ .text          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(write.o)
+ .data          0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(write.o)
+ .bss           0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(write.o)
+ .gnu.warning._write
+                0x00000000        0x0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(write.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ram              0x00200000         0x00040000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /home/adithyan/drivers/test-lattice/compass/build/main.o
+LOAD /home/adithyan/drivers/test-lattice/compass/build/driver/src/magnetometer/ist8310.o
+LOAD /home/adithyan/drivers/test-lattice/compass/build/common/src/i2c.o
+LOAD /home/adithyan/drivers/test-lattice/compass/build/common/src/uart.o
+LOAD /home/adithyan/drivers/test-lattice/compass/build/startup.o
+START GROUP
+LOAD /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a
+LOAD /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a
+LOAD /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libm_nano.a
+END GROUP
+LOAD /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a
+LOAD /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a
+LOAD /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a
+START GROUP
+LOAD /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a
+LOAD /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a
+LOAD /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a
+END GROUP
+START GROUP
+LOAD /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a
+LOAD /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a
+LOAD /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a
+END GROUP
+                0x00200000                        RAM_START_ADDRESS = 0x200000
+                0x00040000                        RAM_SIZE = 0x40000
+                0x00004000                        STACK_SIZE = 0x4000
+
+.text           0x00200000     0x3cb0
+ *(SORT_NONE(.text.entry))
+ .text.entry    0x00200000       0x44 /home/adithyan/drivers/test-lattice/compass/build/startup.o
+                0x00200000                _start
+                0x00200050                        . = ALIGN (0x10)
+ *fill*         0x00200044        0xc 
+ *(.text .text.* .gnu.linkonce.t.*)
+ .text.app_delay_ms
+                0x00200050       0x90 /home/adithyan/drivers/test-lattice/compass/build/main.o
+ .text.app_uart_putc
+                0x002000e0       0x28 /home/adithyan/drivers/test-lattice/compass/build/main.o
+ .text.app_uart_u32
+                0x00200108       0xa0 /home/adithyan/drivers/test-lattice/compass/build/main.o
+ .text.app_uart_hex8
+                0x002001a8       0x4c /home/adithyan/drivers/test-lattice/compass/build/main.o
+ .text.app_uart_q12
+                0x002001f4       0xb4 /home/adithyan/drivers/test-lattice/compass/build/main.o
+ .text.app_uart_ut
+                0x002002a8       0xac /home/adithyan/drivers/test-lattice/compass/build/main.o
+ .text.app_uart_i32
+                0x00200354       0x30 /home/adithyan/drivers/test-lattice/compass/build/main.o
+ .text.app_uart_print.part.0
+                0x00200384       0x34 /home/adithyan/drivers/test-lattice/compass/build/main.o
+ .text.startup.main
+                0x002003b8      0x548 /home/adithyan/drivers/test-lattice/compass/build/main.o
+                0x002003b8                main
+ .text.ist8310_delay_ms
+                0x00200900       0x90 /home/adithyan/drivers/test-lattice/compass/build/driver/src/magnetometer/ist8310.o
+ .text.ist8310_write_reg
+                0x00200990       0x70 /home/adithyan/drivers/test-lattice/compass/build/driver/src/magnetometer/ist8310.o
+ .text.ist8310_read_regs_at
+                0x00200a00      0x10c /home/adithyan/drivers/test-lattice/compass/build/driver/src/magnetometer/ist8310.o
+ .text.ist8310_probe
+                0x00200b0c       0xb8 /home/adithyan/drivers/test-lattice/compass/build/driver/src/magnetometer/ist8310.o
+ .text.ist8310_last_error
+                0x00200bc4        0x8 /home/adithyan/drivers/test-lattice/compass/build/driver/src/magnetometer/ist8310.o
+                0x00200bc4                ist8310_last_error
+ .text.ist8310_read_who_am_i
+                0x00200bcc       0x24 /home/adithyan/drivers/test-lattice/compass/build/driver/src/magnetometer/ist8310.o
+                0x00200bcc                ist8310_read_who_am_i
+ .text.ist8310_calibration_reset
+                0x00200bf0       0x30 /home/adithyan/drivers/test-lattice/compass/build/driver/src/magnetometer/ist8310.o
+                0x00200bf0                ist8310_calibration_reset
+ .text.ist8310_calibration_start
+                0x00200c20       0x54 /home/adithyan/drivers/test-lattice/compass/build/driver/src/magnetometer/ist8310.o
+                0x00200c20                ist8310_calibration_start
+ .text.ist8310_calibration_add
+                0x00200c74       0x68 /home/adithyan/drivers/test-lattice/compass/build/driver/src/magnetometer/ist8310.o
+                0x00200c74                ist8310_calibration_add
+ .text.ist8310_calibration_finish
+                0x00200cdc      0x13c /home/adithyan/drivers/test-lattice/compass/build/driver/src/magnetometer/ist8310.o
+                0x00200cdc                ist8310_calibration_finish
+ .text.ist8310_calibration_apply
+                0x00200e18       0xec /home/adithyan/drivers/test-lattice/compass/build/driver/src/magnetometer/ist8310.o
+                0x00200e18                ist8310_calibration_apply
+ .text.ist8310_init
+                0x00200f04      0x114 /home/adithyan/drivers/test-lattice/compass/build/driver/src/magnetometer/ist8310.o
+                0x00200f04                ist8310_init
+ .text.ist8310_read_raw
+                0x00201018       0xec /home/adithyan/drivers/test-lattice/compass/build/driver/src/magnetometer/ist8310.o
+                0x00201018                ist8310_read_raw
+ .text.ist8310_read
+                0x00201104       0xa0 /home/adithyan/drivers/test-lattice/compass/build/driver/src/magnetometer/ist8310.o
+                0x00201104                ist8310_read
+ .text.i2c_wait_sr0
+                0x002011a4       0x3c /home/adithyan/drivers/test-lattice/compass/build/common/src/i2c.o
+ .text.i2c_initialize
+                0x002011e0       0x9c /home/adithyan/drivers/test-lattice/compass/build/common/src/i2c.o
+                0x002011e0                i2c_initialize
+ .text.i2c_start
+                0x0020127c       0xcc /home/adithyan/drivers/test-lattice/compass/build/common/src/i2c.o
+                0x0020127c                i2c_start
+ .text.i2c_configure
+                0x00201348        0xc /home/adithyan/drivers/test-lattice/compass/build/common/src/i2c.o
+                0x00201348                i2c_configure
+ .text.i2c_data_write
+                0x00201354       0xcc /home/adithyan/drivers/test-lattice/compass/build/common/src/i2c.o
+                0x00201354                i2c_data_write
+ .text.i2c_stop
+                0x00201420       0x28 /home/adithyan/drivers/test-lattice/compass/build/common/src/i2c.o
+                0x00201420                i2c_stop
+ .text.i2c_data_read
+                0x00201448       0xe0 /home/adithyan/drivers/test-lattice/compass/build/common/src/i2c.o
+                0x00201448                i2c_data_read
+ .text.uart_configure
+                0x00201528       0x7c /home/adithyan/drivers/test-lattice/compass/build/common/src/uart.o
+                0x00201528                uart_configure
+ .text.uart_putchar
+                0x002015a4       0x78 /home/adithyan/drivers/test-lattice/compass/build/common/src/uart.o
+                0x002015a4                uart_putchar
+ .text          0x0020161c      0x5c4 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_udivdi3.o)
+                0x0020161c                __udivdi3
+ .text          0x00201be0       0x24 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(muldi3.o)
+                0x00201be0                __mulsi3
+ .text          0x00201c04       0x8c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(multi3.o)
+                0x00201c04                __muldi3
+ .text          0x00201c90       0xb4 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(div.o)
+                0x00201c90                __divsi3
+                0x00201c98                __hidden___udivsi3
+                0x00201c98                __udivsi3
+                0x00201ce0                __umodsi3
+                0x00201d14                __modsi3
+ .text.printf   0x00201d44       0x50 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-printf.o)
+                0x00201d44                printf
+                0x00201d44                iprintf
+ .text.__sfputc_r
+                0x00201d94       0x3c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-nano-vfprintf.o)
+ .text.__sfputs_r
+                0x00201dd0       0x74 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-nano-vfprintf.o)
+                0x00201dd0                __sfputs_r
+ .text._vfprintf_r
+                0x00201e44      0x39c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-nano-vfprintf.o)
+                0x00201e44                _vfiprintf_r
+                0x00201e44                _vfprintf_r
+ .text._printf_common
+                0x002021e0      0x1b0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-nano-vfprintf_i.o)
+                0x002021e0                _printf_common
+ .text._printf_i
+                0x00202390      0x3b8 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-nano-vfprintf_i.o)
+                0x00202390                _printf_i
+ .text.std      0x00202748       0x88 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-findfp.o)
+ .text.stdio_exit_handler
+                0x002027d0       0x18 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-findfp.o)
+ .text.cleanup_stdio
+                0x002027e8       0x68 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-findfp.o)
+ .text.global_stdio_init.part.0
+                0x00202850       0x50 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-findfp.o)
+ .text.__sinit  0x002028a0       0x24 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-findfp.o)
+                0x002028a0                __sinit
+ .text._fwalk_sglue
+                0x002028c4       0xb0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-fwalk.o)
+                0x002028c4                _fwalk_sglue
+ .text.__sread  0x00202974       0x50 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-stdio.o)
+                0x00202974                __sread
+ .text.__swrite
+                0x002029c4       0x84 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-stdio.o)
+                0x002029c4                __swrite
+ .text.__sseek  0x00202a48       0x58 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-stdio.o)
+                0x00202a48                __sseek
+ .text.__sclose
+                0x00202aa0        0x8 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-stdio.o)
+                0x00202aa0                __sclose
+ .text.__swbuf_r
+                0x00202aa8      0x100 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-wbuf.o)
+                0x00202aa8                __swbuf_r
+ .text.__swsetup_r
+                0x00202ba8      0x124 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-wsetup.o)
+                0x00202ba8                __swsetup_r
+ .text.memchr   0x00202ccc       0x24 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-memchr.o)
+                0x00202ccc                memchr
+ .text._close_r
+                0x00202cf0       0x48 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-closer.o)
+                0x00202cf0                _close_r
+ .text._lseek_r
+                0x00202d38       0x50 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-lseekr.o)
+                0x00202d38                _lseek_r
+ .text._read_r  0x00202d88       0x50 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-readr.o)
+                0x00202d88                _read_r
+ .text._write_r
+                0x00202dd8       0x50 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-writer.o)
+                0x00202dd8                _write_r
+ .text          0x00202e28       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-memset.o)
+                0x00202e28                memset
+ .text._free_r  0x00202e44       0xf8 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-freer.o)
+                0x00202e44                _free_r
+ .text.sbrk_aligned
+                0x00202f3c       0x84 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-mallocr.o)
+ .text._malloc_r
+                0x00202fc0      0x1c0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-mallocr.o)
+                0x00202fc0                _malloc_r
+ .text.__malloc_lock
+                0x00203180        0x4 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-mlock.o)
+                0x00203180                __malloc_lock
+ .text.__malloc_unlock
+                0x00203184        0x4 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-mlock.o)
+                0x00203184                __malloc_unlock
+ .text.__sflush_r
+                0x00203188      0x1dc /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-fflush.o)
+                0x00203188                __sflush_r
+ .text._fflush_r
+                0x00203364       0x68 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-fflush.o)
+                0x00203364                _fflush_r
+ .text.__swhatbuf_r
+                0x002033cc       0x90 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-makebuf.o)
+                0x002033cc                __swhatbuf_r
+ .text.__smakebuf_r
+                0x0020345c       0xec /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-makebuf.o)
+                0x0020345c                __smakebuf_r
+ .text._fstat_r
+                0x00203548       0x4c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-fstatr.o)
+                0x00203548                _fstat_r
+ .text._isatty_r
+                0x00203594       0x48 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-isattyr.o)
+                0x00203594                _isatty_r
+ .text._sbrk_r  0x002035dc       0x48 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-sbrkr.o)
+                0x002035dc                _sbrk_r
+ .text._close   0x00203624       0x10 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(close.o)
+                0x00203624                _close
+ .text._fstat   0x00203634       0x10 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(fstat.o)
+                0x00203634                _fstat
+ .text._isatty  0x00203644       0x10 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(isatty.o)
+                0x00203644                _isatty
+ .text._lseek   0x00203654       0x10 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(lseek.o)
+                0x00203654                _lseek
+ .text._read    0x00203664       0x10 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(read.o)
+                0x00203664                _read
+ .text._sbrk    0x00203674       0x2c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(sbrk.o)
+                0x00203674                _sbrk
+ .text._write   0x002036a0       0x10 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(write.o)
+                0x002036a0                _write
+ *(.plt)
+                0x002036b0                        . = ALIGN (0x10)
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *crtend.o(.ctors)
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *crtend.o(.dtors)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.main.str1.4
+                0x002036b0      0x401 /home/adithyan/drivers/test-lattice/compass/build/main.o
+                                0x3a5 (size before relaxing)
+ *fill*         0x00203ab1        0x3 
+ .rodata.hex.0  0x00203ab4       0x11 /home/adithyan/drivers/test-lattice/compass/build/main.o
+ *fill*         0x00203ac5        0x3 
+ .rodata.app_atan_table
+                0x00203ac8       0x82 /home/adithyan/drivers/test-lattice/compass/build/main.o
+ .rodata.i2c_start.str1.4
+                0x00203b4a       0x23 /home/adithyan/drivers/test-lattice/compass/build/common/src/i2c.o
+ *fill*         0x00203b4a        0x2 
+ .rodata        0x00203b4c      0x100 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clz.o)
+                0x00203b4c                __clz_tab
+ .rodata._vfprintf_r.str1.4
+                0x00203c4c       0x13 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-nano-vfprintf.o)
+ .rodata._printf_i.str1.4
+                0x00203c4c       0x25 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-nano-vfprintf_i.o)
+ .rodata._printf_i
+                0x00203c4c       0x58 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-nano-vfprintf_i.o)
+ *(.gcc_except_table)
+ *(.eh_frame_hdr)
+ *(.eh_frame)
+ *(.init)
+ *(.fini)
+                [!provide]                        PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                [!provide]                        PROVIDE (__preinit_array_end = .)
+                [!provide]                        PROVIDE (__init_array_start = .)
+ *(SORT_BY_NAME(.init_array.*))
+ *(.init_array)
+                [!provide]                        PROVIDE (__init_array_end = .)
+                [!provide]                        PROVIDE (__fini_array_start = .)
+ *(.fini_array)
+ *(SORT_BY_NAME(.fini_array.*))
+                [!provide]                        PROVIDE (__fini_array_end = .)
+                0x00203cb0                        . = ALIGN (0x10)
+ *fill*         0x00203ca4        0xc 
+
+.rela.dyn       0x00203cb0        0x0
+ .rela.text.entry
+                0x00203cb0        0x0 /home/adithyan/drivers/test-lattice/compass/build/main.o
+ .rela.text._vfprintf_r
+                0x00203cb0        0x0 /home/adithyan/drivers/test-lattice/compass/build/main.o
+ .rela.text._sbrk
+                0x00203cb0        0x0 /home/adithyan/drivers/test-lattice/compass/build/main.o
+
+.sdata          0x00203cb0       0x10
+                0x00203cb0                        __sdata_load = LOADADDR (.sdata)
+                0x00203cb0                        __sdata_start = .
+                0x002044b0                        PROVIDE (__global_pointer$ = (. + 0x800))
+ *(.srodata.cst16)
+ *(.srodata.cst8)
+ *(.srodata.cst4)
+ *(.srodata.cst2)
+ *(.srodata*)
+ .srodata.candidates.0
+                0x00203cb0        0x4 /home/adithyan/drivers/test-lattice/compass/build/driver/src/magnetometer/ist8310.o
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ .sdata.ist8310_address
+                0x00203cb4        0x1 /home/adithyan/drivers/test-lattice/compass/build/driver/src/magnetometer/ist8310.o
+ *fill*         0x00203cb5        0x3 
+ .sdata._impure_ptr
+                0x00203cb8        0x4 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-impure.o)
+                0x00203cb8                _impure_ptr
+                0x00203cc0                        . = ALIGN (0x10)
+ *fill*         0x00203cbc        0x4 
+                0x00203cc0                        __sdata_end = .
+
+.data           0x00203cc0       0x60
+                0x00203cc0                        __data_load = LOADADDR (.data)
+                0x00203cc0                        __data_start = .
+ *(.got.plt)
+ *(.got)
+ *(.shdata)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data._impure_data
+                0x00203cc0       0x4c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-impure.o)
+                0x00203cc0                _impure_data
+ .data.__sglue  0x00203d0c        0xc /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-findfp.o)
+                0x00203d0c                __sglue
+                0x00203d20                        . = ALIGN (0x10)
+ *fill*         0x00203d18        0x8 
+                0x00203d20                        __data_end = .
+
+.sbss           0x00203d20       0x30
+                0x00203d20                        __sbss_start = .
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss.app_smooth_valid
+                0x00203d20        0x1 /home/adithyan/drivers/test-lattice/compass/build/main.o
+ *fill*         0x00203d21        0x3 
+ .sbss.app_smooth_y_nt
+                0x00203d24        0x4 /home/adithyan/drivers/test-lattice/compass/build/main.o
+ .sbss.app_smooth_x_nt
+                0x00203d28        0x4 /home/adithyan/drivers/test-lattice/compass/build/main.o
+ .sbss.ist8310_last_failure
+                0x00203d2c        0x4 /home/adithyan/drivers/test-lattice/compass/build/driver/src/magnetometer/ist8310.o
+ .sbss.ist8310_initialized
+                0x00203d30        0x4 /home/adithyan/drivers/test-lattice/compass/build/driver/src/magnetometer/ist8310.o
+ .sbss.I2C_CLK  0x00203d34        0x4 /home/adithyan/drivers/test-lattice/compass/build/common/src/i2c.o
+                0x00203d34                I2C_CLK
+ .sbss.SYS_CLK  0x00203d38        0x4 /home/adithyan/drivers/test-lattice/compass/build/common/src/i2c.o
+                0x00203d38                SYS_CLK
+ .sbss.__stdio_exit_handler
+                0x00203d3c        0x4 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-findfp.o)
+                0x00203d3c                __stdio_exit_handler
+ .sbss.errno    0x00203d40        0x4 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-reent.o)
+                0x00203d40                errno
+ .sbss.__malloc_sbrk_start
+                0x00203d44        0x4 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-mallocr.o)
+                0x00203d44                __malloc_sbrk_start
+ .sbss.__malloc_free_list
+                0x00203d48        0x4 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-mallocr.o)
+                0x00203d48                __malloc_free_list
+ .sbss.heap_end.0
+                0x00203d4c        0x4 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(sbrk.o)
+ *(.scommon)
+                0x00203d50                        . = ALIGN (0x10)
+                0x00203d50                        __sbss_end = .
+
+.bss            0x00203d50      0x140
+                0x00203d50                        __bss_start = .
+ *(.shbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss.__sf      0x00203d50      0x138 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-findfp.o)
+                0x00203d50                __sf
+ *(COMMON)
+                0x00203e90                        . = ALIGN (0x10)
+ *fill*         0x00203e88        0x8 
+                0x00203e90                        __bss_end = .
+                [!provide]                        PROVIDE (_end = __bss_end)
+                0x00203e90                        PROVIDE (end = __bss_end)
+
+.stack          0x00203e90     0x4000
+                0x00203e90                        __stack_bottom = .
+                0x00207e90                        . = (. + STACK_SIZE)
+ *fill*         0x00203e90     0x4000 
+                0x00207e90                        __stack_top = .
+OUTPUT(/home/adithyan/drivers/test-lattice/compass/build/riscv_compass.elf elf32-littleriscv)
+
+.debug_info     0x00000000     0x36d9
+ .debug_info    0x00000000     0x149c /home/adithyan/drivers/test-lattice/compass/build/main.o
+ .debug_info    0x0000149c      0xcae /home/adithyan/drivers/test-lattice/compass/build/driver/src/magnetometer/ist8310.o
+ .debug_info    0x0000214a      0x522 /home/adithyan/drivers/test-lattice/compass/build/common/src/i2c.o
+ .debug_info    0x0000266c      0x36a /home/adithyan/drivers/test-lattice/compass/build/common/src/uart.o
+ .debug_info    0x000029d6      0x94e /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_udivdi3.o)
+ .debug_info    0x00003324       0x31 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(muldi3.o)
+ .debug_info    0x00003355      0x23f /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(multi3.o)
+ .debug_info    0x00003594       0x5f /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(div.o)
+ .debug_info    0x000035f3       0xe6 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clz.o)
+
+.debug_abbrev   0x00000000      0xd7c
+ .debug_abbrev  0x00000000      0x383 /home/adithyan/drivers/test-lattice/compass/build/main.o
+ .debug_abbrev  0x00000383      0x395 /home/adithyan/drivers/test-lattice/compass/build/driver/src/magnetometer/ist8310.o
+ .debug_abbrev  0x00000718      0x19c /home/adithyan/drivers/test-lattice/compass/build/common/src/i2c.o
+ .debug_abbrev  0x000008b4      0x12a /home/adithyan/drivers/test-lattice/compass/build/common/src/uart.o
+ .debug_abbrev  0x000009de      0x1c5 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_udivdi3.o)
+ .debug_abbrev  0x00000ba3       0x28 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(muldi3.o)
+ .debug_abbrev  0x00000bcb      0x119 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(multi3.o)
+ .debug_abbrev  0x00000ce4       0x28 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(div.o)
+ .debug_abbrev  0x00000d0c       0x70 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clz.o)
+
+.debug_loclists
+                0x00000000     0x194e
+ .debug_loclists
+                0x00000000      0x6d0 /home/adithyan/drivers/test-lattice/compass/build/main.o
+ .debug_loclists
+                0x000006d0      0x548 /home/adithyan/drivers/test-lattice/compass/build/driver/src/magnetometer/ist8310.o
+ .debug_loclists
+                0x00000c18      0x336 /home/adithyan/drivers/test-lattice/compass/build/common/src/i2c.o
+ .debug_loclists
+                0x00000f4e      0x1ca /home/adithyan/drivers/test-lattice/compass/build/common/src/uart.o
+ .debug_loclists
+                0x00001118      0x776 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_udivdi3.o)
+ .debug_loclists
+                0x0000188e       0xc0 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(multi3.o)
+
+.debug_aranges  0x00000000      0x230
+ .debug_aranges
+                0x00000000       0x60 /home/adithyan/drivers/test-lattice/compass/build/main.o
+ .debug_aranges
+                0x00000060       0x88 /home/adithyan/drivers/test-lattice/compass/build/driver/src/magnetometer/ist8310.o
+ .debug_aranges
+                0x000000e8       0x60 /home/adithyan/drivers/test-lattice/compass/build/common/src/i2c.o
+ .debug_aranges
+                0x00000148       0x50 /home/adithyan/drivers/test-lattice/compass/build/common/src/uart.o
+ .debug_aranges
+                0x00000198       0x20 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_udivdi3.o)
+ .debug_aranges
+                0x000001b8       0x20 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(muldi3.o)
+ .debug_aranges
+                0x000001d8       0x20 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(multi3.o)
+ .debug_aranges
+                0x000001f8       0x20 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(div.o)
+ .debug_aranges
+                0x00000218       0x18 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clz.o)
+
+.debug_rnglists
+                0x00000000      0x336
+ .debug_rnglists
+                0x00000000      0x108 /home/adithyan/drivers/test-lattice/compass/build/main.o
+ .debug_rnglists
+                0x00000108       0xe4 /home/adithyan/drivers/test-lattice/compass/build/driver/src/magnetometer/ist8310.o
+ .debug_rnglists
+                0x000001ec       0x6a /home/adithyan/drivers/test-lattice/compass/build/common/src/i2c.o
+ .debug_rnglists
+                0x00000256       0x39 /home/adithyan/drivers/test-lattice/compass/build/common/src/uart.o
+ .debug_rnglists
+                0x0000028f       0xa7 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_udivdi3.o)
+
+.debug_line     0x00000000     0x39cb
+ .debug_line    0x00000000      0xeb8 /home/adithyan/drivers/test-lattice/compass/build/main.o
+ .debug_line    0x00000eb8     0x10d4 /home/adithyan/drivers/test-lattice/compass/build/driver/src/magnetometer/ist8310.o
+ .debug_line    0x00001f8c      0x63f /home/adithyan/drivers/test-lattice/compass/build/common/src/i2c.o
+ .debug_line    0x000025cb      0x67f /home/adithyan/drivers/test-lattice/compass/build/common/src/uart.o
+ .debug_line    0x00002c4a      0x955 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_udivdi3.o)
+ .debug_line    0x0000359f       0x7a /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(muldi3.o)
+ .debug_line    0x00003619      0x220 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(multi3.o)
+ .debug_line    0x00003839      0x153 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(div.o)
+ .debug_line    0x0000398c       0x3f /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clz.o)
+
+.debug_str      0x00000000      0xcc0
+ .debug_str     0x00000000      0xcc0 /home/adithyan/drivers/test-lattice/compass/build/main.o
+                                0x5ed (size before relaxing)
+ .debug_str     0x00000cc0      0x562 /home/adithyan/drivers/test-lattice/compass/build/driver/src/magnetometer/ist8310.o
+ .debug_str     0x00000cc0      0x2f5 /home/adithyan/drivers/test-lattice/compass/build/common/src/i2c.o
+ .debug_str     0x00000cc0      0x2c9 /home/adithyan/drivers/test-lattice/compass/build/common/src/uart.o
+ .debug_str     0x00000cc0      0x28f /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_udivdi3.o)
+ .debug_str     0x00000cc0       0xaf /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(muldi3.o)
+ .debug_str     0x00000cc0      0x22d /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(multi3.o)
+ .debug_str     0x00000cc0       0xdc /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(div.o)
+ .debug_str     0x00000cc0      0x1b3 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clz.o)
+
+.debug_line_str
+                0x00000000      0x2e2
+ .debug_line_str
+                0x00000000      0x2e2 /home/adithyan/drivers/test-lattice/compass/build/main.o
+                                0x18a (size before relaxing)
+ .debug_line_str
+                0x000002e2      0x1c8 /home/adithyan/drivers/test-lattice/compass/build/driver/src/magnetometer/ist8310.o
+ .debug_line_str
+                0x000002e2       0xa7 /home/adithyan/drivers/test-lattice/compass/build/common/src/i2c.o
+ .debug_line_str
+                0x000002e2      0x111 /home/adithyan/drivers/test-lattice/compass/build/common/src/uart.o
+ .debug_line_str
+                0x000002e2      0x130 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_udivdi3.o)
+ .debug_line_str
+                0x000002e2       0x9a /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(muldi3.o)
+ .debug_line_str
+                0x000002e2      0x15d /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(multi3.o)
+ .debug_line_str
+                0x000002e2       0x97 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(div.o)
+ .debug_line_str
+                0x000002e2      0x130 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clz.o)
+
+.comment        0x00000000       0x2d
+ .comment       0x00000000       0x2d /home/adithyan/drivers/test-lattice/compass/build/main.o
+                                 0x1c (size before relaxing)
+ .comment       0x0000002d       0x1c /home/adithyan/drivers/test-lattice/compass/build/driver/src/magnetometer/ist8310.o
+ .comment       0x0000002d       0x1c /home/adithyan/drivers/test-lattice/compass/build/common/src/i2c.o
+ .comment       0x0000002d       0x1c /home/adithyan/drivers/test-lattice/compass/build/common/src/uart.o
+ .comment       0x0000002d       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_udivdi3.o)
+ .comment       0x0000002d       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(multi3.o)
+ .comment       0x0000002d       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clz.o)
+ .comment       0x0000002d       0x13 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-printf.o)
+ .comment       0x0000002d       0x13 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-impure.o)
+ .comment       0x0000002d       0x13 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-nano-vfprintf.o)
+ .comment       0x0000002d       0x13 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-nano-vfprintf_i.o)
+ .comment       0x0000002d       0x13 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-findfp.o)
+ .comment       0x0000002d       0x13 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-fwalk.o)
+ .comment       0x0000002d       0x13 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-stdio.o)
+ .comment       0x0000002d       0x13 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-wbuf.o)
+ .comment       0x0000002d       0x13 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-wsetup.o)
+ .comment       0x0000002d       0x13 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-memchr.o)
+ .comment       0x0000002d       0x13 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-closer.o)
+ .comment       0x0000002d       0x13 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-reent.o)
+ .comment       0x0000002d       0x13 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-lseekr.o)
+ .comment       0x0000002d       0x13 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-readr.o)
+ .comment       0x0000002d       0x13 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-writer.o)
+ .comment       0x0000002d       0x13 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-freer.o)
+ .comment       0x0000002d       0x13 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-mallocr.o)
+ .comment       0x0000002d       0x13 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-mlock.o)
+ .comment       0x0000002d       0x13 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-fflush.o)
+ .comment       0x0000002d       0x13 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-makebuf.o)
+ .comment       0x0000002d       0x13 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-fstatr.o)
+ .comment       0x0000002d       0x13 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-isattyr.o)
+ .comment       0x0000002d       0x13 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-sbrkr.o)
+ .comment       0x0000002d       0x13 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(close.o)
+ .comment       0x0000002d       0x13 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(fstat.o)
+ .comment       0x0000002d       0x13 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(isatty.o)
+ .comment       0x0000002d       0x13 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(lseek.o)
+ .comment       0x0000002d       0x13 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(read.o)
+ .comment       0x0000002d       0x13 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(sbrk.o)
+ .comment       0x0000002d       0x13 /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(write.o)
+
+.riscv.attributes
+                0x00000000       0x29
+ .riscv.attributes
+                0x00000000       0x25 /home/adithyan/drivers/test-lattice/compass/build/main.o
+ .riscv.attributes
+                0x00000025       0x25 /home/adithyan/drivers/test-lattice/compass/build/driver/src/magnetometer/ist8310.o
+ .riscv.attributes
+                0x0000004a       0x25 /home/adithyan/drivers/test-lattice/compass/build/common/src/i2c.o
+ .riscv.attributes
+                0x0000006f       0x25 /home/adithyan/drivers/test-lattice/compass/build/common/src/uart.o
+ .riscv.attributes
+                0x00000094       0x27 /home/adithyan/drivers/test-lattice/compass/build/startup.o
+ .riscv.attributes
+                0x000000bb       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_udivdi3.o)
+ .riscv.attributes
+                0x000000d7       0x1a /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(muldi3.o)
+ .riscv.attributes
+                0x000000f1       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(multi3.o)
+ .riscv.attributes
+                0x0000010d       0x1a /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(div.o)
+ .riscv.attributes
+                0x00000127       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(_clz.o)
+ .riscv.attributes
+                0x00000143       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-printf.o)
+ .riscv.attributes
+                0x0000015f       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-impure.o)
+ .riscv.attributes
+                0x0000017b       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-nano-vfprintf.o)
+ .riscv.attributes
+                0x00000197       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-nano-vfprintf_i.o)
+ .riscv.attributes
+                0x000001b3       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-findfp.o)
+ .riscv.attributes
+                0x000001cf       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-fwalk.o)
+ .riscv.attributes
+                0x000001eb       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-stdio.o)
+ .riscv.attributes
+                0x00000207       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-wbuf.o)
+ .riscv.attributes
+                0x00000223       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-wsetup.o)
+ .riscv.attributes
+                0x0000023f       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-memchr.o)
+ .riscv.attributes
+                0x0000025b       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-closer.o)
+ .riscv.attributes
+                0x00000277       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-reent.o)
+ .riscv.attributes
+                0x00000293       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-lseekr.o)
+ .riscv.attributes
+                0x000002af       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-readr.o)
+ .riscv.attributes
+                0x000002cb       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-writer.o)
+ .riscv.attributes
+                0x000002e7       0x1a /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-memset.o)
+ .riscv.attributes
+                0x00000301       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-freer.o)
+ .riscv.attributes
+                0x0000031d       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-mallocr.o)
+ .riscv.attributes
+                0x00000339       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-mlock.o)
+ .riscv.attributes
+                0x00000355       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-fflush.o)
+ .riscv.attributes
+                0x00000371       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-makebuf.o)
+ .riscv.attributes
+                0x0000038d       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-fstatr.o)
+ .riscv.attributes
+                0x000003a9       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-isattyr.o)
+ .riscv.attributes
+                0x000003c5       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libc_nano.a(libc_a-sbrkr.o)
+ .riscv.attributes
+                0x000003e1       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(close.o)
+ .riscv.attributes
+                0x000003fd       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(fstat.o)
+ .riscv.attributes
+                0x00000419       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(isatty.o)
+ .riscv.attributes
+                0x00000435       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(lseek.o)
+ .riscv.attributes
+                0x00000451       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(read.o)
+ .riscv.attributes
+                0x0000046d       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(sbrk.o)
+ .riscv.attributes
+                0x00000489       0x1c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/../../../../riscv32-vega-elf/lib/libnosys.a(write.o)
+
+.debug_frame    0x00000000      0x58c
+ .debug_frame   0x00000000      0x168 /home/adithyan/drivers/test-lattice/compass/build/main.o
+ .debug_frame   0x00000168      0x210 /home/adithyan/drivers/test-lattice/compass/build/driver/src/magnetometer/ist8310.o
+ .debug_frame   0x00000378      0x128 /home/adithyan/drivers/test-lattice/compass/build/common/src/i2c.o
+ .debug_frame   0x000004a0       0xc0 /home/adithyan/drivers/test-lattice/compass/build/common/src/uart.o
+ .debug_frame   0x00000560       0x2c /home/adithyan/project/riscv_toolchain/riscv_toolchain/toolchain/bin/../lib/gcc/riscv32-vega-elf/13.2.0/libgcc.a(multi3.o)
